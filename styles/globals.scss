@@ -14,3 +14,10 @@ a {
 * {
   box-sizing: border-box;
 }
+
+$bottomNavigationActionIconSize: 1.4rem;
+
+.bottom-navigation-action-icon {
+  width: $bottomNavigationActionIconSize;
+  height: $bottomNavigationActionIconSize;
+}
