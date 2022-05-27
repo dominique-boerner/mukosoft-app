@@ -78,7 +78,7 @@ export default function Intro() {
           {activeStep > 0 && (
             <Button
               className="mb-4"
-              variant="outlined"
+              variant="contained"
               color="secondary"
               onClick={() => prevStep()}
             >
@@ -88,7 +88,7 @@ export default function Intro() {
           {activeStep !== steps.length - 1 && (
             <Button
               variant="contained"
-              color="secondary"
+              color="tertiary"
               onClick={() => nextStep()}
             >
               Weiter
@@ -97,7 +97,7 @@ export default function Intro() {
           {activeStep === steps.length - 1 && (
             <Button
               variant="contained"
-              color="secondary"
+              color="tertiary"
               onClick={() => finish()}
             >
               Fertig!
