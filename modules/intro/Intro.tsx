@@ -4,14 +4,13 @@ import { Box, useTheme } from "@mui/system";
 import { useStorageItem } from "@capacitor-community/storage-react";
 import { CapacitorStorageKeys } from "../../common/capacitor-storage-keys";
 import { Step } from "./models/step";
-import { theme } from "../../styles/theme";
 import heartbeatAnimation from "@assets/animations/heartbeat.json";
 import medicineAnimation from "@assets/animations/medicine.json";
 import stethoscopeAnimation from "@assets/animations/stethoscope.json";
 import cardiologyImage from "@assets/img/cardiology.svg";
 import familyImage from "@assets/img/family.svg";
 import medicineImage from "@assets/img/medicine.svg";
-import Lottie from "lottie-react";
+import { theme } from "../../common/theme/theme";
 
 export default function Intro() {
   const activeTheme = useTheme(theme);
@@ -59,8 +58,10 @@ export default function Intro() {
   }
 
   return (
-    <Box className="flex flex-col justify-evenly align-center h-screen"
-         style={{ background: activeTheme.palette.primary.main }}>
+    <Box
+      className="flex flex-col justify-evenly align-center h-screen"
+      style={{ background: activeTheme.palette.primary.main }}
+    >
       <Box className="flex flex-col h-screen justify-evenly mx-6">
         <Box>
           <Typography variant="h4">{steps[activeStep].title}</Typography>
@@ -71,9 +72,7 @@ export default function Intro() {
         <Box className="self-center">{steps[activeStep].image}</Box>
       </Box>
 
-      <Box
-        className="h-64 w-full flex flex-col justify-center items-center"
-      >
+      <Box className="h-64 w-full flex flex-col justify-center items-center">
         <Box className="flex flex-col w-2/3 justify-center">
           {activeStep > 0 && (
             <Button
