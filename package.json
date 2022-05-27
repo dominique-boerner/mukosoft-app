@@ -11,6 +11,7 @@
     "build-storybook": "build-storybook"
   },
   "dependencies": {
+    "@capacitor-community/storage-react": "^0.1.0",
     "@capacitor/cli": "^3.4.3",
     "@capacitor/core": "^3.4.3",
     "@capacitor/storage": "^1.2.5",
@@ -22,6 +23,8 @@
     "@svgr/webpack": "^6.2.1",
     "moment": "^2.29.3",
     "next": "12.1.6",
+    "next-compose-plugins": "^2.2.1",
+    "next-transpile-modules": "^9.0.0",
     "react": "18.1.0",
     "react-dom": "18.1.0",
     "react-moment": "^1.1.1",

@@ -1,4 +1,7 @@
-/** @type {import('next').NextConfig} */
+const modulesForCompile = ['@capacitor-community/storage-react']
+const withTM = require('next-transpile-modules')(modulesForCompile);
+const withPlugins = require('next-compose-plugins');
+
 const nextConfig = {
   reactStrictMode: true,
   webpack(config) {
@@ -11,4 +14,4 @@ const nextConfig = {
   }
 }
 
-module.exports = nextConfig
+module.exports =withPlugins([withTM], nextConfig)
