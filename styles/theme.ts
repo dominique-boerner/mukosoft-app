@@ -1,22 +1,42 @@
-import { createTheme, ThemeOptions } from "@mui/material";
-import { orange, teal } from "@mui/material/colors";
+import {createTheme, ThemeOptions} from "@mui/material";
+
+const borderRadius = "10px";
 
 const themeOptions: ThemeOptions = {
   palette: {
-    primary: teal,
-    secondary: orange,
+    mode: "light",
+    primary: {
+      main: "#E6DCF4",
+      light: "#ffffff",
+      dark: "#b4aac1"
+    },
+    secondary: {
+      main: "#00152b",
+      light: "#2a3b54",
+      dark: "#000000"
+    },
     background: {
       default: "#F6F7FB",
     },
   },
   components: {
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          textTransform: "none",
+          padding: ".8rem",
+          borderRadius,
+          boxShadow: "none"
+        }
+      }
+    },
     MuiTypography: {
       styleOverrides: {
         h1: {
-          lineHeight: "1.2",
+          lineHeight: "1.3",
         },
         h2: {
-          lineHeight: "1.2",
+          lineHeight: "1.3",
         },
         h3: {
           lineHeight: "1.4",
