@@ -59,7 +59,7 @@ export default function Intro() {
 
   return (
     <Box
-      className="flex flex-col justify-evenly align-center h-screen"
+      className="flex flex-col justify-evenly align-center min-h-screen"
       style={{ background: activeTheme.palette.primary.main }}
     >
       <Box className="flex flex-col h-screen justify-evenly mx-6">
