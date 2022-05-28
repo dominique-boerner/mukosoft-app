@@ -5,12 +5,16 @@ import { Box } from "@mui/system";
 
 interface RecipeListProps {
   recipes?: Recipe[];
+  cols?: number;
 }
 
-export default function RecipeList({ recipes = [] }: RecipeListProps) {
+export default function RecipeList({
+  recipes = [],
+  cols = 3,
+}: RecipeListProps) {
   return (
     <Box>
-      <ImageList variant="masonry" cols={3} gap={20}>
+      <ImageList variant="masonry" cols={cols} gap={20}>
         {recipes.map((recipe) => (
           <ImageListItem
             key={recipe.title}

@@ -1,6 +1,6 @@
 import { MedicationRequest } from "fhir/r4";
 
-export const mockMedication: MedicationRequest = {
+export const medicationMock: MedicationRequest = {
   resourceType: "MedicationRequest",
   id: "foo",
   status: "active",
