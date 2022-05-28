@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import CommunityService from "./../../services/community-service/community-service";
+import CommunityService from "../../services/communityService/community-service";
 import { ApiCallback } from "@models/ApiCallback";
 import { MyDocResponse } from "@models/my-doc/MyDocResponse";
 

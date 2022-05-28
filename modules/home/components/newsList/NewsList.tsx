@@ -1,6 +1,6 @@
 import { Box, Button, Typography } from "@mui/material";
 import EmptyIcon from "../../../../assets/icons/favourite.svg";
-import NewsCard from "@module/home/components/NewsCard/NewsCard";
+import NewsCard from "@module/home/components/newsCard/NewsCard";
 import React from "react";
 import { MyDocNews } from "@models/my-doc/MyDocNews";
 
@@ -34,8 +34,9 @@ export function NewsList({ news = [], isLoading = true }: NewsListProps) {
           </Typography>
           <Button
             sx={{ marginTop: "1rem" }}
-            onClick={() => {} }
+            onClick={() => {}}
             variant="contained"
+            color="tertiary"
           >
             Zur Community
           </Button>

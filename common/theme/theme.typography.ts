@@ -14,4 +14,7 @@ export const typography: TypographyOptions = {
   h4: {
     fontSize: "1.1rem",
   },
+  button: {
+    fontSize: "1.1rem",
+  },
 };

@@ -9,6 +9,7 @@ import HomeIcon from "../../../assets/icons/uicons-regular-rounded/svg/fi-rr-hom
 import MedicationIcon from "../../../assets/icons/uicons-regular-rounded/svg/fi-rr-medicine.svg";
 import CookbookIcon from "../../../assets/icons/uicons-regular-rounded/svg/fi-rr-carrot.svg";
 import CommunityIcon from "../../../assets/icons/uicons-regular-rounded/svg/fi-rr-following.svg";
+import { features } from "../../../common/config/features";
 
 const BOTTOM_NAVIGATION_ACTION_ICON_CLASS = "bottom-navigation-action-icon";
 
@@ -45,7 +46,7 @@ export class RouteUtil {
    * @return {BottomNavigationAction[]}
    */
   static getBottomNavigationActions(): BottomNavigationAction[] {
-    return [
+    let routes = [
       {
         to: RouteUtil.ROUTES.HOME,
         icon: homeIconElement,
@@ -58,10 +59,18 @@ export class RouteUtil {
         to: RouteUtil.ROUTES.COOKBOOK,
         icon: cookbookIconElement,
       },
-      {
-        to: RouteUtil.ROUTES.COMMUNITY,
-        icon: communityIconElement,
-      },
     ];
+
+    if (features.MY_DOC) {
+      routes = [
+        ...routes,
+        {
+          to: RouteUtil.ROUTES.COMMUNITY,
+          icon: communityIconElement,
+        },
+      ];
+    }
+
+    return routes;
   }
 }

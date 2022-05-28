@@ -21,7 +21,7 @@ export const tertiary: PaletteColorOptions = {
 };
 
 export const background: Partial<TypeBackground> = {
-  default: "#F6F7FB",
+  default: "#F5F6F8",
 };
 
 export const warning: PaletteColorOptions = {

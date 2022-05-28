@@ -1,8 +1,8 @@
 import { Box, LinearProgress, TextField, Typography } from "@mui/material";
 import React, { FunctionComponent } from "react";
-import CommunityCard from "./components/CommunityCard/CommunityCard";
+import CommunityCard from "./components/communityCard/CommunityCard";
 import { MyDocResponse } from "@models/my-doc/MyDocResponse";
-import { useFetchCommunity } from "@hooks/use-fetch-community/useFetchCommunity";
+import { useFetchCommunity } from "@hooks/useFetchCommunity/useFetchCommunity";
 
 const Community: FunctionComponent = () => {
   const community = useFetchCommunity();
