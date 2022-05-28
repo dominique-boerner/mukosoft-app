@@ -4,6 +4,7 @@ import { useTheme } from "@mui/system";
 import Header from "@module/home/components/header/Header";
 import Recipes from "@module/home/components/recipes/Recipes";
 import CommunityNews from "@module/home/components/communityNews/CommunityNews";
+import NextMedication from "@module/home/components/nextMedicationList/NextMedication";
 
 const Home = () => {
   const palette = useTheme().palette;
@@ -14,8 +15,11 @@ const Home = () => {
       style={{ background: palette.background.default }}
     >
       <Header />
-      <CommunityNews />
-      <Recipes />
+      <Box px="1rem" pt="2rem" pb="8rem">
+        <CommunityNews />
+        <NextMedication />
+        <Recipes />
+      </Box>
     </Box>
   );
 };

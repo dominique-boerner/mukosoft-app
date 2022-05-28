@@ -21,6 +21,7 @@
     "@mui/lab": "^5.0.0-alpha.73",
     "@mui/material": "^5.5.1",
     "@svgr/webpack": "^6.2.1",
+    "@types/fhir": "^0.0.34",
     "lottie-react": "^2.2.1",
     "moment": "^2.29.3",
     "next": "12.1.6",
