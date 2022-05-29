@@ -1,7 +1,5 @@
-import {Cookbook} from "@mukosoft-cookbook/core";
+import { Cookbook } from "@mukosoft/cookbook";
 
 export default function CookbookPage() {
-  return (
-      <Cookbook />
-  )
+  return <Cookbook />;
 }

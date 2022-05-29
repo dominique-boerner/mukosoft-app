@@ -1,5 +1,5 @@
 {
-  "name": "@mukosoft-cookbook/core",
+  "name": "@mukosoft/cookbook",
   "version": "0.1.0",
   "private": true,
   "scripts": {
