@@ -1,5 +1,5 @@
 import React from "react";
-import { BottomNavigationAction } from "../models/BottomNavigationAction";
+import { BottomNavigationItem } from "../models/BottomNavigationItem";
 import HomeIcon from "@icons/fi-rr-home.svg";
 import MedicationIcon from "@icons/fi-rr-medicine.svg";
 import CookbookIcon from "@icons/fi-rr-carrot.svg";
@@ -38,9 +38,9 @@ export class RouteUtil {
 
   /**
    * Returns the actions for the bottom navigation.
-   * @return {BottomNavigationAction[]}
+   * @return {BottomNavigationItem[]}
    */
-  static getBottomNavigationActions(): BottomNavigationAction[] {
+  static getBottomNavigationActions(): BottomNavigationItem[] {
     let routes = [
       {
         to: RouteUtil.ROUTES.HOME,

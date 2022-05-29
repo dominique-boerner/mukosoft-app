@@ -1,6 +1,6 @@
 import { ReactElement } from "react";
 
-export interface BottomNavigationAction {
+export interface BottomNavigationItem {
   icon: ReactElement;
   to: string;
 }
