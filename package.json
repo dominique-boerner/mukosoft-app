@@ -22,6 +22,7 @@
     "@mui/material": "^5.5.1",
     "@mukosoft-community/core": "./modules/community",
     "@mukosoft/cookbook": "./packages/mukosoft-cookbook",
+    "@mukosoft/core": "./packages/mukosoft-core",
     "@mukosoft-medications/core": "./modules/medications",
     "@svgr/webpack": "^6.2.1",
     "@types/fhir": "^0.0.34",

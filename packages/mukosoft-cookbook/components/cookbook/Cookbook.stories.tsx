@@ -2,7 +2,7 @@ import React from "react";
 import { ComponentMeta, ComponentStory } from "@storybook/react";
 import Cookbook from "./Cookbook";
 import { ThemeProvider } from "@mui/material";
-import { theme } from "../../../../common/theme/theme";
+import { theme } from "@mukosoft/core";
 
 export default {
   title: "Cookbook/Page",

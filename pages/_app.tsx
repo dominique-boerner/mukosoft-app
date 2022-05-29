@@ -2,9 +2,9 @@ import "../styles/globals.scss";
 import type { AppProps } from "next/app";
 import BottomNavigation from "../modules/bottomNavigation/BottomNavigation";
 import { Box, ThemeProvider } from "@mui/system";
-import { theme } from "../common/theme/theme";
+import { theme } from "@mukosoft/core";
 import { useStorageItem } from "@capacitor-community/storage-react";
-import { CapacitorStorageKeys } from "../common/capacitor-storage-keys";
+import { CapacitorStorageKeys } from "@common/capacitor-storage-keys";
 import Intro from "../modules/intro/Intro";
 import { CircularProgress } from "@mui/material";
 

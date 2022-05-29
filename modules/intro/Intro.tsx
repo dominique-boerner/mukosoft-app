@@ -10,10 +10,9 @@ import stethoscopeAnimation from "@assets/animations/stethoscope.json";
 import cardiologyImage from "@assets/img/cardiology.svg";
 import familyImage from "@assets/img/family.svg";
 import medicineImage from "@assets/img/medicine.svg";
-import { theme } from "../../common/theme/theme";
 
 export default function Intro() {
-  const activeTheme = useTheme(theme);
+  const activeTheme = useTheme();
   const [activeStep, setActiveStep] = useState(0);
   const [isFirstStart, setIsFirstStart] = useStorageItem(
     CapacitorStorageKeys.IS_FIRST_START,
@@ -70,40 +69,39 @@ export default function Intro() {
           </Typography>
         </Box>
         <Box className="self-center">{steps[activeStep].image}</Box>
-      <Box className="h-64 w-full flex flex-col justify-center items-center">
-        <Box className="flex flex-col w-2/3 justify-center">
-          {activeStep > 0 && (
-            <Button
-              className="mb-4"
-              variant="contained"
-              color="secondary"
-              onClick={() => prevStep()}
-            >
-              Zurück
-            </Button>
-          )}
-          {activeStep !== steps.length - 1 && (
-            <Button
-              variant="contained"
-              color="tertiary"
-              onClick={() => nextStep()}
-            >
-              Weiter
-            </Button>
-          )}
-          {activeStep === steps.length - 1 && (
-            <Button
-              variant="contained"
-              color="tertiary"
-              onClick={() => finish()}
-            >
-              Fertig!
-            </Button>
-          )}
+        <Box className="h-64 w-full flex flex-col justify-center items-center">
+          <Box className="flex flex-col w-2/3 justify-center">
+            {activeStep > 0 && (
+              <Button
+                className="mb-4"
+                variant="contained"
+                color="secondary"
+                onClick={() => prevStep()}
+              >
+                Zurück
+              </Button>
+            )}
+            {activeStep !== steps.length - 1 && (
+              <Button
+                variant="contained"
+                color="tertiary"
+                onClick={() => nextStep()}
+              >
+                Weiter
+              </Button>
+            )}
+            {activeStep === steps.length - 1 && (
+              <Button
+                variant="contained"
+                color="tertiary"
+                onClick={() => finish()}
+              >
+                Fertig!
+              </Button>
+            )}
+          </Box>
         </Box>
       </Box>
-      </Box>
-
     </Box>
   );
 }
