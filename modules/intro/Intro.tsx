@@ -59,7 +59,7 @@ export default function Intro() {
 
   return (
     <Box
-      className="flex flex-col justify-evenly align-center min-h-screen"
+      className="flex flex-col fixed top-0 justify-evenly align-center h-screen"
       style={{ background: activeTheme.palette.primary.main }}
     >
       <Box className="flex flex-col h-screen justify-evenly mx-6">
@@ -70,8 +70,6 @@ export default function Intro() {
           </Typography>
         </Box>
         <Box className="self-center">{steps[activeStep].image}</Box>
-      </Box>
-
       <Box className="h-64 w-full flex flex-col justify-center items-center">
         <Box className="flex flex-col w-2/3 justify-center">
           {activeStep > 0 && (
@@ -104,6 +102,8 @@ export default function Intro() {
           )}
         </Box>
       </Box>
+      </Box>
+
     </Box>
   );
 }
