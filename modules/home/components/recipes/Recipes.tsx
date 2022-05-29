@@ -1,6 +1,6 @@
 import { Button, Typography } from "@mui/material";
-import RecipeList from "@common/components/recipeList/RecipeList";
-import { recipeMock } from "../../../../mocks/recipe-mock";
+import { RecipeList } from "@mukosoft-cookbook/core";
+import { recipeMock } from "@mukosoft-cookbook/core/mocks/recipe-mock";
 import React from "react";
 
 export default function Recipes() {
