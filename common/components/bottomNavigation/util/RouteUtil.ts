@@ -1,10 +1,10 @@
 import React from "react";
-import {BottomNavigationAction} from "../models/BottomNavigationAction";
-import HomeIcon from "../../../assets/icons/uicons-regular-rounded/svg/fi-rr-home.svg";
-import MedicationIcon from "../../../assets/icons/uicons-regular-rounded/svg/fi-rr-medicine.svg";
-import CookbookIcon from "../../../assets/icons/uicons-regular-rounded/svg/fi-rr-carrot.svg";
-import CommunityIcon from "../../../assets/icons/uicons-regular-rounded/svg/fi-rr-following.svg";
-import {features} from "@common/config/features";
+import { BottomNavigationAction } from "../models/BottomNavigationAction";
+import HomeIcon from "@icons/fi-rr-home.svg";
+import MedicationIcon from "@icons/fi-rr-medicine.svg";
+import CookbookIcon from "@icons/fi-rr-carrot.svg";
+import CommunityIcon from "@icons/fi-rr-following.svg";
+import { features } from "@common/config/features";
 
 const BOTTOM_NAVIGATION_ACTION_ICON_CLASS = "bottom-navigation-action-icon";
 

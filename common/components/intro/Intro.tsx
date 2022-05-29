@@ -2,7 +2,7 @@ import { Button, Typography } from "@mui/material";
 import React, { useState } from "react";
 import { Box, useTheme } from "@mui/system";
 import { useStorageItem } from "@capacitor-community/storage-react";
-import { CapacitorStorageKeys } from "../../common/capacitor-storage-keys";
+import { CapacitorStorageKeys } from "../../capacitor-storage-keys";
 import { Step } from "./models/step";
 import heartbeatAnimation from "@assets/animations/heartbeat.json";
 import medicineAnimation from "@assets/animations/medicine.json";
