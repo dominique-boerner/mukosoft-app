@@ -9,7 +9,7 @@ interface NewsListProps {
   isLoading: boolean;
 }
 
-export function NewsList({ news = [], isLoading = true }: NewsListProps) {
+export default function NewsList({ news = [], isLoading = true }: NewsListProps) {
   const SKELETON_NEWS_AMOUNT = 3;
 
   return (

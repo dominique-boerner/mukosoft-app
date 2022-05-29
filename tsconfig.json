@@ -21,7 +21,6 @@
       "@hooks/*": ["./common/hooks/*"],
       "@models/*": ["./common/models/*"],
       "@module/community/*": ["./modules/community/*"],
-      "@module/cookbook/*": ["./modules/cookbook/*"],
       "@module/home/*": ["./modules/home/*"],
       "@module/medications/*": ["./modules/medications/*"],
       "@module/router/*": ["./modules/router/*"],

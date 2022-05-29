@@ -1,4 +1,4 @@
-import Home from "./../modules/home/Home";
+import {Home} from "@mukosoft-home/core";
 
 export default function HomePage() {
   return (

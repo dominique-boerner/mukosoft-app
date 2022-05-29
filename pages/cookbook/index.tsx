@@ -1,5 +1,4 @@
-import type {NextPage} from 'next'
-import Cookbook from "@module/cookbook/Cookbook";
+import {Cookbook} from "@mukosoft-cookbook/core";
 
 export default function CookbookPage() {
   return (

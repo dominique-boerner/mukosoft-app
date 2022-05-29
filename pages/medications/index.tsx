@@ -1,4 +1,4 @@
-import Medications from "@module/medications/Medications";
+import {Medications} from "@mukosoft-medications/core";
 
 export default function MedicationsPage() {
   return (

@@ -35,6 +35,10 @@
   "devDependencies": {
     "@babel/core": "^7.18.2",
     "@mui/material": "^5.8.1",
+    "@mukosoft-community/core": "./modules/community",
+    "@mukosoft-cookbook/core": "./modules/cookbook",
+    "@mukosoft-medications/core": "./modules/medications",
+    "@mukosoft-home/core": "./modules/home",
     "@storybook/addon-actions": "^6.5.5",
     "@storybook/addon-essentials": "^6.5.5",
     "@storybook/addon-interactions": "^6.5.5",
