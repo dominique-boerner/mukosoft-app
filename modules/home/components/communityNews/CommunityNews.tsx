@@ -1,5 +1,5 @@
 import { features } from "@common/config/features";
-import { NewsList } from "@module/home/components/newsList/NewsList";
+import { NewsList } from "@mukosoft-home/core";
 import React from "react";
 import { useFetchNews } from "@hooks/useFetchNews/useFetchNews";
 
