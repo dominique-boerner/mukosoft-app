@@ -1,15 +1,10 @@
 import React from "react";
-import Home from "../../home/Home";
-import Medications from "../../medications/Medications";
-import Cookbook from "../../cookbook/Cookbook";
-import Community from "../../community/Community";
-import { Route } from "../models/Route";
-import { BottomNavigationAction } from "../models/BottomNavigationAction";
+import {BottomNavigationAction} from "../models/BottomNavigationAction";
 import HomeIcon from "../../../assets/icons/uicons-regular-rounded/svg/fi-rr-home.svg";
 import MedicationIcon from "../../../assets/icons/uicons-regular-rounded/svg/fi-rr-medicine.svg";
 import CookbookIcon from "../../../assets/icons/uicons-regular-rounded/svg/fi-rr-carrot.svg";
 import CommunityIcon from "../../../assets/icons/uicons-regular-rounded/svg/fi-rr-following.svg";
-import { features } from "../../../common/config/features";
+import {features} from "@common/config/features";
 
 const BOTTOM_NAVIGATION_ACTION_ICON_CLASS = "bottom-navigation-action-icon";
 

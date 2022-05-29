@@ -1,6 +1,6 @@
 import "../styles/globals.scss";
 import type { AppProps } from "next/app";
-import BottomNavigation from "@module/router/BottomNavigation";
+import BottomNavigation from "../modules/bottomNavigation/BottomNavigation";
 import { Box, ThemeProvider } from "@mui/system";
 import { theme } from "../common/theme/theme";
 import { useStorageItem } from "@capacitor-community/storage-react";
