@@ -5,7 +5,7 @@ const withPlugins = require("next-compose-plugins");
 const nextConfig = {
   reactStrictMode: true,
   image: {
-    domains: "https://mukosoft-app.vercel.app",
+    domains: "https://images.pexels.com",
   },
   webpack(config) {
     config.module.rules.push({
