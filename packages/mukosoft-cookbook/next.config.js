@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   image: {
-    domains: ["images.pexels.com"],
+    domains: ["images.pexels.com", "mukosoft-app.vercel.app"],
   },
 };
 
