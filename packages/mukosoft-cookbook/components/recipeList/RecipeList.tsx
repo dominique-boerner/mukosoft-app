@@ -21,7 +21,7 @@ export default function RecipeList({
             key={recipe.title}
             className="shadow-md rounded-md overflow-hidden"
           >
-            <Image
+            <img
               src={`${recipe.image}?fit=crop&auto=format`}
               alt={recipe.title}
               loading="lazy"
