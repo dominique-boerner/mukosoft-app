@@ -1,0 +1,56 @@
+name: Push to deployment
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Install SSH Key
+        uses: shimataro/ssh-key-action@v2
+        with:
+          key: ${{ secrets.SSH_SECRET }} 
+      
+      - uses: actions/checkout@v3
+      # install dependencies from package.json
+      - name: install dependencies
+        run: npm install
+
+      # build application
+      - name: build artifacts
+        run: npm run build:app
+
+      # clone the deployment repository
+      - name: clone deployment repository
+        run: git clone https://github.com/mukosoft/mukosoft-deployment
+
+      # re-delete front-end folder in deployment repository
+      - name: re-delete front-end folder
+        run: cd mukosoft-deployment | rm -rf front-end | mkdir front-end
+
+
+      # copy build directory into deployment repository
+      - name: copy mukosoft-app into deployment
+        run: cp -R out mukosoft-deployment/front-end
+
+      # copy nginx.config and dockerfile
+      - name: copy nginx.config and dockerfile
+        run: cp -R nginx.config mukosoft-deployment/front-end | cp -R dockerfile mukosoft-deployment/front-end
+
+      - name: configurate git 
+        run: git config --global user.email "deployment@mukosoft.de" |
+          git config --global user.name "deploymentbot"
+
+      # commit and push new files
+      - name: git add new build files
+        run: cd mukosoft-deployment | 
+          git add . |
+          git commit -m "update mukosoft-app build files" |
+          git push git@github.com:mukosoft/mukosoft-deployment.git
+
