@@ -15,7 +15,8 @@ jobs:
       - name: Install SSH Key
         uses: shimataro/ssh-key-action@v2
         with:
-          key: ${{ secrets.SSH_SECRET }} 
+          key: ${{ secrets.SSH_SECRET }}
+          known_hosts: 'just-a-placeholder-so-we-dont-get-errors'
       
       - uses: actions/checkout@v3
       # install dependencies from package.json
