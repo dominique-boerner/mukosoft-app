@@ -3,6 +3,7 @@ const withTM = require("next-transpile-modules")(modulesForCompile);
 const withPlugins = require("next-compose-plugins");
 
 const nextConfig = {
+  distDir: "build",
   reactStrictMode: true,
   image: {
     domains: ["images.pexels.com"],
