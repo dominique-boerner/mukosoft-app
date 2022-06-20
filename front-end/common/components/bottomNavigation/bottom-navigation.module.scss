@@ -1,0 +1,8 @@
+.bottomNavigationActive:after {
+  position: absolute;
+  content: "";
+  height: 6px; width: 6px;
+  margin-top: 2.6rem;
+  border-radius: 100%;
+  background: #00152b;
+}
