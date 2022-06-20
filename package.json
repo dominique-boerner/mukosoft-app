@@ -1,0 +1,20 @@
+{
+  "name": "mukosoft-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "docker:compose-up": "npm run build:front-end && docker compose up",
+    "build:front-end": "cd front-end && npm run build:app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mukosoft/mukosoft-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mukosoft/mukosoft-app/issues"
+  },
+  "homepage": "https://github.com/mukosoft/mukosoft-app#readme"
+}

@@ -1,0 +1,7 @@
+version: "3.9"
+services:
+  web:
+    restart: always
+    ports:
+      - "8888:80"
+    build: ./front-end
