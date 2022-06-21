@@ -8,14 +8,15 @@ The MukoSoft app consists of two independent parts:
 
 ## Front-End
 
-The front-end is a NextJS application. TailwindCSS is used for the design of the interfaces. The interfaces are developed independently as their own application and included as packages. Storybook is used to develop the different elements independently. The app is compiled into a native Android/iOS app via capacitor.
+The front-end is a NextJS application. TailwindCSS and Material UI is used for the design of the interfaces. The interfaces are developed independently as their own application and included as packages. Storybook is used to develop the different elements independently. The app is compiled into a native Android/iOS app via capacitor.
 
 ### Stack
 
-- NextJS
-- TailwindCSS
-- Storybook
-- Capacitor
+* NextJS
+* TailwindCSS
+* Material UI
+* Storybook
+* Capacitor
 
 ### Testing
 tbc
@@ -25,7 +26,7 @@ tbc
 The back-end was developed using NestJS and provides the medications and access to the external My-Doc interface. The front-end thus communicates with external interfaces via the back-end. The back-end also has a swagger definition. This can be called via **/api**.
 
 ### Stack
-- NestJS
+* NestJS
 
 ### Testing
 To test NestJS we use the [NestJS own testing library](https://www.npmjs.com/package/@nestjs/testing).
@@ -38,7 +39,7 @@ The easiest way to launch the front-end and back-end is via Docker. To do this, 
 npm run docker:build
 ```
 
-This builds the front-end and runs a docker compose build.
+This will install all the dependencies needed from the front-end and back-end, builds the front-end and runs a docker compose build.
 
 Afterwards, the containers can be started via the following command:
 
@@ -47,6 +48,15 @@ npm run docker:run
 ```
 
 The front-end is then available under **localhost:8888** and the back-end under **localhost:8889**.
+
+## Run manually
+
+You can also run the front-end by running following scripts:
+```bat
+npm run install
+npm run start:front-end
+npm run start:back-end
+```
 
 # Roadmap
 

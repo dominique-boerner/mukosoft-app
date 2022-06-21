@@ -1,21 +1,25 @@
 {
   "name": "mukosoft-app",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "The MukoSoft app has been specially developed for cystic fibrosis patients.",
   "scripts": {
-    "docker:build": "npm run build:front-end && docker compose build",
+    "docker:build": "npm install && npm run build:front-end && docker compose build",
     "docker:run": "docker compose up",
-    "build:front-end": "cd front-end && npm run build:app"
+    "build:front-end": "cd front-end && npm run build:app",
+    "install": "npm run install:front-end && npm run install:back-end",
+    "install:front-end": "cd front-end && npm i",
+    "install:back-end": "cd back-end && npm i",
+    "start:front-end": "cd front-end && npm start:app",
+    "start:back-end": "cd back-end && npm start"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mukosoft/mukosoft-app.git"
   },
-  "author": "",
+  "author": "Dominique Börner",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/mukosoft/mukosoft-app/issues"
   },
-  "homepage": "https://github.com/mukosoft/mukosoft-app#readme"
+  "homepage": "https://mukosoft.de/"
 }
