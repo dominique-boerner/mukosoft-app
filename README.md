@@ -31,6 +31,10 @@ The back-end was developed using NestJS and provides the medications and access 
 ### Testing
 To test NestJS we use the [NestJS own testing library](https://www.npmjs.com/package/@nestjs/testing).
 
+## Preparations
+
+To run the applications nodejs is mandatory. To do this, go to the [NodeJS website](https://nodejs.org/en/) and download the necessary version for the operating system.
+
 ## Run via Docker
 
 The easiest way to launch the front-end and back-end is via Docker. To do this, simply run the following command in the root directory:

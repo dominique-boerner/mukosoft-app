@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "The MukoSoft app has been specially developed for cystic fibrosis patients.",
   "scripts": {
-    "docker:build": "npm install && npm run build:front-end && docker compose build",
+    "docker:build": "npm run install && npm run build:front-end && docker compose build",
     "docker:run": "docker compose up",
     "build:front-end": "cd front-end && npm run build:app",
     "install": "npm run install:front-end && npm run install:back-end",
