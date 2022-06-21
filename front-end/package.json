@@ -4,13 +4,12 @@
   "private": true,
   "scripts": {
     "dev:app": "next dev",
+    "build": "next build",
     "build:app": "next build && next export",
     "start:app": "next start",
     "lint:app": "next lint",
     "storybook:app": "start-storybook -p 6006",
-    "build-storybook:app": "build-storybook",
-    "docker:build": "docker build -t mukosoft-app .",
-    "docker:run": "docker run --name mukosoft-app -d -p 8888:80 mukosoft-app"
+    "build-storybook:app": "build-storybook"
   },
   "dependencies": {
     "@capacitor-community/storage-react": "^0.1.0",
