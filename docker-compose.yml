@@ -5,3 +5,8 @@ services:
     ports:
       - "8888:80"
     build: ./front-end
+  backend:
+    restart: always
+    ports:
+      - "8889:9000"
+    build: ./back-end
