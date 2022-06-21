@@ -33,7 +33,6 @@ export class RouteUtil {
     HOME: "/",
     MEDICATIONS: "/medications",
     COOKBOOK: "/cookbook",
-    COMMUNITY: "/community",
   };
 
   /**
@@ -55,16 +54,6 @@ export class RouteUtil {
         icon: cookbookIconElement,
       },
     ];
-
-    if (features.MY_DOC) {
-      routes = [
-        ...routes,
-        {
-          to: RouteUtil.ROUTES.COMMUNITY,
-          icon: communityIconElement,
-        },
-      ];
-    }
 
     return routes;
   }
