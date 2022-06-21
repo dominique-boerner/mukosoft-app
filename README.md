@@ -53,9 +53,9 @@ The front-end is then available under **localhost:8888** and the back-end under 
 
 You can also run the front-end by running following scripts:
 ```bat
-npm run install
-npm run start:front-end
-npm run start:back-end
+npm run install # install dependencies for front-end and back-end
+npm run start:front-end # start front-end
+npm run start:back-end # start back-end
 ```
 
 # Roadmap
