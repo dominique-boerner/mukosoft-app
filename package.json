@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "docker:compose-up": "npm run build:front-end && docker compose up",
+    "docker:build": "npm run build:front-end && docker compose build",
+    "docker:run": "docker compose up",
     "build:front-end": "cd front-end && npm run build:app"
   },
   "repository": {
