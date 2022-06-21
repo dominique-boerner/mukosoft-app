@@ -3,6 +3,7 @@ const withTM = require("next-transpile-modules")(modulesForCompile);
 const withPlugins = require("next-compose-plugins");
 
 const nextConfig = {
+  staticPageGenerationTimeout: 1000,
   distDir: "build",
   reactStrictMode: true,
   image: {

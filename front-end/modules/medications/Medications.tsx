@@ -32,7 +32,8 @@ const Medications = () => {
           };
         });
         setAutocompleteOptions(medications);
-      });
+      })
+      .catch((err) => console.error("Error while fetching medications: ", err));
   };
 
   return (
