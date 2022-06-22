@@ -1,8 +1,7 @@
-import { ImageList, ImageListItem } from "@mui/material";
+import {ImageList, ImageListItem} from "@mui/material";
 import React from "react";
-import { Recipe } from "../../models/recipe";
-import { Box } from "@mui/system";
-import Image from "next/image";
+import {Recipe} from "../../models/recipe";
+import {Box} from "@mui/system";
 
 interface RecipeListProps {
   recipes?: Recipe[];
