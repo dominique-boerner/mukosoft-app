@@ -16,7 +16,7 @@ const Home = () => {
     >
       <Header />
       <Box px="1rem" pt="2rem" pb="8rem">
-        <CommunityNews />
+        <CommunityNews data-test-id="foo" />
         <NextMedication />
         <Recipes />
       </Box>
