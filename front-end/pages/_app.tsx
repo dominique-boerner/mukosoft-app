@@ -2,7 +2,7 @@ import "../styles/globals.scss";
 import type { AppProps } from "next/app";
 import BottomNavigation from "../common/components/bottomNavigation/BottomNavigation";
 import { Box, ThemeProvider } from "@mui/system";
-import { theme } from "@mukosoft/core";
+import { theme } from "@core/theme/theme";
 import { useStorageItem } from "@capacitor-community/storage-react";
 import { CapacitorStorageKeys } from "@common/capacitor-storage-keys";
 import Intro from "../common/components/intro/Intro";

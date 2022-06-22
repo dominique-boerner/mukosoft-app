@@ -9,7 +9,7 @@ interface RecipeListProps {
   cols?: number;
 }
 
-export default function RecipeList({
+export function RecipeList({
   recipes = [],
   cols = 3,
 }: RecipeListProps) {
