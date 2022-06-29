@@ -1,2 +1,2 @@
-FROM nginx:stable-alpine-perl
+FROM nginx:1.23.0-alpine
 COPY www /usr/share/nginx/html
