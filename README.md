@@ -8,18 +8,17 @@ The MukoSoft app consists of two independent parts:
 
 ## Front-End
 
-The front-end is a NextJS application. TailwindCSS and Material UI is used for the design of the interfaces. The interfaces are developed independently as their own application and included as packages. Storybook is used to develop the different elements independently. The app is compiled into a native Android/iOS app via capacitor.
+The front-end is a Angular 14 application. TailwindCSS and Ionic is used for the design of the interfaces. The app is compiled into a native Android/iOS app via capacitor.
 
 ### Stack
 
-* NextJS
+* Angular 14
 * TailwindCSS
-* Material UI
-* Storybook
+* Ionic
 * Capacitor
 
 ### Testing
-tbc
+The front-end is tested using Karma. Cypress is used for E2E tests.
 
 ## Back-End
 
