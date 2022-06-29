@@ -5,11 +5,11 @@
   "scripts": {
     "docker:build": "npm run build:front-end && docker compose build",
     "docker:run": "docker compose up",
-    "build:front-end": "cd front-end && npm run build:app",
+    "build:front-end": "cd front-end && npm run build",
     "install": "npm run install:front-end && npm run install:back-end",
     "install:front-end": "cd front-end && npm i",
     "install:back-end": "cd back-end && npm i",
-    "start:front-end": "cd front-end && npm start:app",
+    "start:front-end": "cd front-end && npm start",
     "start:back-end": "cd back-end && npm start"
   },
   "repository": {

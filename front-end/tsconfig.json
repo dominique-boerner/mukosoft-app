@@ -1,35 +1,24 @@
+/* To learn more about this file see: https://angular.io/config/tsconfig. */
 {
+  "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": ".",
-    "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"],
-    "allowJs": true,
-    "skipLibCheck": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "noEmit": true,
-    "esModuleInterop": true,
-    "module": "esnext",
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "declaration": false,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
     "moduleResolution": "node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "jsx": "preserve",
-    "incremental": true,
-    "paths": {
-      "@core/*": ["./core/*"],
-      "@common/*": ["./common/*"],
-      "@services/*": ["./common/services/*"],
-      "@hooks/*": ["./common/hooks/*"],
-      "@models/*": ["./common/models/*"],
-      "@module/community/*": ["./modules/community/*"],
-      "@module/cookbook/*": ["./modules/cookbook/*"],
-      "@module/home/*": ["./modules/home/*"],
-      "@module/medications/*": ["./modules/medications/*"],
-      "@module/router/*": ["./modules/router/*"],
-      "@icons/*": ["./assets/icons/uicons-regular-rounded/svg/*"],
-      "@assets/*": ["./assets/*"]
-    }
+    "importHelpers": true,
+    "target": "es2020",
+    "module": "es2020",
+    "lib": ["es2018", "dom"],
+    "allowSyntheticDefaultImports": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules"]
+  "angularCompilerOptions": {
+    "enableI18nLegacyMessageIdFormat": false,
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "strictTemplates": true,
+  }
 }

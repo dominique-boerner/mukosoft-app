@@ -1,0 +1,10 @@
+{
+  "home.title": "MukoSoft",
+  "home.greeting.title": "Hallo {{name}}",
+  "home.greeting.subtitle": "Wie geht es dir heute?",
+
+  "navigation.tabs.home": "Home",
+  "navigation.tabs.medications": "Medikationen",
+  "navigation.tabs.cookbook": "Kochbuch",
+  "navigation.tabs.settings": "Einstellungen"
+}

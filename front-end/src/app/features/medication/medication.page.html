@@ -1,0 +1,27 @@
+<ion-content [fullscreen]="true">
+
+  <ion-searchbar (ionChange)="searchString =($any($event).target.value)"></ion-searchbar>
+
+  <ion-grid *ngIf="$medicationRequestsError | async as medicationRequestError">
+    <ng-container *ngIf="!medicationRequestError.error; else errorTemplate">
+      <ion-row *ngFor="let medicationRequest of $currentIntervalMedicationRequests | async">
+        <app-medication-request-item
+          class="w-full"
+          [medicationRequest]="medicationRequest"
+          [medication]="getMedicationByReference(medicationRequest)"
+          (onRemoveClick)="removeMedicationRequest($event)"
+        ></app-medication-request-item>
+      </ion-row>
+    </ng-container>
+    <ng-template #errorTemplate>
+      <ion-text>
+        <h1>Ein Fehler ist aufgetreten</h1>
+        <h2 class="text-xs">Fehler: {{ medicationRequestError.errorMessage }}</h2>
+        <h2 class="text-xs">Fehlercode: {{ medicationRequestError.errorCode }}</h2>
+      </ion-text>
+    </ng-template>
+  </ion-grid>
+
+</ion-content>
+
+<app-medication-fab (onMedicationAddClick)="addMedicationMock()"></app-medication-fab>

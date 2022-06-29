@@ -1,3 +1,2 @@
-FROM nginx
-COPY nginx.config /etc/nginx/nginx.config
-COPY /out /usr/share/nginx/html
+FROM nginx:stable-alpine-perl
+COPY www /usr/share/nginx/html
