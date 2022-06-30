@@ -13,38 +13,26 @@ describe('MedicationService', () => {
 
   describe('CRUD of MedicationRequest', () => {
     xit('should create a medicationRequest', () => {
-      service
-        .createMedicationRequest(mockMedicationRequestPrednisoneNonActive)
-        .subscribe((medicationRequests) =>
-          expect(medicationRequests.success).toBeTruthy()
-        );
+      service.createMedicationRequest(mockMedicationRequestPrednisoneNonActive);
+      expect(service.error.value).toBeFalse();
     });
 
     it('should get all medicationRequests', () => {
-      service
-        .getMedicationRequests()
-        .subscribe((medicationRequests) =>
-          expect(medicationRequests.length > 0).toBeTruthy()
-        );
+      service.getMedicationRequests();
+      expect(service.error.value).toBeFalse();
     });
 
     xit('should update a medicationRequest', () => {
-      service
-        .updateMedicationRequest(
-          '#med103',
-          mockMedicationRequestPrednisoneNonActive
-        )
-        .subscribe((medicationRequests) =>
-          expect(medicationRequests.success).toBeTruthy()
-        );
+      service.updateMedicationRequest(
+        '#med103',
+        mockMedicationRequestPrednisoneNonActive
+      );
+      expect(service.error.value).toBeFalse();
     });
 
     xit('should delete a medicationRequest', () => {
-      service
-        .deleteMedicationRequest('#med103')
-        .subscribe((medicationRequests) =>
-          expect(medicationRequests.success).toBeTruthy()
-        );
+      service.deleteMedicationRequest('#med103');
+      expect(service.error.value).toBeFalse();
     });
   });
 });

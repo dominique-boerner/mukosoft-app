@@ -10,7 +10,8 @@
     "install:front-end": "cd front-end && npm i",
     "install:back-end": "cd back-end && npm i",
     "start:front-end": "cd front-end && npm start",
-    "start:back-end": "cd back-end && npm start"
+    "start:back-end": "cd back-end && npm start",
+    "test:front-end": "cd front-end && npm test"
   },
   "repository": {
     "type": "git",
