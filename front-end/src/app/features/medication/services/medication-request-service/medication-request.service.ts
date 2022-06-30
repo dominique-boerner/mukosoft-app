@@ -10,6 +10,7 @@ import {
 } from '../../../../core/selectors/medication-request.selector';
 import { MedicationRequestDatabaseService } from '../medication-request-database-service/medication-request-database.service';
 import { setMedicationRequests } from '../../../../core/actions/medication-request.actions';
+import { MedicationCreationError } from './medication-request-errors';
 
 @Injectable({
   providedIn: 'root',
@@ -28,17 +29,17 @@ export class MedicationRequestService {
    * @see https://www.hl7.org/fhir/medicationrequest.html
    */
   createMedicationRequest(medicationRequest: MedicationRequest) {
-    this.medicationRequestDatabaseService
+    return this.medicationRequestDatabaseService
       .putMedicationRequest(medicationRequest)
       .then(() => {
         this.error.next({ error: false });
         this.synchronizeMedicationRequestsWithDatabase();
+        return this.error;
       })
-      .catch((error) => {
-        this.error.next({ error: true, errorMessage: error });
-        throw error;
+      .catch((e) => {
+        this.error.next(MedicationCreationError);
+        throw MedicationCreationError;
       });
-    this.synchronizeMedicationRequestsWithDatabase();
   }
 
   /**
@@ -62,10 +63,10 @@ export class MedicationRequestService {
    */
   getMedicationRequests(): Observable<MedicationRequest[]> {
     try {
-      this.setError(false, '', '');
+      this.setError(false, 0, '');
       this.store.select(selectMedicationRequests);
     } catch (e) {
-      this.setError(true, '', e);
+      this.setError(true, 0, e);
       return of([]);
     }
   }
@@ -76,10 +77,10 @@ export class MedicationRequestService {
    */
   getCurrentIntervalMedicationRequests(): Observable<MedicationRequest[]> {
     try {
-      this.setError(false, '', '');
+      this.setError(false, 0, '');
       return this.store.select(selectCurrentIntervalMedicationRequests);
     } catch (e) {
-      this.setError(true, '', e);
+      this.setError(true, 0, e);
       return of([]);
     }
   }
@@ -125,11 +126,11 @@ export class MedicationRequestService {
       });
   }
 
-  private setError(error: boolean, errorCode: string, errorMessage: string) {
+  private setError(error: boolean, errorCode: number, errorMessage: string) {
     this.error.next({
       error,
-      errorCode,
       errorMessage,
+      errorCode,
     });
   }
 }

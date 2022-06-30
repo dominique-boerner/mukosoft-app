@@ -7,7 +7,7 @@ import { prednisone } from '../../__mocks__/mock-medication';
   providedIn: 'root',
 })
 export class MedicationService {
-  $medications = new BehaviorSubject<Medication[]>([]);
+  medications$ = new BehaviorSubject<Medication[]>([]);
 
   constructor() {
     this.loadAllMedications();
@@ -16,7 +16,7 @@ export class MedicationService {
   getMedicationByReference(
     medicationReference: string
   ): Medication | undefined {
-    return this.$medications.value.find((medications) => {
+    return this.medications$.value.find((medications) => {
       const searchString = medicationReference.replace('#', '');
       return medications.id.includes(searchString);
     });
@@ -28,6 +28,6 @@ export class MedicationService {
   }
 
   private setMedications(medications: Medication[]) {
-    this.$medications.next(medications);
+    this.medications$.next(medications);
   }
 }
