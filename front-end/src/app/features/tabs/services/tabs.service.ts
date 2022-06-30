@@ -9,22 +9,22 @@ export class TabsService {
     {
       id: 'home',
       label: 'navigation.tabs.home',
-      icon: 'home-outline',
+      icon: 'fi fi-rr-home',
     },
     {
       id: 'medications',
       label: 'navigation.tabs.medications',
-      icon: 'ellipse',
+      icon: 'fi fi-rr-medicine',
     },
     {
       id: 'cookbook',
       label: 'navigation.tabs.cookbook',
-      icon: 'book-outline',
+      icon: 'fi fi-rr-carrot',
     },
     {
       id: 'settings',
       label: 'navigation.tabs.settings',
-      icon: 'settings-outline',
+      icon: 'fi fi-rr-settings-sliders',
     },
   ];
 }

@@ -1,7 +1,7 @@
 <ion-tabs>
   <ion-tab-bar data-test-id="tab-bar" [slot]="slot">
     <ion-tab-button *ngFor="let tabItem of tabItems" [tab]="tabItem.id">
-      <ion-icon [name]="tabItem.icon"></ion-icon>
+      <span class="text-xl" [class]="tabItem.icon"></span>
       <ion-label>{{tabItem.label | translate}}</ion-label>
     </ion-tab-button>
   </ion-tab-bar>
