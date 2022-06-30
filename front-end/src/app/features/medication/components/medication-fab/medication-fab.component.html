@@ -6,5 +6,8 @@
     <ion-fab-button (click)="onMedicationAddClick.emit()">
       <ion-icon name="create"></ion-icon>
     </ion-fab-button>
+    <ion-fab-button *ngIf="isDevelopmentMode" (click)="onMedicationsRemoveClick.emit()">
+      <ion-icon name="trash" color="danger"></ion-icon>
+    </ion-fab-button>
   </ion-fab-list>
 </ion-fab>

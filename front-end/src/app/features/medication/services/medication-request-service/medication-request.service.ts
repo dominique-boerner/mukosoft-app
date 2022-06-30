@@ -126,6 +126,12 @@ export class MedicationRequestService {
       });
   }
 
+  deleteAllMedicationRequests() {
+    this.medicationRequestDatabaseService
+      .deleteAllMedicationRequests()
+      .then(() => this.synchronizeMedicationRequestsWithDatabase());
+  }
+
   private setError(error: boolean, errorCode: number, errorMessage: string) {
     this.error.next({
       error,

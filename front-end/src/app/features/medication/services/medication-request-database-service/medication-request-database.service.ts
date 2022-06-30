@@ -3,6 +3,7 @@ import { MedicationRequest } from 'fhir/r4';
 import { UuidService } from '../../../../core/services/uuid-service/uuid.service';
 import { AbstractDatabaseService } from '../../abstract/AbstractDatabaseService';
 import { Logger } from '../../../../core/util/logger';
+import { environment } from '../../../../../environments/environment';
 
 @Injectable({
   providedIn: 'root',
@@ -72,5 +73,20 @@ export class MedicationRequestDatabaseService extends AbstractDatabaseService {
           );
         });
     });
+  }
+
+  deleteAllMedicationRequests() {
+    if (!environment.production) {
+      return this.db
+        .allDocs({ include_docs: true })
+        .then((allDocs) => {
+          return allDocs.rows.map((row) => {
+            return { _id: row.id, _rev: row.doc._rev, _deleted: true };
+          });
+        })
+        .then((deleteDocs) => {
+          return this.db.bulkDocs(deleteDocs);
+        });
+    }
   }
 }

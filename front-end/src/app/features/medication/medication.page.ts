@@ -56,4 +56,8 @@ export class MedicationPage implements OnInit {
   removeMedicationRequest(id: string) {
     this.medicationRequestService.deleteMedicationRequest(id);
   }
+
+  removeAllMedications() {
+    this.medicationRequestService.deleteAllMedicationRequests();
+  }
 }
