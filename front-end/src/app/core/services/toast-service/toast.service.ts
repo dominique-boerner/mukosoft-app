@@ -5,7 +5,7 @@ import { ToastController } from '@ionic/angular';
   providedIn: 'root',
 })
 export class ToastService {
-  position: 'top' | 'bottom' | 'middle' = 'top';
+  position: 'top' | 'bottom' | 'middle' = 'bottom';
   duration = 2000;
 
   constructor(private readonly toastController: ToastController) {}
@@ -16,7 +16,7 @@ export class ToastService {
       icon: 'information-circle',
       color: 'success',
       duration: this.duration,
-      position: this.position,
+      position: this.position
     });
 
     await toast.present();
