@@ -5,7 +5,7 @@
 
   <ion-grid>
     <ion-row
-      *ngFor="let medicationRequest of $currentIntervalMedicationRequests | async"
+      *ngFor="let medicationRequest of currentIntervalMedicationRequests$ | async"
     >
       <app-medication-request-item
         class="w-full"

@@ -12,7 +12,7 @@ import { MedicationRequestError } from './models/medication-request-error';
   templateUrl: 'medication.page.html',
 })
 export class MedicationPage implements OnInit {
-  $currentIntervalMedicationRequests =
+  currentIntervalMedicationRequests$ =
     this.medicationRequestService.getCurrentIntervalMedicationRequests();
 
   searchString = '';
