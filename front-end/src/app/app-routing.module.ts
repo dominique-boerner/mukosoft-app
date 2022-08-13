@@ -7,6 +7,13 @@ const routes: Routes = [
     loadChildren: () =>
       import('./features/tabs/tabs.module').then((m) => m.TabsPageModule),
   },
+  {
+    path: 'settings',
+    loadChildren: () =>
+      import('./features/settings/settings.module').then(
+        (m) => m.SettingsPageModule
+      ),
+  },
 ];
 @NgModule({
   imports: [

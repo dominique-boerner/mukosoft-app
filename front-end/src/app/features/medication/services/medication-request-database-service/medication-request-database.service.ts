@@ -1,7 +1,7 @@
 import { Inject, Injectable } from '@angular/core';
 import { MedicationRequest } from 'fhir/r4';
 import { UuidService } from '../../../../core/services/uuid-service/uuid.service';
-import { AbstractDatabaseService } from '../../abstract/AbstractDatabaseService';
+import { AbstractDatabaseService } from '../../../../core/abstract/AbstractDatabaseService';
 import { Logger } from '../../../../core/util/logger';
 import { environment } from '../../../../../environments/environment';
 

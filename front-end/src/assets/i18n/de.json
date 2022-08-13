@@ -2,7 +2,12 @@
   "home.title": "MukoSoft",
   "home.greeting.title": "Hallo {{name}}",
   "home.greeting.subtitle": "Wie geht es dir heute?",
-
+  "home.greeting.default-user": "Nutzer",
+  "settings.profile.title": "Mein Profil",
+  "settings.profile.description": "Personalisieren Sie Ihre MukoSoft App. Die Einstellungen und persönlichen Daten werden ausschließlich auf Ihrem Smartphone gespeichert.",
+  "settings.profile.name": "Name",
+  "settings.profile.birthdate": "Geburtsdatum",
+  "settings.save": "Einstellungen speichern",
   "navigation.tabs.home": "Home",
   "navigation.tabs.medications": "Medikationen",
   "navigation.tabs.cookbook": "Kochbuch",

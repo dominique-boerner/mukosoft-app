@@ -1,4 +1,5 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-greeting-card',
@@ -6,5 +7,11 @@ import { Component, Input } from '@angular/core';
 })
 export class GreetingCardComponent {
   @Input()
-  name: string;
+  name: Observable<string>;
+
+  @Input()
+  profileImage: Observable<string>;
+
+  @Output()
+  onAvatarClick = new EventEmitter<void>();
 }

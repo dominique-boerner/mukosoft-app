@@ -21,13 +21,14 @@ const routes: Routes = [
       },
       {
         path: 'cookbook',
-        loadChildren: () =>
-          import('../tab3/tab3.module').then((m) => m.Tab3PageModule),
+        redirectTo: '/tabs/home',
       },
       {
         path: 'settings',
-        redirectTo: '/tabs/home',
-        pathMatch: 'full',
+        loadChildren: () =>
+          import('../settings/settings.module').then(
+            (m) => m.SettingsPageModule
+          ),
       },
     ],
   },

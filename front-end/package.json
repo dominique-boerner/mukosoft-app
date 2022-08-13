@@ -9,7 +9,9 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run"
   },
   "private": true,
   "dependencies": {
@@ -27,6 +29,7 @@
     "@capacitor/ios": "^3.6.0",
     "@capacitor/keyboard": "1.2.3",
     "@capacitor/status-bar": "1.0.8",
+    "@cypress/schematic": "^1.0.0",
     "@ionic/angular": "^6.1.9",
     "@ngrx/effects": "^14.0.1",
     "@ngrx/entity": "^14.0.1",
@@ -74,9 +77,9 @@
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "^1.5.0",
     "postcss": "^8.4.14",
-    "protractor": "~7.0.0",
     "tailwindcss": "^3.1.4",
     "ts-node": "~8.3.0",
-    "typescript": "~4.7.3"
+    "typescript": "~4.7.3",
+    "cypress": "latest"
   }
 }
