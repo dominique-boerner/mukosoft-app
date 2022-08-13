@@ -7,6 +7,7 @@ import { SettingsPage } from './settings.page';
 
 import { Tab3PageRoutingModule } from './settings-routing.module';
 import { TranslateModule } from '@ngx-translate/core';
+import { SharedModule } from '../../shared/shared.module';
 
 @NgModule({
   imports: [
@@ -16,6 +17,7 @@ import { TranslateModule } from '@ngx-translate/core';
     RouterModule.forChild([{ path: '', component: SettingsPage }]),
     Tab3PageRoutingModule,
     TranslateModule,
+    SharedModule,
   ],
   declarations: [SettingsPage],
 })

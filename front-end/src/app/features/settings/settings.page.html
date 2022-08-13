@@ -18,33 +18,24 @@
           </ion-row>
           <ion-row>
             <div class="flex flex-col w-full my-1">
-              <ion-text id="labelName"
-                        color="secondary"
-                        class="opacity-80">{{ "settings.profile.name" | translate }}</ion-text>
-              <ion-input type="text"
-                         color="secondary"
-                         class="border border-1 rounded-md"
-                         aria-labelledby="labelName"
-                         [value]="name | async"
-                         (ionChange)="setName($event.target.value)"></ion-input>
+              <app-label [labelId]="nameLabel">{{ "settings.profile.name" | translate }}</app-label>
+              <app-input type="text"
+                         [labelId]="nameLabel"
+                         [value]="name | async"></app-input>
             </div>
           </ion-row>
           <ion-row>
             <div class="flex flex-col w-full my-1">
-              <ion-text id="labelBirthdate"
-                        color="secondary"
-                        class="opacity-80">{{ "settings.profile.birthdate" | translate }}</ion-text>
-              <ion-input type="date"
-                         color="secondary"
-                         class="border border-1 rounded-md"
-                         aria-labelledby="labelBirthdate"
-                         (ionChange)="setBirthdate()"></ion-input>
+              <app-label [labelId]="birthdateLabel">{{ "settings.profile.birthdate" | translate }}</app-label>
+              <app-input type="date"
+                         [labelId]="birthdateLabel"
+                         [value]="birthDate | async"></app-input>
             </div>
           </ion-row>
         </ion-grid>
       </ion-row>
     </ion-grid>
-    <ion-button color="secondary" expand="block" [disabled]="!hasChangedSomething">
+    <ion-button color="secondary" expand="block">
       <ion-icon name="save" class="mr-2"></ion-icon>
       <ion-text>{{ "settings.save" | translate }}</ion-text>
     </ion-button>

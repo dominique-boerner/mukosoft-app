@@ -9,6 +9,9 @@ export class SettingsPage {
   private readonly initialName = this.settingsService.getPatientName();
   private readonly initialBirthdate = null;
 
+  readonly nameLabel = 'name';
+  readonly birthdateLabel = 'birthdate';
+
   name = this.settingsService.getPatientName();
   profileImage = this.settingsService.getPatientAvatar();
 
@@ -17,20 +20,4 @@ export class SettingsPage {
   hasChangedSomething = false;
 
   constructor(private readonly settingsService: SettingsService) {}
-
-  setName(name: string) {
-    // this.name = name;
-    this.setHasChangedSomething();
-  }
-
-  setBirthdate() {
-    this.setHasChangedSomething();
-  }
-
-  private setHasChangedSomething() {
-    this.hasChangedSomething = !(
-      this.name === this.initialName &&
-      this.initialBirthdate === this.initialBirthdate
-    );
-  }
 }
