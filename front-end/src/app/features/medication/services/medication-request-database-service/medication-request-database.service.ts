@@ -1,9 +1,9 @@
-import { Inject, Injectable } from '@angular/core';
-import { MedicationRequest } from 'fhir/r4';
-import { UuidService } from '../../../../core/services/uuid-service/uuid.service';
-import { AbstractDatabaseService } from '../../../../core/abstract/abstract-database-service';
-import { Logger } from '../../../../core/util/logger';
-import { environment } from '../../../../../environments/environment';
+import {Inject, Injectable} from '@angular/core';
+import {MedicationRequest} from 'fhir/r4';
+import {UuidService} from '../../../../core/services/uuid-service/uuid.service';
+import {AbstractDatabaseService} from '../../../../core/abstract/abstract-database-service';
+import {Logger} from '../../../../core/util/logger';
+import {environment} from '../../../../../environments/environment';
 
 @Injectable({
   providedIn: 'root',
@@ -39,7 +39,7 @@ export class MedicationRequestDatabaseService extends AbstractDatabaseService {
 
   getMedicationRequests() {
     return this.db
-      .allDocs<MedicationRequest>({ include_docs: true, attachments: true })
+      .allDocs<MedicationRequest>({include_docs: true, attachments: true})
       .then((response) => {
         Logger.success(
           `successfully loaded ${response.total_rows} medicationRequests`,
@@ -76,17 +76,15 @@ export class MedicationRequestDatabaseService extends AbstractDatabaseService {
   }
 
   deleteAllMedicationRequests() {
-    if (!environment.production) {
-      return this.db
-        .allDocs({ include_docs: true })
-        .then((allDocs) => {
-          return allDocs.rows.map((row) => {
-            return { _id: row.id, _rev: row.doc._rev, _deleted: true };
-          });
-        })
-        .then((deleteDocs) => {
-          return this.db.bulkDocs(deleteDocs);
+    return this.db
+      .allDocs({include_docs: true})
+      .then((allDocs) => {
+        return allDocs.rows.map((row) => {
+          return {_id: row.id, _rev: row.doc._rev, _deleted: true};
         });
-    }
+      })
+      .then((deleteDocs) => {
+        return this.db.bulkDocs(deleteDocs);
+      });
   }
 }

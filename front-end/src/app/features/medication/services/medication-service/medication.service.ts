@@ -1,7 +1,7 @@
-import { Injectable } from '@angular/core';
-import { Medication } from 'fhir/r4';
-import { BehaviorSubject } from 'rxjs';
-import { prednisone } from '../../__mocks__/mock-medication';
+import {Injectable} from '@angular/core';
+import {Medication} from 'fhir/r4';
+import {BehaviorSubject} from 'rxjs';
+import {prednisone} from '../../__mocks__/mock-medication';
 
 @Injectable({
   providedIn: 'root',
@@ -18,7 +18,7 @@ export class MedicationService {
   ): Medication | undefined {
     return this.medications$.value.find((medications) => {
       const searchString = medicationReference.replace('#', '');
-      return medications.id.includes(searchString);
+      return medications?.id?.includes(searchString);
     });
   }
 

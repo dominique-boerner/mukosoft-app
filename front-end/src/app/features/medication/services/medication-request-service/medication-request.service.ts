@@ -11,6 +11,7 @@ import {
 import { MedicationRequestDatabaseService } from '../medication-request-database-service/medication-request-database.service';
 import { setMedicationRequests } from '../../../../core/actions/medication-request.actions';
 import { MedicationCreationError } from './medication-request-errors';
+import {AppState} from "../../../../core/state/app-state";
 
 @Injectable({
   providedIn: 'root',
@@ -19,7 +20,7 @@ export class MedicationRequestService {
   error = new BehaviorSubject<MedicationRequestError>({ error: false });
 
   constructor(
-    private readonly store: Store<{ medicationRequests: MedicationRequest[] }>,
+    private readonly store: Store<AppState>,
     private readonly medicationRequestDatabaseService: MedicationRequestDatabaseService
   ) {}
 
@@ -51,7 +52,7 @@ export class MedicationRequestService {
     this.medicationRequestDatabaseService
       .getMedicationRequests()
       .then((response) => {
-        const documents = response.rows.map((row) => row.doc);
+        const documents = response.rows.map((row: any) => row.doc);
         this.store.dispatch(
           setMedicationRequests({ medicationRequests: documents })
         );
@@ -64,8 +65,8 @@ export class MedicationRequestService {
   getMedicationRequests(): Observable<MedicationRequest[]> {
     try {
       this.setError(false, 0, '');
-      this.store.select(selectMedicationRequests);
-    } catch (e) {
+      return this.store.select(selectMedicationRequests)
+    } catch (e: any) {
       this.setError(true, 0, e);
       return of([]);
     }
@@ -79,7 +80,7 @@ export class MedicationRequestService {
     try {
       this.setError(false, 0, '');
       return this.store.select(selectCurrentIntervalMedicationRequests);
-    } catch (e) {
+    } catch (e: any) {
       this.setError(true, 0, e);
       return of([]);
     }
@@ -128,7 +129,7 @@ export class MedicationRequestService {
 
   deleteAllMedicationRequests() {
     this.medicationRequestDatabaseService
-      .deleteAllMedicationRequests()
+      .deleteAllMedicationRequests()!
       .then(() => this.synchronizeMedicationRequestsWithDatabase());
   }
 

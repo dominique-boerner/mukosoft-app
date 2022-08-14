@@ -9,7 +9,7 @@ import {
 import { MedicationRequest } from 'fhir/r4';
 import { isWithinInterval } from 'date-fns';
 
-const initialState = [];
+const initialState: MedicationRequest[] = [];
 
 export const medicationRequestReducer = createReducer<MedicationRequest[]>(
   initialState,

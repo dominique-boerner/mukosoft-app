@@ -11,7 +11,7 @@ export class SettingsPage {
 
   name = this.settingsService.getPatientName();
   profileImage = this.settingsService.getPatientAvatar();
-  birthDate = null;
+  birthDate: any = null;
 
   constructor(private readonly settingsService: SettingsService) {}
 }
