@@ -1,7 +1,7 @@
 import { Inject, Injectable } from '@angular/core';
 import { MedicationRequest } from 'fhir/r4';
 import { UuidService } from '../../../../core/services/uuid-service/uuid.service';
-import { AbstractDatabaseService } from '../../../../core/abstract/AbstractDatabaseService';
+import { AbstractDatabaseService } from '../../../../core/abstract/abstract-database-service';
 import { Logger } from '../../../../core/util/logger';
 import { environment } from '../../../../../environments/environment';
 
@@ -10,7 +10,7 @@ import { environment } from '../../../../../environments/environment';
 })
 export class MedicationRequestDatabaseService extends AbstractDatabaseService {
   constructor(@Inject(UuidService) uuidService: UuidService) {
-    super(uuidService, 'crm_medicationRequests');
+    super('crm_medicationRequests');
   }
 
   putMedicationRequest(

@@ -11,10 +11,7 @@ export abstract class AbstractDatabaseService {
   protected databaseName: string;
   protected db: PouchDB.Database<{}>;
 
-  protected constructor(
-    private readonly uuidService: UuidService,
-    databaseName: string
-  ) {
+  protected constructor(databaseName: string) {
     this.databaseName = databaseName;
     this.db = new PouchDB(this.databaseName);
     this.db

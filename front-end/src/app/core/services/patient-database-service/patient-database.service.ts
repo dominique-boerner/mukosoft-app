@@ -1,5 +1,5 @@
 import { Inject, Injectable } from '@angular/core';
-import { AbstractDatabaseService } from '../../abstract/AbstractDatabaseService';
+import { AbstractDatabaseService } from '../../abstract/abstract-database-service';
 import { UuidService } from '../uuid-service/uuid.service';
 import { Patient } from 'fhir/r4';
 import { Logger } from '../../util/logger';
@@ -9,7 +9,7 @@ import { Logger } from '../../util/logger';
 })
 export class PatientDatabaseService extends AbstractDatabaseService {
   constructor(@Inject(UuidService) uuidService: UuidService) {
-    super(uuidService, 'crm_patient');
+    super('crm_patient');
   }
 
   putPatient(patient: Patient) {
