@@ -1,7 +1,0 @@
-{
-  "name": "mukosoft-app-ng",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "angular"
-}
