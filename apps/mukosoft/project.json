@@ -6,7 +6,9 @@
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "options": {
         "outputPath": "dist/apps/mukosoft",
         "index": "apps/mukosoft/src/index.html",
@@ -14,8 +16,25 @@
         "polyfills": "apps/mukosoft/src/polyfills.ts",
         "tsConfig": "apps/mukosoft/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
-        "assets": ["apps/mukosoft/src/favicon.ico", "apps/mukosoft/src/assets"],
-        "styles": ["apps/mukosoft/src/styles.scss"],
+        "assets": [
+          "apps/mukosoft/src/favicon.ico",
+          "apps/mukosoft/src/assets",
+          {
+            "glob": "**/*",
+            "input": "src/assets",
+            "output": "assets"
+          },
+          {
+            "glob": "**/*.svg",
+            "input": "node_modules/ionicons/dist/ionicons/svg",
+            "output": "./svg"
+          }
+        ],
+        "styles": [
+          "apps/mukosoft/src/theme/variables.scss",
+          "apps/mukosoft/src/global.scss",
+          "apps/mukosoft/src/assets/icon/flaticons/css/uicons-regular-rounded.css"
+        ],
         "scripts": []
       },
       "configurations": {
@@ -75,12 +94,17 @@
     "lint": {
       "executor": "@nrwl/linter:eslint",
       "options": {
-        "lintFilePatterns": ["apps/mukosoft/**/*.ts", "apps/mukosoft/**/*.html"]
+        "lintFilePatterns": [
+          "apps/mukosoft/**/*.ts",
+          "apps/mukosoft/**/*.html"
+        ]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/mukosoft"],
+      "outputs": [
+        "coverage/apps/mukosoft"
+      ],
       "options": {
         "jestConfig": "apps/mukosoft/jest.config.ts",
         "passWithNoTests": true

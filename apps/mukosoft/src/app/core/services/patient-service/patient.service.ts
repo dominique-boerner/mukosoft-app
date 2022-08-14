@@ -3,12 +3,9 @@ import { Patient } from 'fhir/r4';
 import { getRandomAvatar } from '../../util/avatar-helper';
 import { UuidService } from '../uuid-service/uuid.service';
 import { Store } from '@ngrx/store';
-import {
-  selectPatientAvatar,
-  selectPatientName,
-} from '../../selectors/patient.selector';
+import { selectPatientAvatar, selectPatientName } from '../../selectors/patient.selector';
 import { AppState } from '../../state/app-state';
-import { Observable, of } from 'rxjs';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',

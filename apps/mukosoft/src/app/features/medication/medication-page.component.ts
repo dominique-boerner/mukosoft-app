@@ -9,9 +9,9 @@ import {MedicationRequestError} from './models/medication-request-error';
 
 @Component({
   selector: 'app-tab2',
-  templateUrl: 'medication.page.html',
+  templateUrl: 'medication-page.component.html',
 })
-export class MedicationPage implements OnInit {
+export class MedicationPageComponent implements OnInit {
   currentIntervalMedicationRequests$ =
     this.medicationRequestService.getCurrentIntervalMedicationRequests();
 

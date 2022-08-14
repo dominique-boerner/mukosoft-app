@@ -4,11 +4,42 @@
     <list default="true" id="e076ab55-216e-4444-b9af-130db4231713" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft-e2e/project.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft-e2e/project.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/mukosoft/project.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/project.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/api-interfaces/project.json" beforeDir="false" afterPath="$PROJECT_DIR$/libs/api-interfaces/project.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nx.json" beforeDir="false" afterPath="$PROJECT_DIR$/nx.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/core/provider/app-initializer.provider.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/core/provider/app-initializer.provider.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/core/reducer/patient.reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/core/reducer/patient.reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/core/services/navigation-service/navigation.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/core/services/navigation-service/navigation.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/core/services/patient-service/patient.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/core/services/patient-service/patient.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/core/state/app-state.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/core/state/app-state.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/core/util/avatar-helper.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/core/util/avatar-helper.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/home/components/greeting-card/greeting-card.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/home/components/greeting-card/greeting-card.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/home/components/greeting-card/greeting-card.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/home/components/greeting-card/greeting-card.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/home/home-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/home/home-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/home/home.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/home/home.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/home/home.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/home/home-page.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/home/home.page.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/home/home-page.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/home/home.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/home/home-page.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/components/medication-fab/medication-fab.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/components/medication-fab/medication-fab.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/components/medication-fab/medication-fab.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/components/medication-fab/medication-fab.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/components/medication-request-item/medication-request-item.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/components/medication-request-item/medication-request-item.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/components/medication-request/medication-request.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/components/medication-request/medication-request.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/components/medication-request/medication-request.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/components/medication-request/medication-request.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/components/medication/medication.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/components/medication/medication.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/components/medication/medication.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/components/medication/medication.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/medication-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/medication-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/medication.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/medication.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/medication.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/medication-page.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/medication.page.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/medication-page.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/medication.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/medication-page.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/models/medication-request-response.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/models/medication-request-response.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/settings/settings.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/settings/settings.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/tabs/tabs-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/tabs/tabs-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/tabs/tabs.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/tabs/tabs.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/tabs/tabs.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/tabs/tabs.page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/assets/i18n/de.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/assets/i18n/de.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/styles.scss" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +67,8 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "configurable.group.appearance"
+    "settings.editor.selected.configurable": "configurable.group.appearance",
+    "ts.external.directory.path": "G:\\mukosoft-app\\node_modules\\typescript\\lib"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -47,11 +79,22 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1660472311419</updated>
-      <workItem from="1660472312829" duration="1168000" />
+      <workItem from="1660472312829" duration="2513000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

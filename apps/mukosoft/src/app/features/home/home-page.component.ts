@@ -3,10 +3,10 @@ import { NavigationService } from '../../core/services/navigation-service/naviga
 import { PatientService } from '../../core/services/patient-service/patient.service';
 
 @Component({
-  selector: 'app-tab1',
-  templateUrl: 'home.page.html',
+  selector: 'mukosoft-app-nx-home',
+  templateUrl: 'home-page.component.html',
 })
-export class HomePage {
+export class HomePageComponent {
   name = this.patientService.getPatientName();
   profileImage = this.patientService.getPatientAvatar();
 
