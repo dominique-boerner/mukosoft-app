@@ -11,13 +11,15 @@ export const selectCurrentIntervalMedicationRequests = createSelector(
   selectMedicationRequests,
   (medicationRequests: MedicationRequest[]) => {
     if (medicationRequests && medicationRequests.length > 0) {
-      return medicationRequests.filter((medicationRequest: MedicationRequest) =>
-        medicationRequest?.dosageInstruction?.find((dosage: Dosage) => {
-            isWithinInterval(new Date(), {
-              start: new Date(dosage.timing.repeat.boundsPeriod.start) ?? new Date(),
+      return medicationRequests.filter((medicationRequest: MedicationRequest) => {
+        return medicationRequest?.dosageInstruction?.find((dosage: Dosage) => {
+            return isWithinInterval(new Date(), {
+              start: new Date(dosage.timing.repeat.boundsPeriod.start),
               end: new Date(dosage.timing.repeat.boundsPeriod.end),
             })
         })
+
+      }
       );
     } else {
       return [];
