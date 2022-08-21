@@ -1,6 +1,6 @@
 <ion-card *ngIf="medicationRequest" color="secondary">
   <ion-card-content>
-    <mukosoft-app-nx-medication [medication]="medication"></mukosoft-app-nx-medication>
+    <mukosoft-medication [medication]="medication"></mukosoft-medication>
     <ng-container
       *ngFor="let dosageInstruction of medicationRequest.dosageInstruction"
     >

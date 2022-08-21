@@ -3,7 +3,7 @@ import { NavigationService } from '../../core/services/navigation-service/naviga
 import { PatientService } from '../../core/services/patient-service/patient.service';
 
 @Component({
-  selector: 'mukosoft-app-nx-home',
+  selector: 'mukosoft-home-page',
   templateUrl: 'home-page.component.html',
 })
 export class HomePageComponent {

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'mukosoft-app-nx-title',
+  selector: 'mukosoft-title',
   templateUrl: './title.component.html',
 })
 export class TitleComponent {

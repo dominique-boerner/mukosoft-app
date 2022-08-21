@@ -2,7 +2,7 @@ import { Component, Input } from '@angular/core';
 import { Medication } from 'fhir/r4';
 
 @Component({
-  selector: 'mukosoft-app-nx-medication',
+  selector: 'mukosoft-medication',
   templateUrl: './medication.component.html',
 })
 export class MedicationComponent {

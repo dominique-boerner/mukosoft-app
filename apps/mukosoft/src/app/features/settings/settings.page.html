@@ -18,18 +18,18 @@
           </ion-row>
           <ion-row>
             <div class="flex flex-col w-full my-1">
-              <app-label [labelId]="nameLabel">{{ "settings.profile.name" | translate }}</app-label>
-              <app-input type="text"
+              <mukosoft-label [labelId]="nameLabel">{{ "settings.profile.name" | translate }}</mukosoft-label>
+              <mukosoft-input type="text"
                          [labelId]="nameLabel"
-                         [value]="name | async"></app-input>
+                         [value]="name | async"></mukosoft-input>
             </div>
           </ion-row>
           <ion-row>
             <div class="flex flex-col w-full my-1">
-              <app-label [labelId]="birthdateLabel">{{ "settings.profile.birthdate" | translate }}</app-label>
-              <app-input type="date"
+              <mukosoft-label [labelId]="birthdateLabel">{{ "settings.profile.birthdate" | translate }}</mukosoft-label>
+              <mukosoft-input type="date"
                          [labelId]="birthdateLabel"
-                         [value]="birthDate | async"></app-input>
+                         [value]="birthDate | async"></mukosoft-input>
             </div>
           </ion-row>
         </ion-grid>

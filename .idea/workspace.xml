@@ -2,17 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e076ab55-216e-4444-b9af-130db4231713" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/shared/atoms/typography/typography.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/.eslintrc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/project.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/project.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/home/components/greeting-card/greeting-card.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/home/components/greeting-card/greeting-card.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/home/components/greeting-card/greeting-card.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/home/components/greeting-card/greeting-card.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/home/home-page.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/home/home-page.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/home/home.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/home/home.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/shared/input/input.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/shared/atoms/input/input.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/shared/input/input.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/shared/atoms/input/input.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/shared/label/label.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/shared/atoms/typography/label/label.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/shared/label/label.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/shared/atoms/typography/label/label.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/shared/shared.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/shared/shared.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/home/home-page.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/home/home-page.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/components/medication-fab/medication-fab.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/components/medication-fab/medication-fab.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/components/medication-request-item/medication-request-item.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/components/medication-request-item/medication-request-item.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/components/medication-request-item/medication-request-item.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/components/medication-request-item/medication-request-item.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/components/medication-request/medication-request.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/components/medication-request/medication-request.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/components/medication-request/medication-request.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/components/medication-request/medication-request.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/components/medication/medication.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/components/medication/medication.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/medication-page.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/medication-page.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/medication-page.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/medication-page.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/settings/settings.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/settings/settings.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/settings/settings.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/settings/settings.page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/tabs/tabs-page.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/tabs/tabs.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/tabs/tabs-page.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/tabs/tabs-page.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/tabs/tabs.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/tabs/tabs-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/tabs/tabs-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/tabs/tabs.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/tabs/tabs.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/shared/atoms/input/input.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/shared/atoms/input/input.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/shared/atoms/typography/label/label.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/shared/atoms/typography/label/label.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/shared/atoms/typography/title/title.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/shared/atoms/typography/title/title.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +82,7 @@
       <updated>1660472311419</updated>
       <workItem from="1660472312829" duration="2958000" />
       <workItem from="1660489426168" duration="631000" />
-      <workItem from="1661073050926" duration="757000" />
+      <workItem from="1661073050926" duration="1110000" />
     </task>
     <servers />
   </component>

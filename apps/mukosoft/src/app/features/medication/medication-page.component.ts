@@ -8,7 +8,7 @@ import { ToastService } from '../../core/services/toast-service/toast.service';
 import { MedicationRequestError } from './models/medication-request-error';
 
 @Component({
-  selector: 'app-tab2',
+  selector: 'mukosoft-medication-page',
   templateUrl: 'medication-page.component.html'
 })
 export class MedicationPageComponent implements OnInit {

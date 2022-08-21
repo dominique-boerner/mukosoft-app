@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { TabsPageComponent } from './tabs-page.component';
+import { TabsComponent } from './tabs.component';
 
 const routes: Routes = [
   {
     path: 'tabs',
-    component: TabsPageComponent,
+    component: TabsComponent,
     children: [
       {
         path: 'home',

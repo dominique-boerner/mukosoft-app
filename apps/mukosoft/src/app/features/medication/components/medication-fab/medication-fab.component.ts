@@ -2,7 +2,7 @@ import { Component, EventEmitter, Output } from '@angular/core';
 import { environment } from '../../../../../environments/environment';
 
 @Component({
-  selector: 'mukosoft-app-nx-medication-fab',
+  selector: 'mukosoft-medication-fab',
   templateUrl: './medication-fab.component.html',
 })
 export class MedicationFabComponent {

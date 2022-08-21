@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { SettingsService } from './services/settings-service';
 
 @Component({
-  selector: 'app-settings',
+  selector: 'mukosoft-settings-page',
   templateUrl: 'settings.page.html',
 })
 export class SettingsPage {

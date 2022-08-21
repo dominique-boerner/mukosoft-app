@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-label',
+  selector: 'mukosoft-label',
   templateUrl: './label.component.html',
 })
 export class LabelComponent {

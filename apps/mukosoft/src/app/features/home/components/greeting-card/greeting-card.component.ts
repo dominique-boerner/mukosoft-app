@@ -1,11 +1,10 @@
-import { Component, EventEmitter, Input, Output } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { AppState } from '../../../../core/state/app-state';
 import { selectPatientAvatar, selectPatientName } from '../../../../core/selectors/patient.selector';
 
 @Component({
-  selector: 'mukosoft-app-nx-greeting-card',
+  selector: 'mukosoft-greeting-card',
   templateUrl: './greeting-card.component.html',
 })
 export class GreetingCardComponent {

@@ -3,7 +3,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 export type InputComponentType = 'text' | 'date' | 'number';
 
 @Component({
-  selector: 'app-input',
+  selector: 'mukosoft-input',
   templateUrl: './input.component.html',
 })
 export class InputComponent {

@@ -2,10 +2,10 @@ import { Component } from '@angular/core';
 import { TabsService } from './services/tabs.service';
 
 @Component({
-  selector: 'mukosoft-app-nx-tabs',
-  templateUrl: 'tabs-page.component.html',
+  selector: 'mukosoft-tabs',
+  templateUrl: 'tabs.component.html',
 })
-export class TabsPageComponent {
+export class TabsComponent {
   readonly slot = 'bottom';
 
   tabItems = this.tabsService.tabItems;
