@@ -1,13 +1,14 @@
 import { NgModule } from '@angular/core';
-import { InputComponent } from './input/input.component';
+import { InputComponent } from './atoms/input/input.component';
 import { IonicModule } from '@ionic/angular';
-import { LabelComponent } from './label/label.component';
+import { TypographyModule } from './atoms/typography/typography.module';
 
-const declarations = [InputComponent, LabelComponent];
+const declarations = [InputComponent];
+const imports = [IonicModule, TypographyModule]
 
 @NgModule({
-  imports: [IonicModule],
+  imports,
   declarations,
-  exports: [...declarations],
+  exports: [...declarations, ...imports],
 })
 export class SharedModule {}

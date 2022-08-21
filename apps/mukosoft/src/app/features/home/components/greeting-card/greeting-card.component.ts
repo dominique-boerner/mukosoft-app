@@ -1,17 +1,23 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Observable } from 'rxjs';
+import { Store } from '@ngrx/store';
+import { AppState } from '../../../../core/state/app-state';
+import { selectPatientAvatar, selectPatientName } from '../../../../core/selectors/patient.selector';
 
 @Component({
   selector: 'mukosoft-app-nx-greeting-card',
   templateUrl: './greeting-card.component.html',
 })
 export class GreetingCardComponent {
-  @Input()
-  name: Observable<string>;
+  name = this.store.select(selectPatientName);
 
-  @Input()
-  profileImage: Observable<string>;
+  profileImage = this.store.select(selectPatientAvatar);
 
   @Output()
   onAvatarClick = new EventEmitter<void>();
+
+  constructor(private readonly store: Store<AppState>) {
+  }
+
+
 }

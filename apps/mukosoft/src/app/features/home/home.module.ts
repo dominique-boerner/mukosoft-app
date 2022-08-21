@@ -6,6 +6,7 @@ import { HomePageComponent } from './home-page.component';
 import { HomeRoutineModule } from './home-routing.module';
 import { TranslateModule } from '@ngx-translate/core';
 import { GreetingCardComponent } from './components/greeting-card/greeting-card.component';
+import { SharedModule } from '../../shared/shared.module';
 
 const imports = [
   IonicModule,
@@ -19,7 +20,10 @@ const components = [HomePageComponent, GreetingCardComponent];
 const declarations = [...components];
 
 @NgModule({
-  imports,
+  imports: [
+    imports,
+    SharedModule
+  ],
   declarations,
 })
 export class HomeModule {}

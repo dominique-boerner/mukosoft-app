@@ -1,15 +1,15 @@
-<ion-card color="primary" class="flex items-center py-4 m-0 rounded-none shadow-none">
-  <ion-card-header class="flex justify-between w-full">
-    <div class="flex flex-col">
-      <ion-card-title data-cy="greeting-title" class="text-2xl font-bold">
-        {{ "home.greeting.title" | translate: { name: (this.name | async) } }}!
-      </ion-card-title>
-      <ion-card-subtitle class="text-xl">
+<ion-card color='primary' class='flex items-center py-4 m-0 rounded-none shadow-none'>
+  <ion-card-header class='flex justify-between w-full'>
+    <div class='flex flex-col'>
+        <mukosoft-app-nx-title>
+          {{ "home.greeting.title" | translate: { name: (this.name | async) } }}!
+        </mukosoft-app-nx-title>
+      <ion-card-subtitle class='text-xl'>
         {{ "home.greeting.subtitle" | translate }}
       </ion-card-subtitle>
     </div>
     <ion-avatar>
-      <img [src]="profileImage | async" alt="users avatar">
+      <img [src]='profileImage | async' alt='users avatar'>
     </ion-avatar>
   </ion-card-header>
 </ion-card>
