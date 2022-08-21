@@ -16,5 +16,4 @@ export class GreetingCardComponent {
   constructor(private readonly store: Store<AppState>) {
   }
 
-
 }

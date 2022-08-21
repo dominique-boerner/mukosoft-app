@@ -3,10 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="e076ab55-216e-4444-b9af-130db4231713" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/home/components/greeting-card/greeting-card.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/home/components/greeting-card/greeting-card.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/home/components/greeting-card/greeting-card.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/home/components/greeting-card/greeting-card.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/settings/settings.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/settings/settings.page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/shared/shared.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/shared/shared.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/shared/user-avatar/user-avatar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/shared/user-avatar/user-avatar.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/shared/user-avatar/user-avatar.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/shared/user-avatar/user-avatar.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +59,7 @@
       <updated>1660472311419</updated>
       <workItem from="1660472312829" duration="2958000" />
       <workItem from="1660489426168" duration="631000" />
-      <workItem from="1661073050926" duration="1604000" />
+      <workItem from="1661073050926" duration="2459000" />
     </task>
     <servers />
   </component>

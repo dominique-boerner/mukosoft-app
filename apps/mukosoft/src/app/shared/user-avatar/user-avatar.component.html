@@ -1,3 +1,8 @@
-<ion-avatar class='w-auto h-auto'>
+<ion-avatar class='w-auto h-auto relative'>
   <img class='w-auto h-auto' [src]='avatarUrl | async' alt='users avatar'>
+  <ng-container *ngIf='imageUpload'>
+    <input type='file' class='absolute top-0 w-full h-full opacity-0 z-50' />
+    <ion-icon color='secondary' class='absolute bottom-0 right-0 rounded-full text-xl p-1' mode=''
+              icon='camera'></ion-icon>
+  </ng-container>
 </ion-avatar>

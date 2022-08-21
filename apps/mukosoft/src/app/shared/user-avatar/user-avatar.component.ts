@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { AppState } from '../../core/state/app-state';
 import { selectPatientAvatar } from '../../core/selectors/patient.selector';
@@ -9,6 +9,9 @@ import { selectPatientAvatar } from '../../core/selectors/patient.selector';
 })
 export class UserAvatarComponent {
   readonly avatarUrl = this.store.select(selectPatientAvatar);
+
+  @Input()
+  imageUpload = false;
 
   constructor(private readonly store: Store<AppState>) {}
 }
