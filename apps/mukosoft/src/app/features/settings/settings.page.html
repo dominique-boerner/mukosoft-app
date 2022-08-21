@@ -1,42 +1,39 @@
-<ion-content [fullscreen]="true">
-  <div class="mx-auto w-96 py-4">
-    <ion-grid class="p-0">
+<ion-content [fullscreen]='true'>
+  <div class='mx-auto w-96 py-4'>
+    <ion-grid class='p-0'>
       <ion-row>
-        <ion-avatar class="mx-auto my-8 h-36 w-36">
-          <img class="h-36 w-36" [src]="profileImage | async"
-               alt="users avatar">
-        </ion-avatar>
+        <mukosoft-user-avatar class="mx-auto my-8 h-36 w-36"></mukosoft-user-avatar>
       </ion-row>
       <ion-row>
-        <ion-grid class="p-0">
+        <ion-grid class='p-0'>
           <ion-row>
-            <ion-text color="secondary" class="text-2xl">{{ "settings.profile.title" | translate }}</ion-text>
+            <ion-text color='secondary' class='text-2xl'>{{ "settings.profile.title" | translate }}</ion-text>
           </ion-row>
           <ion-row>
-            <ion-text color="secondary" class="text-sm">{{ "settings.profile.description" | translate }}
+            <ion-text color='secondary' class='text-sm'>{{ "settings.profile.description" | translate }}
             </ion-text>
           </ion-row>
           <ion-row>
-            <div class="flex flex-col w-full my-1">
-              <mukosoft-label [labelId]="nameLabel">{{ "settings.profile.name" | translate }}</mukosoft-label>
-              <mukosoft-input type="text"
-                         [labelId]="nameLabel"
-                         [value]="name | async"></mukosoft-input>
+            <div class='flex flex-col w-full my-1'>
+              <mukosoft-label [labelId]='nameLabel'>{{ "settings.profile.name" | translate }}</mukosoft-label>
+              <mukosoft-input type='text'
+                              [labelId]='nameLabel'
+                              [value]='name | async'></mukosoft-input>
             </div>
           </ion-row>
           <ion-row>
-            <div class="flex flex-col w-full my-1">
-              <mukosoft-label [labelId]="birthdateLabel">{{ "settings.profile.birthdate" | translate }}</mukosoft-label>
-              <mukosoft-input type="date"
-                         [labelId]="birthdateLabel"
-                         [value]="birthDate | async"></mukosoft-input>
+            <div class='flex flex-col w-full my-1'>
+              <mukosoft-label [labelId]='birthdateLabel'>{{ "settings.profile.birthdate" | translate }}</mukosoft-label>
+              <mukosoft-input type='date'
+                              [labelId]='birthdateLabel'
+                              [value]='birthDate | async'></mukosoft-input>
             </div>
           </ion-row>
         </ion-grid>
       </ion-row>
     </ion-grid>
-    <ion-button color="secondary" expand="block">
-      <ion-icon name="save" class="mr-2"></ion-icon>
+    <ion-button color='secondary' expand='block'>
+      <ion-icon name='save' class='mr-2'></ion-icon>
       <ion-text>{{ "settings.save" | translate }}</ion-text>
     </ion-button>
   </div>

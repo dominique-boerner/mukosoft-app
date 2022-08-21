@@ -1,7 +1,7 @@
 import { Component, EventEmitter, Output } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { AppState } from '../../../../core/state/app-state';
-import { selectPatientAvatar, selectPatientName } from '../../../../core/selectors/patient.selector';
+import { selectPatientName } from '../../../../core/selectors/patient.selector';
 
 @Component({
   selector: 'mukosoft-greeting-card',
@@ -9,8 +9,6 @@ import { selectPatientAvatar, selectPatientName } from '../../../../core/selecto
 })
 export class GreetingCardComponent {
   name = this.store.select(selectPatientName);
-
-  profileImage = this.store.select(selectPatientAvatar);
 
   @Output()
   onAvatarClick = new EventEmitter<void>();
