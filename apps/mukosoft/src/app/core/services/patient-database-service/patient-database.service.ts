@@ -34,9 +34,25 @@ export class PatientDatabaseService extends AbstractDatabaseService {
       });
   }
 
+  async updatePatient(patient: Patient) {
+    const docsResponse = await this.getPatient();
+    const patientDoc = docsResponse.rows[0].doc;
+
+    const newPatientDoc = {
+      ...patientDoc,
+      ...patient,
+    };
+
+    this.putPatient(newPatientDoc);
+  }
+
   getPatient() {
     return this.db
-      .allDocs<Patient>({ include_docs: true, attachments: true })
+      .allDocs<Patient>({
+        include_docs: true,
+        attachments: true,
+        descending: false,
+      })
       .then((response) => {
         Logger.success(
           `successfully loaded patient!`,

@@ -18,6 +18,9 @@ export const selectPatientAvatar = createSelector(
 
 export const selectPatientName = createSelector(
   selectPatientState,
-  (patient: Patient) =>
-    patient ? patient?.name?.find((p) => p.use === 'nickname').text : ''
+  (patient: Patient) => {
+    return patient
+      ? patient?.name?.find((p) => p.use === 'nickname')?.text
+      : '';
+  }
 );

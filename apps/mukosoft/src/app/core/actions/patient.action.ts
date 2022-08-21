@@ -1,5 +1,5 @@
 import { createAction, props } from '@ngrx/store';
-import { Patient } from 'fhir/r4';
+import { HumanName, Patient } from 'fhir/r4';
 
 const generateTitle = (description: string) => {
   return `[Patient] ${description}`;
@@ -8,4 +8,9 @@ const generateTitle = (description: string) => {
 export const setPatient = createAction(
   generateTitle('set Patient'),
   props<{ patient: Patient }>()
+);
+
+export const setPatientName = createAction(
+  generateTitle('set patient name'),
+  props<{ name: HumanName }>()
 );

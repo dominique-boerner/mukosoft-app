@@ -18,7 +18,8 @@
               <mukosoft-label [labelId]='nameLabel'>{{ "settings.profile.name" | translate }}</mukosoft-label>
               <mukosoft-input type='text'
                               [labelId]='nameLabel'
-                              [value]='name | async'></mukosoft-input>
+                              [value]='name | async'
+                              (onIonChange)='setNewName($event)'></mukosoft-input>
             </div>
           </ion-row>
           <ion-row>
@@ -32,7 +33,7 @@
         </ion-grid>
       </ion-row>
     </ion-grid>
-    <ion-button color='secondary' expand='block'>
+    <ion-button color='secondary' expand='block' (click)='save()'>
       <ion-icon name='save' class='mr-2'></ion-icon>
       <ion-text>{{ "settings.save" | translate }}</ion-text>
     </ion-button>

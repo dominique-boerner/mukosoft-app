@@ -1,11 +1,17 @@
 import { Injectable } from '@angular/core';
-import { Patient } from 'fhir/r4';
+import { HumanName, Patient } from 'fhir/r4';
 import { getRandomAvatar } from '../../util/avatar-helper';
 import { UuidService } from '../uuid-service/uuid.service';
 import { Store } from '@ngrx/store';
-import { selectPatientAvatar, selectPatientName } from '../../selectors/patient.selector';
+import {
+  selectPatientAvatar,
+  selectPatientName,
+  selectPatientState,
+} from '../../selectors/patient.selector';
 import { AppState } from '../../state/app-state';
 import { Observable } from 'rxjs';
+import { PatientDatabaseService } from '../patient-database-service/patient-database.service';
+import { setPatient } from '../../actions/patient.action';
 
 @Injectable({
   providedIn: 'root',
@@ -15,13 +21,41 @@ export class PatientService {
 
   constructor(
     private readonly uuidService: UuidService,
-    private readonly store: Store<AppState>
+    private readonly store: Store<AppState>,
+    private readonly patientDatabaseService: PatientDatabaseService
   ) {
     this.getInitialPatient();
   }
 
+  setPatientStore() {
+    this.patientDatabaseService.getPatient().then((response) => {
+      const noPatientDataExists = response.total_rows === 0;
+      if (noPatientDataExists) {
+        const newPatient = this.getInitialPatient();
+        this.patientDatabaseService.putPatient(newPatient).catch((err) => err);
+        this.store.dispatch(setPatient({ patient: newPatient }));
+      } else {
+        const patient = response.rows[0].doc;
+        this.store.dispatch(setPatient({ patient }));
+      }
+    });
+  }
+
   getPatientAvatar(): Observable<string> {
     return this.store.select(selectPatientAvatar);
+  }
+
+  setPatientName(name: HumanName) {
+    this.store.select(selectPatientState).subscribe((patient) => {
+      const remainingNames = patient.name.filter(
+        (patientName) => patientName.use !== name.use
+      );
+      const newPatient = {
+        ...patient,
+        name: [...remainingNames, name],
+      };
+      this.patientDatabaseService.updatePatient(newPatient);
+    });
   }
 
   getPatientName(): Observable<string> {
