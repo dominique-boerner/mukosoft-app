@@ -1,9 +1,8 @@
-import {Inject, Injectable} from '@angular/core';
-import {MedicationRequest} from 'fhir/r4';
-import {UuidService} from '../../../../core/services/uuid-service/uuid.service';
-import {AbstractDatabaseService} from '../../../../core/abstract/abstract-database-service';
-import {Logger} from '../../../../core/util/logger';
-import {environment} from '../../../../../environments/environment';
+import { Inject, Injectable } from '@angular/core';
+import { MedicationRequest } from 'fhir/r4';
+import { UuidService } from '../../../../core/services/uuid-service/uuid.service';
+import { AbstractDatabaseService } from '../../../../core/abstract/abstract-database-service';
+import { Logger } from '../../../../core/util/logger';
 
 @Injectable({
   providedIn: 'root',

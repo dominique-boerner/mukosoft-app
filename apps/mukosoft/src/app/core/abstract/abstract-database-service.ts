@@ -1,5 +1,4 @@
 import PouchDB from 'pouchdb';
-import { UuidService } from '../services/uuid-service/uuid.service';
 import { Logger } from '../util/logger';
 
 /**
