@@ -64,11 +64,7 @@ npm run start:back-end # start back-end
 # Roadmap
 
 ## Version 1.0
-<<<<<<< Updated upstream
-* 💊 basic medication reminder 
-=======
 * 💊 basic medication reminder
->>>>>>> Stashed changes
 * 🥕 cookbook and recipes for cystic fibrosis
 * ❤️ vitaldata: fev1, size and weight (BMI)
 
