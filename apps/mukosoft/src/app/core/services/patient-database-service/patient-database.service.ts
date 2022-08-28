@@ -13,11 +13,13 @@ export class PatientDatabaseService extends AbstractDatabaseService {
   }
 
   putPatient(patient: Patient) {
+    const newPatient = {
+      ...patient,
+      _id: patient.id,
+    };
+
     return this.db
-      .put<Patient>({
-        ...patient,
-        _id: patient.id,
-      })
+      .put<Patient>(newPatient)
       .then((response) => {
         Logger.success(
           `successfully set patient with id ${patient.id}`,
@@ -34,7 +36,7 @@ export class PatientDatabaseService extends AbstractDatabaseService {
       });
   }
 
-  async updatePatient(patient: Patient) {
+  async updatePatient(patient: Patient): Promise<Patient> {
     const docsResponse = await this.getPatient();
     const patientDoc = docsResponse.rows[0].doc;
 
@@ -43,7 +45,9 @@ export class PatientDatabaseService extends AbstractDatabaseService {
       ...patient,
     };
 
-    this.putPatient(newPatientDoc);
+    await this.putPatient(newPatientDoc);
+
+    return newPatientDoc;
   }
 
   getPatient() {
@@ -51,11 +55,12 @@ export class PatientDatabaseService extends AbstractDatabaseService {
       .allDocs<Patient>({
         include_docs: true,
         attachments: true,
-        descending: false,
+        limit: 1,
+        descending: true,
       })
       .then((response) => {
         Logger.success(
-          `successfully loaded patient!`,
+          `successfully loaded patient ${response.rows[0].id}!`,
           PatientDatabaseService.name
         );
         return response;

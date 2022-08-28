@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HumanName, Patient } from 'fhir/r4';
 import { getRandomAvatar } from '../../util/avatar-helper';
 import { UuidService } from '../uuid-service/uuid.service';
-import { Store } from '@ngrx/store';
+import { select, Store } from '@ngrx/store';
 import {
   selectPatientAvatar,
   selectPatientName,
@@ -41,11 +41,15 @@ export class PatientService {
     });
   }
 
+  setPatient(patient: Patient) {
+    this.store.dispatch(setPatient({ patient }));
+  }
+
   getPatientAvatar(): Observable<string> {
     return this.store.select(selectPatientAvatar);
   }
 
-  setPatientName(name: HumanName) {
+  async setPatientName(name: HumanName) {
     this.store.select(selectPatientState).subscribe((patient) => {
       const remainingNames = patient.name.filter(
         (patientName) => patientName.use !== name.use
@@ -54,7 +58,12 @@ export class PatientService {
         ...patient,
         name: [...remainingNames, name],
       };
-      this.patientDatabaseService.updatePatient(newPatient);
+      this.patientDatabaseService.updatePatient(newPatient).then(() => {
+        this.patientDatabaseService.getPatient().then((response) => {
+          // const patient = response.rows[0].doc;
+          // this.store.dispatch(setPatient({ patient }));
+        });
+      });
     });
   }
 
@@ -75,5 +84,9 @@ export class PatientService {
       ],
       photo: [{ title: this.AVATAR_IDENTIFIER, url: getRandomAvatar() }],
     };
+  }
+
+  getPatient() {
+    return this.store.pipe(select(selectPatientState));
   }
 }

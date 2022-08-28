@@ -1,9 +1,6 @@
 import { Component } from '@angular/core';
 import { SettingsService } from './services/settings-service';
-import { Store } from '@ngrx/store';
-import { AppState } from '../../core/state/app-state';
-import { setPatientName } from '../../core/actions/patient.action';
-import { HumanName } from 'fhir/r4';
+import { Patient } from 'fhir/r4';
 
 @Component({
   selector: 'mukosoft-settings-page',
@@ -19,18 +16,24 @@ export class SettingsPage {
 
   newName = '';
 
-  constructor(
-    private readonly settingsService: SettingsService,
-    private readonly store: Store<AppState>
-  ) {}
+  constructor(private readonly settingsService: SettingsService) {}
 
   save() {
-    const name: HumanName = {
-      use: 'nickname',
-      text: this.newName,
-    };
-
-    this.settingsService.setPatientName(name);
+    this.settingsService
+      .getPatient()
+      .subscribe((patient) => {
+        const newPatient: Patient = {
+          ...patient,
+          name: [
+            {
+              use: 'nickname',
+              text: this.newName,
+            },
+          ],
+        };
+        this.settingsService.save(newPatient);
+      })
+      .unsubscribe();
   }
 
   setNewName(name: string) {
