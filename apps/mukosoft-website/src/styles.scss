@@ -1,1 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "rufina-regular";
+  src: url("./assets/fonts/rufina/Rufina-Regular.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "rufina-bold";
+  src: url("./assets/fonts/rufina/Rufina-Bold.ttf") format("ttf");
+}
+
+.rufina-regular {
+  font-family: rufina-regular;
+}
+
+.rufina-bold {
+  font-family: rufina-bold;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}

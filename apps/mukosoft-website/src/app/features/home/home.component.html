@@ -1,0 +1,60 @@
+<div class="w-screen h-screen flex flex-col justify-between">
+  <div class="flex flex-col h-full bg-secondary justify-around md:flex-row">
+    <div
+      class="flex flex-col p-8 justify-center text-center md:justify-center md:text-left"
+    >
+      <h1 class="text-primary text-8xl rufina-bold leading-snug">MukoSoft</h1>
+      <span
+        class="border-t-2 border-b-2 block h-2 border-primary my-2 w-48 mx-auto md:hidden"
+      ></span>
+      <article class="text-primary text-3xl max-w-5xl leading-snug">
+        Die MukoSoft-App ist speziell für Mukoviszidose-Patient*innen entwickelt
+        worden. Die App erinnert an die Einnahme von Medikamenten, gibt
+        Vorschläge für kalorienreiches Kochen, speichert und wertet die eigenen
+        Vitalwerte aus und bietet allgemeine Informationen zu verschiedenen
+        krankheitsspezifischen Themen.
+      </article>
+      <span class="text-primary text-2xl mt-4 font-bold leading-snug">
+        Release: bald
+      </span>
+    </div>
+    <div class="relative w-96 hidden my-auto flex-shrink-0 lg:block">
+      <img
+        class="absolute top-0 left-0 z-10 filter blur-md"
+        src="./../assets/img/human.svg"
+        loading="lazy"
+        alt="human"
+      />
+      <img
+        class="relative z-50"
+        src="./../assets/img/human.svg"
+        loading="lazy"
+        alt="human"
+      />
+    </div>
+  </div>
+  <div class="flex flex-col justify-between md:flex-row">
+    <div class="flex bg-white h-20 px-8 items-center justify-evenly md:w-4/12">
+      <a
+        *ngFor="let social of socials"
+        class="text-secondary mr-4 md:text-xl p-4 md:p-0"
+        target="_blank"
+        [href]="social.url"
+        [title]="social.name"
+      >
+        <span class="fi" [class]="social.icon"></span>
+      </a>
+    </div>
+    <div
+      class="flex bg-primary h-20 px-8 items-center justify-evenly md:w-8/12"
+    >
+      <a
+        *ngFor="let item of navigationItems"
+        class="text-secondary mr-4 p-4 underline md:text-md md:p-0"
+        target="_blank"
+        [href]="item.url"
+        >{{ item.name }}</a
+      >
+    </div>
+  </div>
+</div>

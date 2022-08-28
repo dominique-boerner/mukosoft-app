@@ -5,7 +5,9 @@
   "targets": {
     "build": {
       "executor": "@angular-devkit/build-angular:browser",
-      "outputs": ["{options.outputPath}"],
+      "outputs": [
+        "{options.outputPath}"
+      ],
       "options": {
         "outputPath": "dist/apps/mukosoft-website",
         "index": "apps/mukosoft-website/src/index.html",
@@ -17,7 +19,10 @@
           "apps/mukosoft-website/src/favicon.ico",
           "apps/mukosoft-website/src/assets"
         ],
-        "styles": ["apps/mukosoft-website/src/styles.scss"],
+        "styles": [
+          "apps/mukosoft-website/src/styles.scss",
+          "apps/mukosoft-website/src/assets/icon/uicons-brands/css/uicons-brands.css"
+        ],
         "scripts": []
       },
       "configurations": {
@@ -82,7 +87,9 @@
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/mukosoft-website"],
+      "outputs": [
+        "coverage/apps/mukosoft-website"
+      ],
       "options": {
         "jestConfig": "apps/mukosoft-website/jest.config.ts",
         "passWithNoTests": true
