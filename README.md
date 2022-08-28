@@ -1,5 +1,7 @@
 # MukoSoft App
 
+[![front-end testing](https://github.com/mukosoft/mukosoft-app/actions/workflows/front_end.yml/badge.svg)](https://github.com/mukosoft/mukosoft-app/actions/workflows/front_end.yml)
+
 The MukoSoft app has been specially developed for cystic fibrosis patients. The app reminds you to take your medication, provides suggestions for high-calorie cooking, stores and evaluates your own vital signs, and offers general information on a variety of disease-specific topics.
 
 # Infrastructure
