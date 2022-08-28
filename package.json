@@ -6,6 +6,8 @@
     "ng": "nx",
     "postinstall": "node ./decorate-angular-cli.js && ngcc --properties es2020 browser module main",
     "start": "nx serve",
+    "start:app": "nx serve mukosoft-app",
+    "start:website": "nx serve mukosoft-website",
     "build": "nx build",
     "test": "nx test",
     "test:app": "nx test mukosoft-app",
