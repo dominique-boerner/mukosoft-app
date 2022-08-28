@@ -1,23 +1,23 @@
-import { Injectable } from '@angular/core';
-import { BehaviorSubject, Observable, of } from 'rxjs';
-import { MedicationRequest } from 'fhir/r4';
-import { MedicationRequestResponse } from '../../models/medication-request-response';
-import { MedicationRequestError } from '../../models/medication-request-error';
-import { Store } from '@ngrx/store';
+import { Injectable } from "@angular/core";
+import { BehaviorSubject, Observable, of } from "rxjs";
+import { MedicationRequest } from "fhir/r4";
+import { MedicationRequestResponse } from "../../models/medication-request-response";
+import { MedicationRequestError } from "../../models/medication-request-error";
+import { Store } from "@ngrx/store";
 import {
   selectCurrentIntervalMedicationRequests,
   selectMedicationRequests,
-} from '../../../../core/selectors/medication-request.selector';
-import { MedicationRequestDatabaseService } from '../medication-request-database-service/medication-request-database.service';
-import { setMedicationRequests } from '../../../../core/actions/medication-request.actions';
-import { MedicationCreationError } from './medication-request-errors';
-import {AppState} from "../../../../core/state/app-state";
+} from "../../../../core/selectors/medication-request.selector";
+import { MedicationRequestDatabaseService } from "../medication-request-database-service/medication-request-database.service";
+import { setMedicationRequests } from "../../../../core/actions/medication-request.actions";
+import { MedicationCreationError } from "./medication-request-errors";
+import { AppState } from "../../../../core/state/app-state";
 
 @Injectable({
-  providedIn: 'root',
+  providedIn: "root",
 })
 export class MedicationRequestService {
-  error = new BehaviorSubject<MedicationRequestError>({ error: false });
+  error$ = new BehaviorSubject<MedicationRequestError>({ error: false });
 
   constructor(
     private readonly store: Store<AppState>,
@@ -33,12 +33,12 @@ export class MedicationRequestService {
     return this.medicationRequestDatabaseService
       .putMedicationRequest(medicationRequest)
       .then(() => {
-        this.error.next({ error: false });
+        this.error$.next({ error: false });
         this.synchronizeMedicationRequestsWithDatabase();
-        return this.error;
+        return this.error$;
       })
       .catch((e) => {
-        this.error.next(MedicationCreationError);
+        this.error$.next(MedicationCreationError);
         throw MedicationCreationError;
       });
   }
@@ -64,8 +64,8 @@ export class MedicationRequestService {
    */
   getMedicationRequests(): Observable<MedicationRequest[]> {
     try {
-      this.setError(false, 0, '');
-      return this.store.select(selectMedicationRequests)
+      this.setError(false, 0, "");
+      return this.store.select(selectMedicationRequests);
     } catch (e: any) {
       this.setError(true, 0, e);
       return of([]);
@@ -78,7 +78,7 @@ export class MedicationRequestService {
    */
   getCurrentIntervalMedicationRequests(): Observable<MedicationRequest[]> {
     try {
-      this.setError(false, 0, '');
+      this.setError(false, 0, "");
       return this.store.select(selectCurrentIntervalMedicationRequests);
     } catch (e: any) {
       this.setError(true, 0, e);
@@ -119,11 +119,11 @@ export class MedicationRequestService {
     this.medicationRequestDatabaseService
       .deleteMedicationRequest(id)
       .then(() => {
-        this.error.next({ error: false });
+        this.error$.next({ error: false });
         this.synchronizeMedicationRequestsWithDatabase();
       })
       .catch((error) => {
-        this.error.next({ error: true, errorMessage: error });
+        this.error$.next({ error: true, errorMessage: error });
       });
   }
 
@@ -134,7 +134,7 @@ export class MedicationRequestService {
   }
 
   private setError(error: boolean, errorCode: number, errorMessage: string) {
-    this.error.next({
+    this.error$.next({
       error,
       errorMessage,
       errorCode,

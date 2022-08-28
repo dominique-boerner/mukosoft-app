@@ -1,9 +1,9 @@
-import { TestBed } from '@angular/core/testing';
+import { TestBed } from "@angular/core/testing";
 
-import { MedicationRequestService } from './medication-request.service';
-import { mockMedicationRequestPrednisoneNonActive } from '../../__mocks__/mock-medication-request';
+import { MedicationRequestService } from "./medication-request.service";
+import { mockMedicationRequestPrednisoneNonActive } from "../../__mocks__/mock-medication-request";
 
-describe('MedicationService', () => {
+describe("MedicationService", () => {
   let service: MedicationRequestService;
 
   beforeEach(() => {
@@ -11,28 +11,28 @@ describe('MedicationService', () => {
     service = TestBed.inject(MedicationRequestService);
   });
 
-  describe('CRUD of MedicationRequest', () => {
-    xit('should create a medicationRequest', () => {
+  describe("CRUD of MedicationRequest", () => {
+    xit("should create a medicationRequest", () => {
       service.createMedicationRequest(mockMedicationRequestPrednisoneNonActive);
-      expect(service.error.value).toBeFalse();
+      expect(service.error$.value.error).toBeFalsy();
     });
 
-    it('should get all medicationRequests', () => {
+    it("should get all medicationRequests", () => {
       service.getMedicationRequests();
-      expect(service.error.value).toBeFalse();
+      expect(service.error$.value.error).toBeFalsy();
     });
 
-    xit('should update a medicationRequest', () => {
+    xit("should update a medicationRequest", () => {
       service.updateMedicationRequest(
-        '#med103',
+        "#med103",
         mockMedicationRequestPrednisoneNonActive
       );
-      expect(service.error.value).toBeFalse();
+      expect(service.error$.value.error).toBeFalsy();
     });
 
-    xit('should delete a medicationRequest', () => {
-      service.deleteMedicationRequest('#med103');
-      expect(service.error.value).toBeFalse();
+    xit("should delete a medicationRequest", () => {
+      service.deleteMedicationRequest("#med103");
+      expect(service.error$.value.error).toBeFalsy();
     });
   });
 });
