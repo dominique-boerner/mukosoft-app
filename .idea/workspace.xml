@@ -3,12 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e076ab55-216e-4444-b9af-130db4231713" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.github/workflows/front_end.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/front_end.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/services/medication-request-service/medication-request.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/services/medication-request-service/medication-request.service.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/services/medication-request-service/medication-request.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/services/medication-request-service/medication-request.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/environments/environment.prod.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/environments/environment.prod.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +72,7 @@
       <workItem from="1661097892677" duration="3219000" />
       <workItem from="1661450909572" duration="27000" />
       <workItem from="1661690308821" duration="6346000" />
-      <workItem from="1661701148782" duration="3525000" />
+      <workItem from="1661701148782" duration="4035000" />
     </task>
     <servers />
   </component>
