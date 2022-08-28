@@ -4,3 +4,6 @@ node_modules
 
 # build directory
 dist
+
+# cypress outputs
+*cy.ts.mp4

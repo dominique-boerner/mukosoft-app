@@ -2,8 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e076ab55-216e-4444-b9af-130db4231713" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/apps/mukosoft-e2e/cypress/e2e/1-getting-started/app.cy.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/mukosoft-e2e/cypress/support/commands.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/mukosoft-e2e/cypress/support/e2e.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/mukosoft-e2e/cypress/videos/app.cy.ts.mp4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/front_end.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/front_end.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft-website/src/app/features/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft-website/src/app/features/home/home.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft-e2e/cypress.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft-e2e/cypress.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft-e2e/src/e2e/app.cy.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft-e2e/src/fixtures/example.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft-e2e/src/support/app.po.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft-e2e/src/support/commands.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft-e2e/src/support/e2e.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft-e2e/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft-e2e/tsconfig.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +53,7 @@
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\IntelliJ IDEA 2021.2.3\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external"
+    "ts.external.directory.path": "G:\\mukosoft-app\\node_modules\\typescript\\lib"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -53,6 +65,7 @@
       <recent name="G:\mukosoft-app\apps\mukosoft-website\src\app\features\home" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\mukosoft-app\apps\mukosoft-e2e\cypress" />
       <recent name="G:\mukosoft-app\apps\mukosoft-website\src" />
       <recent name="G:\mukosoft-app\apps\mukosoft-website\src\app\features\home" />
       <recent name="G:\mukosoft-app\apps\mukosoft\src\app\shared\atoms" />
@@ -73,7 +86,8 @@
       <workItem from="1661097892677" duration="3219000" />
       <workItem from="1661450909572" duration="27000" />
       <workItem from="1661690308821" duration="6346000" />
-      <workItem from="1661701148782" duration="4963000" />
+      <workItem from="1661701148782" duration="5501000" />
+      <workItem from="1661708210630" duration="2011000" />
     </task>
     <servers />
   </component>
