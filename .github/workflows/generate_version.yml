@@ -1,4 +1,11 @@
 name: "Generate version.json for MukoSoft App"
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
 jobs:
   build:
     runs-on: ubuntu-latest

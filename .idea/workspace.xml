@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e076ab55-216e-4444-b9af-130db4231713" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.github/workflows/generate_version.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/front_end.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/front_end.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/generate_version.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/generate_version.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
