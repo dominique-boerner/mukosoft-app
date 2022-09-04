@@ -15,7 +15,7 @@ export class SettingsPage {
 
   public readonly name = this.settingsService.getPatientName();
   public readonly profileImage = this.settingsService.getPatientAvatar();
-  public readonly birthDate: any = null;
+  public readonly birthDate = new Date();
 
   public readonly appVersion = versionJson.version;
 

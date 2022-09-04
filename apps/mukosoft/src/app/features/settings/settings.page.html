@@ -21,9 +21,9 @@
           </ion-row>
           <ion-row>
             <div class="flex flex-col w-full my-1">
-              <mukosoft-label [labelId]="nameLabel"
-                >{{ "settings.profile.name" | translate }}</mukosoft-label
-              >
+              <mukosoft-label>
+                {{ "settings.profile.name" | translate }}
+              </mukosoft-label>
               <mukosoft-input
                 type="text"
                 [labelId]="nameLabel"
@@ -34,14 +34,18 @@
           </ion-row>
           <ion-row>
             <div class="flex flex-col w-full my-1">
-              <mukosoft-label [labelId]="birthdateLabel"
-                >{{ "settings.profile.birthdate" | translate }}</mukosoft-label
+              <mukosoft-label>
+                {{ "settings.profile.birthdate" | translate }}
+              </mukosoft-label>
+
+              <ion-button
+                class="w-full"
+                color="secondary"
+                fill="outline"
+                (click)="modal.isOpen = !modal.isOpen"
               >
-              <mukosoft-input
-                type="date"
-                [labelId]="birthdateLabel"
-                [value]="birthDate | async"
-              ></mukosoft-input>
+                {{birthDate | date}}
+              </ion-button>
             </div>
           </ion-row>
         </ion-grid>
@@ -55,4 +59,14 @@
       {{"settings.version"|translate}}: {{appVersion}}
     </ion-text>
   </div>
+
+  <ion-modal
+    #modal
+    [keepContentsMounted]="true"
+    (ionModalDidDismiss)="modal.isOpen = false"
+  >
+    <ng-template>
+      <ion-datetime id="datetime" [showDefaultButtons]="true"></ion-datetime>
+    </ng-template>
+  </ion-modal>
 </ion-content>

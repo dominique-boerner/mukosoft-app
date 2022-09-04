@@ -1,10 +1,7 @@
-import { Component, Input } from '@angular/core';
+import { Component } from "@angular/core";
 
 @Component({
-  selector: 'mukosoft-label',
-  templateUrl: './label.component.html',
+  selector: "mukosoft-label",
+  templateUrl: "./label.component.html",
 })
-export class LabelComponent {
-  @Input()
-  labelId: string;
-}
+export class LabelComponent {}
