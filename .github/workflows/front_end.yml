@@ -31,10 +31,10 @@ jobs:
           npm run e2e
       - run: npm run build
       - name: copy file via ssh password
-          - uses: garygrossgarten/github-action-scp@release
-          - with:
-            - host: ${{ secrets.HOST }}
-            - username: ${{ secrets.USERNAME }}
-            - password: ${{ secrets.PASSWORD }}
-            - local: "dist/apps/mukosoft"
-            - target: "domains/app"
+          uses: garygrossgarten/github-action-scp@release
+          with:
+            host: ${{ secrets.HOST }}
+            username: ${{ secrets.USERNAME }}
+            password: ${{ secrets.PASSWORD }}
+            local: "dist/apps/mukosoft"
+            target: "domains/app"
