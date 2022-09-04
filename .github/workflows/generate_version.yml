@@ -20,7 +20,7 @@ jobs:
           contents: |
             {
               date: ${{ github.event.repository.updated_at }},
-              version: ${{ github.run_number }}
+              version: 0.0.${{ github.run_number }}
             }
       - name: Commit & Push
         uses: Andro999b/push@v1.3
