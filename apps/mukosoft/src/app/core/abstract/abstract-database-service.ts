@@ -1,5 +1,5 @@
-import PouchDB from 'pouchdb';
-import { Logger } from '../util/logger';
+import PouchDB from "pouchdb";
+import { Logger } from "../util/logger/logger";
 
 /**
  * AbstractDatabaseService

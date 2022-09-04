@@ -3,7 +3,7 @@ import { PatientService } from "../../../../core/services/patient-service/patien
 import { Observable } from "rxjs";
 import { PatientDatabaseService } from "../../../../core/services/patient-database-service/patient-database.service";
 import { Patient } from "fhir/r4";
-import { Logger } from "../../../../core/util/logger";
+import { Logger } from "../../../../core/util/logger/logger";
 import { ISettingsService } from "./settings-service.interface";
 
 /**

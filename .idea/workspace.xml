@@ -2,10 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e076ab55-216e-4444-b9af-130db4231713" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/core/util/avatar-helper/avatar-helper.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/core/util/logger/logger.spec.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/core/services/patient-service/patient.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/core/services/patient-service/patient.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/core/util/avatar-helper.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/core/util/avatar-helper/avatar-helper.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/core/abstract/abstract-database-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/core/abstract/abstract-database-service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/core/services/patient-database-service/patient-database.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/core/services/patient-database-service/patient-database.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/core/util/logger.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/core/util/logger/logger.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/services/medication-request-database-service/medication-request-database.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/services/medication-request-database-service/medication-request-database.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/settings/services/settings-service/settings-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/settings/services/settings-service/settings-service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +34,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "G:/mukosoft-app/apps/mukosoft/src/app/core/util/avatar-helper",
+    "last_opened_file_path": "G:/mukosoft-app/apps/mukosoft/src/app/core/util/logger",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -48,21 +51,21 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\mukosoft-app\apps\mukosoft\src\app\core\util\logger" />
       <recent name="G:\mukosoft-app\apps\mukosoft\src\app\core\util\avatar-helper" />
       <recent name="G:\mukosoft-app\apps\mukosoft\src\app\core\services\navigation-service" />
       <recent name="G:\mukosoft-app\apps\mukosoft-website\src\assets\fonts\rufina" />
       <recent name="G:\mukosoft-app\apps\mukosoft-website\src\assets" />
-      <recent name="G:\mukosoft-app\apps\mukosoft-website" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\mukosoft-app\apps\mukosoft\src\app\core\util\logger" />
       <recent name="G:\mukosoft-app\apps\mukosoft\src\app\core\util\avatar-helper" />
       <recent name="G:\mukosoft-app\apps\mukosoft\src\app\__mocks__" />
       <recent name="G:\mukosoft-app\apps\mukosoft\src\app" />
       <recent name="G:\mukosoft-app\apps\mukosoft\src\app\features\settings\services\settings-service" />
-      <recent name="G:\mukosoft-app\apps\mukosoft-e2e\cypress" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.should return a random avatar">
+  <component name="RunManager" selected="Jest.logging of the application">
     <configuration name="MedicationService" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -86,6 +89,19 @@
       <test-file value="$PROJECT_DIR$/apps/mukosoft/src/app/core/services/navigation-service/navigation.service.spec.ts" />
       <test-names>
         <test-name value="NavigationService" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="logging of the application" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/apps/mukosoft/src/app/core/util/logger/logger.spec.ts" />
+      <test-names>
+        <test-name value="logging of the application" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -119,6 +135,7 @@
     </configuration>
     <list>
       <item itemvalue="Jest.MedicationService" />
+      <item itemvalue="Jest.logging of the application" />
       <item itemvalue="Jest.should return a random avatar" />
       <item itemvalue="Jest.NavigationService" />
       <item itemvalue="npm.test --watch" />
@@ -126,6 +143,7 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.logging of the application" />
         <item itemvalue="Jest.should return a random avatar" />
         <item itemvalue="Jest.MedicationService" />
         <item itemvalue="Jest.NavigationService" />

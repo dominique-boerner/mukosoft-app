@@ -1,15 +1,15 @@
-import { Inject, Injectable } from '@angular/core';
-import { AbstractDatabaseService } from '../../abstract/abstract-database-service';
-import { UuidService } from '../uuid-service/uuid.service';
-import { Patient } from 'fhir/r4';
-import { Logger } from '../../util/logger';
+import { Inject, Injectable } from "@angular/core";
+import { AbstractDatabaseService } from "../../abstract/abstract-database-service";
+import { UuidService } from "../uuid-service/uuid.service";
+import { Patient } from "fhir/r4";
+import { Logger } from "../../util/logger/logger";
 
 @Injectable({
-  providedIn: 'root',
+  providedIn: "root",
 })
 export class PatientDatabaseService extends AbstractDatabaseService {
   constructor(@Inject(UuidService) uuidService: UuidService) {
-    super('crm_patient');
+    super("crm_patient");
   }
 
   putPatient(patient: Patient) {
