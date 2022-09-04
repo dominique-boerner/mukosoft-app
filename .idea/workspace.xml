@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e076ab55-216e-4444-b9af-130db4231713" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.github/workflows/deploy_website.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/settings/settings.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/settings/settings.page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/settings/settings.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/settings/settings.page.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/shared/atoms/typography/label/label.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/shared/atoms/typography/label/label.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/shared/atoms/typography/label/label.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/shared/atoms/typography/label/label.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,6 +179,7 @@
       <workItem from="1661701148782" duration="5501000" />
       <workItem from="1661708210630" duration="2606000" />
       <workItem from="1662279541100" duration="1068000" />
+      <workItem from="1662318716932" duration="769000" />
     </task>
     <servers />
   </component>
