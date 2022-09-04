@@ -1,13 +1,16 @@
-<ion-card color='primary' class='flex items-center py-4 m-0 rounded-none shadow-none'>
-  <ion-card-header class='flex justify-between w-full'>
-    <div class='flex flex-col'>
+<ion-card
+  color="primary"
+  class="flex items-center py-4 m-0 rounded-none shadow-none"
+>
+  <ion-card-header class="flex justify-between w-full">
+    <div class="flex flex-col">
       <mukosoft-title>
         {{ "home.greeting.title" | translate: { name: (this.name | async) } }}!
       </mukosoft-title>
-      <ion-card-subtitle class='text-xl'>
+      <ion-card-subtitle class="text-xl">
         {{ "home.greeting.subtitle" | translate }}
       </ion-card-subtitle>
     </div>
-    <mukosoft-user-avatar class='w-20 h-20'></mukosoft-user-avatar>
+    <mukosoft-user-avatar class="w-20 h-20"></mukosoft-user-avatar>
   </ion-card-header>
 </ion-card>
