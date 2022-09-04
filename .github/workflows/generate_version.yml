@@ -18,7 +18,10 @@ jobs:
           path: "version.json"
           write-mode: overwrite
           contents: |
-            { version: ${{ github.run_number }} }
+            {
+              date: ${{ github.event.repository.updated_at }},
+              version: ${{ github.run_number }}
+            }
       - name: Commit & Push
         uses: Andro999b/push@v1.3
         with:
