@@ -25,9 +25,9 @@ jobs:
       - run: |
           echo "installing dependencies"
           npm i --force
-#      - run: |
-#          echo "testing the application"
-#          npm run test
+      - run: |
+          echo "testing the application"
+          npm run test
       - run: sudo apt-get install -y libgtk2.0-0 libgtk-3-0 libgbm-dev libnotify-dev libgconf-2-4 libnss3 libxss1 libasound2 libxtst6 xauth xvfb
       - run: |
           npx cypress install
@@ -36,6 +36,3 @@ jobs:
       - run: |
           echo "build application"
           npm run build --if-present
-#      - run: |
-#          echo "copy mukosoft-website via sftp"
-#          sftp access-5000087057.ud-webspace.de -o User=a5857

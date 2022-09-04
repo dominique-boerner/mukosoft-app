@@ -17,7 +17,9 @@ import { AppState } from "../../../../core/state/app-state";
   providedIn: "root",
 })
 export class MedicationRequestService {
-  error$ = new BehaviorSubject<MedicationRequestError>({ error: false });
+  public error$ = new BehaviorSubject<MedicationRequestError>({
+    error: false,
+  });
 
   constructor(
     private readonly store: Store<AppState>,
@@ -29,7 +31,7 @@ export class MedicationRequestService {
    * @param medicationRequest
    * @see https://www.hl7.org/fhir/medicationrequest.html
    */
-  createMedicationRequest(medicationRequest: MedicationRequest) {
+  public createMedicationRequest(medicationRequest: MedicationRequest) {
     return this.medicationRequestDatabaseService
       .putMedicationRequest(medicationRequest)
       .then(() => {
@@ -48,7 +50,7 @@ export class MedicationRequestService {
    * @see https://www.hl7.org/fhir/medicationrequest.html
    * @see MedicationRequestDatabaseService
    */
-  synchronizeMedicationRequestsWithDatabase() {
+  public synchronizeMedicationRequestsWithDatabase() {
     this.medicationRequestDatabaseService
       .getMedicationRequests()
       .then((response) => {
@@ -62,7 +64,7 @@ export class MedicationRequestService {
    * Get all FHIR MedicationRequests.
    * @see https://www.hl7.org/fhir/medicationrequest.html
    */
-  getMedicationRequests(): Observable<MedicationRequest[]> {
+  public getMedicationRequests(): Observable<MedicationRequest[]> {
     try {
       this.setError(false, 0, "");
       return this.store.select(selectMedicationRequests);
@@ -76,7 +78,9 @@ export class MedicationRequestService {
    * Get all currently active FHIR MedicationRequests.
    * @see https://www.hl7.org/fhir/medicationrequest.html
    */
-  getCurrentIntervalMedicationRequests(): Observable<MedicationRequest[]> {
+  public getCurrentIntervalMedicationRequests(): Observable<
+    MedicationRequest[]
+  > {
     try {
       this.setError(false, 0, "");
       return this.store.select(selectCurrentIntervalMedicationRequests);
@@ -92,7 +96,7 @@ export class MedicationRequestService {
    * @param medicationRequest
    * @see https://www.hl7.org/fhir/medicationrequest.html
    */
-  updateMedicationRequest(
+  public updateMedicationRequest(
     id: string,
     medicationRequest: MedicationRequest
   ): Observable<MedicationRequestResponse<MedicationRequest[]>> {
@@ -115,7 +119,7 @@ export class MedicationRequestService {
    * @param id
    * @see https://www.hl7.org/fhir/medicationrequest.html
    */
-  deleteMedicationRequest(id: string) {
+  public deleteMedicationRequest(id: string) {
     this.medicationRequestDatabaseService
       .deleteMedicationRequest(id)
       .then(() => {
@@ -127,7 +131,7 @@ export class MedicationRequestService {
       });
   }
 
-  deleteAllMedicationRequests() {
+  public deleteAllMedicationRequests() {
     this.medicationRequestDatabaseService
       .deleteAllMedicationRequests()!
       .then(() => this.synchronizeMedicationRequestsWithDatabase());

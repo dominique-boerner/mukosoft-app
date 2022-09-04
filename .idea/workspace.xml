@@ -2,26 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e076ab55-216e-4444-b9af-130db4231713" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/__mocks__/medications.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/front_end.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/front_end.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/api/src/app/api/v1/medication/services/medication.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/services/medication-service/medication-service.interface.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/app.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/core/services/toast-service/toast.service.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/core/services/uuid-service/uuid.service.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/home/home-page.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/__mocks__/mock-medication-request.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/__mocks__/mock-medication-request.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/__mocks__/mock-medication.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/__mocks__/mock-medication.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/components/medication-fab/medication-fab.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/components/medication-request-item/medication-request-item.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/components/medication-request/medication-request.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/components/medication/medication.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/medication-page.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/medication-page.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/medication-page.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/services/medication-request-service/medication-request.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/services/medication-request-service/medication-request.service.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/services/medication-service/medication.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/services/medication-service/medication.service.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/services/medication-service/medication.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/services/medication-service/medication.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/settings/settings.page.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/services/medication-request-service/medication-request.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/services/medication-request-service/medication-request.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/mukosoft/tsconfig.app.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/tsconfig.app.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
