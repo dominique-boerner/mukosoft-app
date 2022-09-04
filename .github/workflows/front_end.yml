@@ -37,6 +37,7 @@ jobs:
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
           local: "dist/apps/mukosoft"
+          rmRemote: true
           remote: "www/domains/app"
       - name: copy .htaccess file via ssh password
         uses: garygrossgarten/github-action-scp@release
@@ -45,5 +46,5 @@ jobs:
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
           local: ".htaccess"
-          remote: "www/domains/app"
+          remote: "www/domains/app/.htaccess"
           dotfiles: true
