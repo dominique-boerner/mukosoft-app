@@ -1,8 +1,7 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
 
 @Component({
-  selector: 'mukosoft-title',
-  templateUrl: './title.component.html',
+  selector: "mukosoft-title",
+  templateUrl: "./title.component.html",
 })
-export class TitleComponent {
-}
+export class TitleComponent {}

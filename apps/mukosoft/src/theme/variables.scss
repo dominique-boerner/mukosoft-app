@@ -7,6 +7,9 @@
 
 /** Ionic CSS Variables **/
 :root {
+  /** background **/
+  --ion-background-color: #F5F6F8;
+
   /** primary **/
   --ion-color-primary: #e6dcf4;
   --ion-color-primary-rgb: 56, 128, 255;
@@ -78,6 +81,13 @@
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+}
+
+ion-button {
+  --box-shadow: 0px;
+  --border-radius: 6px;
+
+  height: 3.6rem;
 }
 
 //@media (prefers-color-scheme: dark) {

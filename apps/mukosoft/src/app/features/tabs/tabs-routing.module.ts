@@ -1,41 +1,41 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { TabsComponent } from './tabs.component';
+import { NgModule } from "@angular/core";
+import { RouterModule, Routes } from "@angular/router";
+import { TabsComponent } from "./tabs.component";
 
 const routes: Routes = [
   {
-    path: 'tabs',
+    path: "tabs",
     component: TabsComponent,
     children: [
       {
-        path: 'home',
+        path: "home",
         loadChildren: () =>
-          import('../home/home.module').then((m) => m.HomeModule),
+          import("../home/home.module").then((m) => m.HomeModule),
       },
       {
-        path: 'medications',
+        path: "medications",
         loadChildren: () =>
-          import('../medication/medication.module').then(
+          import("../medication/medication.module").then(
             (m) => m.Tab2PageModule
           ),
       },
       {
-        path: 'cookbook',
-        redirectTo: '/tabs/home',
+        path: "cookbook",
+        redirectTo: "/tabs/home",
       },
       {
-        path: 'settings',
+        path: "settings",
         loadChildren: () =>
-          import('../settings/settings.module').then(
+          import("../settings/settings.module").then(
             (m) => m.SettingsPageModule
           ),
       },
     ],
   },
   {
-    path: '',
-    redirectTo: '/tabs/home',
-    pathMatch: 'full',
+    path: "",
+    redirectTo: "/tabs/home",
+    pathMatch: "full",
   },
 ];
 
