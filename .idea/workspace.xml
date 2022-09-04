@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e076ab55-216e-4444-b9af-130db4231713" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/apps/mukosoft-e2e/cypress/e2e/1-getting-started/app.cy.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/mukosoft-e2e/cypress/support/commands.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/mukosoft-e2e/cypress/support/e2e.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/mukosoft-e2e/cypress/videos/app.cy.ts.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/front_end.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/front_end.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft-e2e/cypress.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft-e2e/cypress.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft-e2e/src/e2e/app.cy.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft-e2e/src/fixtures/example.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft-e2e/src/support/app.po.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft-e2e/src/support/commands.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft-e2e/src/support/e2e.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft-e2e/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft-e2e/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,26 +22,26 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "G:/mukosoft-app/apps/mukosoft-website/src/assets/fonts/rufina",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.standard": "",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "G:\\mukosoft-app\\node_modules\\prettier",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "G:\\mukosoft-app\\node_modules\\typescript\\lib"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;G:/mukosoft-app/apps/mukosoft-website/src/assets/fonts/rufina&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;G:\\mukosoft-app\\node_modules\\prettier&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;G:\\mukosoft-app\\node_modules\\typescript\\lib&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="G:\mukosoft-app\apps\mukosoft-website\src\assets\fonts\rufina" />
@@ -72,6 +58,27 @@
       <recent name="G:\mukosoft-app\apps\mukosoft\src\app\shared\typography" />
     </key>
   </component>
+  <component name="RunManager" selected="npm.test --watch">
+    <configuration name="start" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="start" />
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="test --watch" type="js.build_tools.npm" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="test" />
+      <arguments value="--watch" />
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="npm.test --watch" />
+      <item itemvalue="npm.start" />
+    </list>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -87,7 +94,8 @@
       <workItem from="1661450909572" duration="27000" />
       <workItem from="1661690308821" duration="6346000" />
       <workItem from="1661701148782" duration="5501000" />
-      <workItem from="1661708210630" duration="2011000" />
+      <workItem from="1661708210630" duration="2606000" />
+      <workItem from="1662279541100" duration="91000" />
     </task>
     <servers />
   </component>
