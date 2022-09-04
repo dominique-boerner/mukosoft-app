@@ -1,6 +1,7 @@
 import { Component } from "@angular/core";
 import { SettingsService } from "./services/settings-service/settings-service";
 import { Patient } from "fhir/r4";
+import versionJson from "version.json";
 
 @Component({
   selector: "mukosoft-settings-page",
@@ -13,6 +14,7 @@ export class SettingsPage {
   public name = this.settingsService.getPatientName();
   public profileImage = this.settingsService.getPatientAvatar();
   public birthDate: any = null;
+  public appVersion = versionJson.version;
 
   private newName = "";
 
