@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e076ab55-216e-4444-b9af-130db4231713" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/core/reducer/medication-request-reducer/medication-request.reducer.spec.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/settings/settings.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/settings/settings.page.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/__mocks__/mock-medication-request.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/__mocks__/mock-medication-request.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/core/actions/medication-request.actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/core/actions/medication-request.actions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/core/reducer/medication-request.reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/core/reducer/medication-request-reducer/medication-request.reducer.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +33,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "G:/mukosoft-app/apps/mukosoft/src/app/core/util/logger",
+    "last_opened_file_path": "G:/mukosoft-app/apps/mukosoft/src/app/core/reducer/medication-request-reducer",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
@@ -48,21 +52,34 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\mukosoft-app\apps\mukosoft\src\app\core\reducer\medication-request-reducer" />
       <recent name="G:\mukosoft-app\apps\mukosoft\src\app\core\util\logger" />
       <recent name="G:\mukosoft-app\apps\mukosoft\src\app\core\util\avatar-helper" />
       <recent name="G:\mukosoft-app\apps\mukosoft\src\app\core\services\navigation-service" />
       <recent name="G:\mukosoft-app\apps\mukosoft-website\src\assets\fonts\rufina" />
-      <recent name="G:\mukosoft-app\apps\mukosoft-website\src\assets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\mukosoft-app\apps\mukosoft\src\app\core\reducer\medication-request-reducer" />
       <recent name="G:\mukosoft-app\apps\mukosoft\src\app\core\util\logger" />
       <recent name="G:\mukosoft-app\apps\mukosoft\src\app\core\util\avatar-helper" />
       <recent name="G:\mukosoft-app\apps\mukosoft\src\app\__mocks__" />
       <recent name="G:\mukosoft-app\apps\mukosoft\src\app" />
-      <recent name="G:\mukosoft-app\apps\mukosoft\src\app\features\settings\services\settings-service" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.start">
+  <component name="RunManager" selected="Jest.MedicationRequestReducer">
+    <configuration name="MedicationRequestReducer" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/apps/mukosoft/src/app/core/reducer/medication-request-reducer/medication-request.reducer.spec.ts" />
+      <test-names>
+        <test-name value="MedicationRequestReducer" />
+      </test-names>
+      <method v="2" />
+    </configuration>
     <configuration name="MedicationService" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -131,6 +148,7 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Jest.MedicationRequestReducer" />
       <item itemvalue="Jest.MedicationService" />
       <item itemvalue="Jest.logging of the application" />
       <item itemvalue="Jest.should return a random avatar" />
@@ -140,6 +158,7 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.MedicationRequestReducer" />
         <item itemvalue="Jest.logging of the application" />
         <item itemvalue="Jest.should return a random avatar" />
         <item itemvalue="Jest.MedicationService" />

@@ -14,7 +14,7 @@ import { HttpClient, HttpClientModule } from "@angular/common/http";
 import { TranslateHttpLoader } from "@ngx-translate/http-loader";
 import { StoreModule } from "@ngrx/store";
 import { EffectsModule } from "@ngrx/effects";
-import { medicationRequestReducer } from "./core/reducer/medication-request.reducer";
+import { medicationRequestReducer } from "./core/reducer/medication-request-reducer/medication-request.reducer";
 import { StoreDevtoolsModule } from "@ngrx/store-devtools";
 import { environment } from "../environments/environment";
 import { AppInitializerProvider } from "./core/provider/app-initializer.provider";
