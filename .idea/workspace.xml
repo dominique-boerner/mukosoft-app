@@ -3,13 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="e076ab55-216e-4444-b9af-130db4231713" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/settings/settings.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/settings/settings.page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/settings/settings.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/settings/settings.page.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/assets/i18n/de.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/assets/i18n/de.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/tsconfig.app.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/tsconfig.app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/core/services/patient-database-service/patient-database.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/core/services/patient-database-service/patient-database.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

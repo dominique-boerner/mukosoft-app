@@ -70,7 +70,11 @@ export class PatientDatabaseService extends AbstractDatabaseService {
           `Error while loading patient: ${error}`,
           PatientDatabaseService.name
         );
-        return error;
+        return {
+          rows: [],
+          total_rows: 0,
+          offset: 0,
+        };
       });
   }
 }
