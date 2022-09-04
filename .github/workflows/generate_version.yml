@@ -28,4 +28,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: main
           force: true
-          message: "generate version.json - ${date}"
+          message: "version bump 0.0.${{ github.run_number }}"
