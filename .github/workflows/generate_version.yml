@@ -10,15 +10,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Generate build number
-        uses: einaregilsson/build-number@v3
-        with:
-          token: ${{secrets.github_token}}
-      - name: Print new build number
-        run: echo "Build number is $BUILD_NUMBER"
+      - name: Checkout repo
+        uses: actions/checkout@v3
       - name: Create version.json
         run: |
           touch version.json
-          echo { version: $BUILD_NUMBER }
-
-        # Or, if you're on Windows: echo "Build number is ${env:BUILD_NUMBER}"
+          echo { version: ${{ github.run_number }} } >> version.json
