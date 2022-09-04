@@ -23,7 +23,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
       - run: |
-            echo "Run number is $env:GITHUB_RUN_NUMBER."
+            echo "Run number is $env:GITHUB_RUN_ID."
       - run: |
           echo "installing dependencies"
           npm i --force
