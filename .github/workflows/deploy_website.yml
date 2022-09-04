@@ -18,11 +18,9 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
       - run: |
-          echo "installing dependencies"
           npm i --force
       - run: |
-          echo "testing the application"
-          npm run test
+          npx nx build
       - run: sudo apt-get install -y libgtk2.0-0 libgtk-3-0 libgbm-dev libnotify-dev libgconf-2-4 libnss3 libxss1 libasound2 libxtst6 xauth xvfb
       - name: copy file via ssh password
         uses: appleboy/scp-action@master
