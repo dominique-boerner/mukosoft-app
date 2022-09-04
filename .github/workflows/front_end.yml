@@ -37,4 +37,4 @@ jobs:
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
           local: "dist/apps/mukosoft"
-          target: "domains/app"
+          remote: "www/domains/app"
