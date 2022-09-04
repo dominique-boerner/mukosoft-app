@@ -1,6 +1,8 @@
 import { Component } from "@angular/core";
 import { SettingsService } from "./services/settings-service/settings-service";
 import { Patient } from "fhir/r4";
+
+// @ts-ignore
 import versionJson from "version.json";
 
 @Component({
