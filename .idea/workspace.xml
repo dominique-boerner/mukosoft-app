@@ -2,18 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e076ab55-216e-4444-b9af-130db4231713" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/tabs/tab-items.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/settings/services/settings-service/settings-service.interface.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/settings/services/settings-service/settings-service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/core/services/navigation-service/navigation.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/home/components/greeting-card/greeting-card.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/home/components/greeting-card/greeting-card.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/home/components/greeting-card/greeting-card.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/home/components/greeting-card/greeting-card.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/home/home-page.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/home/home-page.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/home/home-page.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/home/home-page.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/tabs/models/tab.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/tabs/models/tab.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/tabs/services/tabs.service.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/tabs/services/tabs.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/tabs/tabs.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/tabs/tabs.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/tabs/tabs.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/tabs/tabs.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/settings/services/settings-service.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/settings/settings.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/settings/settings.page.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,11 +56,11 @@
       <recent name="G:\mukosoft-app\apps\mukosoft-website\src\app" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\mukosoft-app\apps\mukosoft\src\app\features\settings\services\settings-service" />
       <recent name="G:\mukosoft-app\apps\mukosoft-e2e\cypress" />
       <recent name="G:\mukosoft-app\apps\mukosoft-website\src" />
       <recent name="G:\mukosoft-app\apps\mukosoft-website\src\app\features\home" />
       <recent name="G:\mukosoft-app\apps\mukosoft\src\app\shared\atoms" />
-      <recent name="G:\mukosoft-app\apps\mukosoft\src\app\shared\typography" />
     </key>
   </component>
   <component name="RunManager" selected="Jest.NavigationService">

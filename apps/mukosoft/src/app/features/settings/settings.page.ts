@@ -1,20 +1,20 @@
-import { Component } from '@angular/core';
-import { SettingsService } from './services/settings-service';
-import { Patient } from 'fhir/r4';
+import { Component } from "@angular/core";
+import { SettingsService } from "./services/settings-service/settings-service";
+import { Patient } from "fhir/r4";
 
 @Component({
-  selector: 'mukosoft-settings-page',
-  templateUrl: 'settings.page.html',
+  selector: "mukosoft-settings-page",
+  templateUrl: "settings.page.html",
 })
 export class SettingsPage {
-  readonly nameLabel = 'name';
-  readonly birthdateLabel = 'birthdate';
+  readonly nameLabel = "name";
+  readonly birthdateLabel = "birthdate";
 
-  name = this.settingsService.getPatientName();
-  profileImage = this.settingsService.getPatientAvatar();
-  birthDate: any = null;
+  public name = this.settingsService.getPatientName();
+  public profileImage = this.settingsService.getPatientAvatar();
+  public birthDate: any = null;
 
-  newName = '';
+  private newName = "";
 
   constructor(private readonly settingsService: SettingsService) {}
 
@@ -26,12 +26,12 @@ export class SettingsPage {
           ...patient,
           name: [
             {
-              use: 'nickname',
+              use: "nickname",
               text: this.newName,
             },
           ],
         };
-        this.settingsService.save(newPatient);
+        this.settingsService.updatePatient(newPatient);
       })
       .unsubscribe();
   }
