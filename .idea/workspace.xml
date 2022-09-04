@@ -2,13 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e076ab55-216e-4444-b9af-130db4231713" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/core/util/logger/logger.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/mukosoft/src/environments/environment.interface.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/core/abstract/abstract-database-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/core/abstract/abstract-database-service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/core/services/patient-database-service/patient-database.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/core/services/patient-database-service/patient-database.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/core/util/logger.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/core/util/logger/logger.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/services/medication-request-database-service/medication-request-database.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/services/medication-request-database-service/medication-request-database.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/settings/services/settings-service/settings-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/settings/services/settings-service/settings-service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/environments/environment.prod.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/environments/environment.prod.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/environments/environment.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
