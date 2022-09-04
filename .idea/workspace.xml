@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e076ab55-216e-4444-b9af-130db4231713" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/front_end.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/front_end.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/services/medication-request-service/medication-request.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/services/medication-request-service/medication-request.service.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/services/medication-request-service/medication-request.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/services/medication-request-service/medication-request.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/tsconfig.app.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/tsconfig.app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/jest.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/jest.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/project.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/project.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jest.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/jest.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
