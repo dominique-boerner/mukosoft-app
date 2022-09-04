@@ -20,8 +20,8 @@ jobs:
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
-          - node-version: ${{ matrix.node-version }}
-          - cache: 'npm'
+          anode-version: ${{ matrix.node-version }}
+          cache: 'npm'
       - run: npm i --force
       - run: npm run test
       - run: |
@@ -31,10 +31,10 @@ jobs:
           npm run e2e
       - run: npm run build
       - name: copy file via ssh password
-          uses: garygrossgarten/github-action-scp@release
-          with:
-            host: ${{ secrets.HOST }}
-            username: ${{ secrets.USERNAME }}
-            password: ${{ secrets.PASSWORD }}
-            local: "dist/apps/mukosoft"
-            target: "domains/app"
+        uses: garygrossgarten/github-action-scp@release
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          local: "dist/apps/mukosoft"
+          target: "domains/app"
