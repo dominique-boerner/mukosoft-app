@@ -10,8 +10,8 @@ import versionJson from "version.json";
   templateUrl: "settings.page.html",
 })
 export class SettingsPage {
-  readonly nameLabel = "name";
-  readonly birthdateLabel = "birthdate";
+  public readonly nameLabel = "name";
+  public readonly birthdateLabel = "birthdate";
 
   public name = this.settingsService.getPatientName();
   public profileImage = this.settingsService.getPatientAvatar();

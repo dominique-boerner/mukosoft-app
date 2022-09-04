@@ -3,9 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="e076ab55-216e-4444-b9af-130db4231713" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/api/dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/apps/api/dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/settings/settings.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/settings/settings.page.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/tsconfig.app.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/tsconfig.app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

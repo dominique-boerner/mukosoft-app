@@ -4,9 +4,13 @@ services:
     restart: always
     ports:
       - "8888:80"
-    build: ./front-end
+    build:
+      context: ./
+      dockerfile: ./apps/mukosoft/dockerfile
   backend:
     restart: always
     ports:
       - "8889:9000"
-    build: ./back-end
+    build:
+      context: ./
+      dockerfile: ./apps/api/dockerfile
