@@ -46,3 +46,4 @@ jobs:
           password: ${{ secrets.PASSWORD }}
           local: ".htaccess"
           remote: "www/domains/app"
+          dotfiles: true
