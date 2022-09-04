@@ -1,13 +1,17 @@
 import { TestBed } from "@angular/core/testing";
 
 import { MedicationRequestService } from "./medication-request.service";
-import { mockMedicationRequestPrednisoneNonActive } from "../../__mocks__/mock-medication-request";
+import { mockMedicationRequestPrednisoneNonActive } from "../../../../__mocks__/mock-medication-request";
+import { StoreModule } from "@ngrx/store";
+import { appState } from "../../../../app.module";
 
-describe("MedicationService", () => {
+describe("MedicationRequestService", () => {
   let service: MedicationRequestService;
 
   beforeEach(() => {
-    TestBed.configureTestingModule({});
+    TestBed.configureTestingModule({
+      imports: [StoreModule.forRoot(appState)],
+    });
     service = TestBed.inject(MedicationRequestService);
   });
 
@@ -17,7 +21,7 @@ describe("MedicationService", () => {
       expect(service.error$.value.error).toBeFalsy();
     });
 
-    it("should get all medicationRequests", () => {
+    it("should get all medicaationRequests", () => {
       service.getMedicationRequests();
       expect(service.error$.value.error).toBeFalsy();
     });
