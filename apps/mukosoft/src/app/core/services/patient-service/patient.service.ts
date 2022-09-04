@@ -1,23 +1,23 @@
-import { Injectable } from '@angular/core';
-import { HumanName, Patient } from 'fhir/r4';
-import { getRandomAvatar } from '../../util/avatar-helper';
-import { UuidService } from '../uuid-service/uuid.service';
-import { select, Store } from '@ngrx/store';
+import { Injectable } from "@angular/core";
+import { HumanName, Patient } from "fhir/r4";
+import { getRandomAvatar } from "../../util/avatar-helper/avatar-helper";
+import { UuidService } from "../uuid-service/uuid.service";
+import { select, Store } from "@ngrx/store";
 import {
   selectPatientAvatar,
   selectPatientName,
   selectPatientState,
-} from '../../selectors/patient.selector';
-import { AppState } from '../../state/app-state';
-import { Observable } from 'rxjs';
-import { PatientDatabaseService } from '../patient-database-service/patient-database.service';
-import { setPatient } from '../../actions/patient.action';
+} from "../../selectors/patient.selector";
+import { AppState } from "../../state/app-state";
+import { Observable } from "rxjs";
+import { PatientDatabaseService } from "../patient-database-service/patient-database.service";
+import { setPatient } from "../../actions/patient.action";
 
 @Injectable({
-  providedIn: 'root',
+  providedIn: "root",
 })
 export class PatientService {
-  AVATAR_IDENTIFIER = 'avatar';
+  AVATAR_IDENTIFIER = "avatar";
 
   constructor(
     private readonly uuidService: UuidService,
@@ -73,13 +73,13 @@ export class PatientService {
 
   getInitialPatient(): Patient {
     return {
-      resourceType: 'Patient',
+      resourceType: "Patient",
       id: this.uuidService.generateUuid(),
       birthDate: undefined,
       name: [
         {
-          use: 'nickname',
-          text: 'Nutzer',
+          use: "nickname",
+          text: "Nutzer",
         },
       ],
       photo: [{ title: this.AVATAR_IDENTIFIER, url: getRandomAvatar() }],

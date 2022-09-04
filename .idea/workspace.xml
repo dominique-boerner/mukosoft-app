@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e076ab55-216e-4444-b9af-130db4231713" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/core/util/avatar-helper/avatar-helper.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/jest.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/jest.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/project.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/project.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jest.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/jest.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/core/services/patient-service/patient.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/core/services/patient-service/patient.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/core/util/avatar-helper.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/core/util/avatar-helper/avatar-helper.spec.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,44 +25,44 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;G:/mukosoft-app/apps/mukosoft/src/app/core/services/navigation-service&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
-    &quot;nodejs.jest.jest_package&quot;: &quot;G:/mukosoft-app/node_modules/jest&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;G:\\mukosoft-app\\node_modules\\prettier&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;G:\\mukosoft-app\\node_modules\\typescript\\lib&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "G:/mukosoft-app/apps/mukosoft/src/app/core/util/avatar-helper",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.standard": "",
+    "nodejs.jest.jest_package": "G:/mukosoft-app/node_modules/jest",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "G:\\mukosoft-app\\node_modules\\prettier",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "G:\\mukosoft-app\\node_modules\\typescript\\lib"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\mukosoft-app\apps\mukosoft\src\app\core\util\avatar-helper" />
       <recent name="G:\mukosoft-app\apps\mukosoft\src\app\core\services\navigation-service" />
       <recent name="G:\mukosoft-app\apps\mukosoft-website\src\assets\fonts\rufina" />
       <recent name="G:\mukosoft-app\apps\mukosoft-website\src\assets" />
       <recent name="G:\mukosoft-app\apps\mukosoft-website" />
-      <recent name="G:\mukosoft-app\apps\mukosoft-website\src\app" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\mukosoft-app\apps\mukosoft\src\app\core\util\avatar-helper" />
       <recent name="G:\mukosoft-app\apps\mukosoft\src\app\__mocks__" />
       <recent name="G:\mukosoft-app\apps\mukosoft\src\app" />
       <recent name="G:\mukosoft-app\apps\mukosoft\src\app\features\settings\services\settings-service" />
       <recent name="G:\mukosoft-app\apps\mukosoft-e2e\cypress" />
-      <recent name="G:\mukosoft-app\apps\mukosoft-website\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.MedicationService">
+  <component name="RunManager" selected="Jest.should return a random avatar">
     <configuration name="MedicationService" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -90,6 +89,19 @@
       </test-names>
       <method v="2" />
     </configuration>
+    <configuration name="should return a random avatar" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/apps/mukosoft/src/app/core/util/avatar-helper/avatar-helper.spec.ts" />
+      <test-names>
+        <test-name value="should return a random avatar" />
+      </test-names>
+      <method v="2" />
+    </configuration>
     <configuration name="start" type="js.build_tools.npm" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="start" />
@@ -107,12 +119,14 @@
     </configuration>
     <list>
       <item itemvalue="Jest.MedicationService" />
+      <item itemvalue="Jest.should return a random avatar" />
       <item itemvalue="Jest.NavigationService" />
       <item itemvalue="npm.test --watch" />
       <item itemvalue="npm.start" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.should return a random avatar" />
         <item itemvalue="Jest.MedicationService" />
         <item itemvalue="Jest.NavigationService" />
       </list>
