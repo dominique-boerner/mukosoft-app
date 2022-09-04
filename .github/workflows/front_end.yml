@@ -1,4 +1,4 @@
-name: front-end testing
+name: MukoSoft App - Test & Deploy
 
 on:
   push:
@@ -20,19 +20,21 @@ jobs:
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
-          node-version: ${{ matrix.node-version }}
-          cache: 'npm'
+          - node-version: ${{ matrix.node-version }}
+          - cache: 'npm'
+      - run: npm i --force
+      - run: npm run test
       - run: |
-          echo "installing dependencies"
-          npm i --force
-      - run: |
-          echo "testing the application"
-          npm run test
-      - run: sudo apt-get install -y libgtk2.0-0 libgtk-3-0 libgbm-dev libnotify-dev libgconf-2-4 libnss3 libxss1 libasound2 libxtst6 xauth xvfb
-      - run: |
+          sudo apt-get install -y libgtk2.0-0 libgtk-3-0 libgbm-dev libnotify-dev libgconf-2-4 libnss3 libxss1 libasound2 libxtst6 xauth xvfb
           npx cypress install
           echo "e2e testing"
           npm run e2e
-      - run: |
-          echo "build application"
-          npm run build --if-present
+      - run: npm run build
+      - name: copy file via ssh password
+          - uses: garygrossgarten/github-action-scp@release
+          - with:
+            - host: ${{ secrets.HOST }}
+            - username: ${{ secrets.USERNAME }}
+            - password: ${{ secrets.PASSWORD }}
+            - local: "dist/apps/mukosoft"
+            - target: "domains/app"
