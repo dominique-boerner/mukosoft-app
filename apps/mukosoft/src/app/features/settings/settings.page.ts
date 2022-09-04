@@ -13,34 +13,39 @@ export class SettingsPage {
   public readonly nameLabel = "name";
   public readonly birthdateLabel = "birthdate";
 
-  public name = this.settingsService.getPatientName();
-  public profileImage = this.settingsService.getPatientAvatar();
-  public birthDate: any = null;
-  public appVersion = versionJson.version;
+  public readonly name = this.settingsService.getPatientName();
+  public readonly profileImage = this.settingsService.getPatientAvatar();
+  public readonly birthDate: any = null;
+
+  public readonly appVersion = versionJson.version;
 
   private newName = "";
 
   constructor(private readonly settingsService: SettingsService) {}
 
-  save() {
+  public save() {
     this.settingsService
       .getPatient()
       .subscribe((patient) => {
-        const newPatient: Patient = {
-          ...patient,
-          name: [
-            {
-              use: "nickname",
-              text: this.newName,
-            },
-          ],
-        };
+        const newPatient = this.generateNewPatient(patient);
         this.settingsService.updatePatient(newPatient);
       })
       .unsubscribe();
   }
 
-  setNewName(name: string) {
+  public setNewName(name: string) {
     this.newName = name;
+  }
+
+  private generateNewPatient(currentPatient: Patient): Patient {
+    return {
+      ...currentPatient,
+      name: [
+        {
+          use: "nickname",
+          text: this.newName,
+        },
+      ],
+    };
   }
 }
