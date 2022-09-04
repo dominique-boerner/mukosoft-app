@@ -29,7 +29,6 @@ jobs:
           npx cypress install
           echo "e2e testing"
           npm run e2e
-      - run: npm run build
       - name: copy file via ssh password
         uses: garygrossgarten/github-action-scp@release
         with:
@@ -37,4 +36,12 @@ jobs:
           username: ${{ secrets.USERNAME }}
           password: ${{ secrets.PASSWORD }}
           local: "dist/apps/mukosoft"
+          remote: "www/domains/app"
+      - name: copy .htaccess file via ssh password
+        uses: garygrossgarten/github-action-scp@release
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          password: ${{ secrets.PASSWORD }}
+          local: ".htaccess"
           remote: "www/domains/app"
