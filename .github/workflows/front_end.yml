@@ -29,7 +29,10 @@ jobs:
           npx cypress install
           echo "e2e testing"
           npm run e2e
-      - run: npx semantic-release
+      - run: npm run semantic-release
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - run: npm run build
       - name: copy file via ssh password
         uses: garygrossgarten/github-action-scp@release
