@@ -17,6 +17,7 @@ module.exports = {
       "secondary-contrast": "#ffffff",
       "secondary-shade": "#000000",
       "secondary-tint": "#2a3b54",
+      danger: "#eb445a",
     },
   },
   plugins: [],

@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e076ab55-216e-4444-b9af-130db4231713" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/front_end.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/front_end.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/mukosoft/src/theme/icons.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/project.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/project.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/components/medication-fab/medication-fab.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/components/medication-fab/medication-fab.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/components/medication-fab/medication-fab.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/components/medication-fab/medication-fab.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
