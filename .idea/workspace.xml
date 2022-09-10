@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e076ab55-216e-4444-b9af-130db4231713" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/apps/mukosoft/src/theme/custom-ion-components.scss" afterDir="false" />
+    <list default="true" id="e076ab55-216e-4444-b9af-130db4231713" name="Changes" comment="styling of the navigation bar">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/tabs/tabs.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/tabs/tabs.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/global.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/theme/variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/theme/variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/tabs/tab-items.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/tabs/tab-items.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/theme/icons.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/theme/icons.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,6 +182,14 @@
       <workItem from="1662279541100" duration="1068000" />
       <workItem from="1662318716932" duration="4800000" />
     </task>
+    <task id="LOCAL-00001" summary="styling of the navigation bar">
+      <created>1662801764817</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1662801764818</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -199,6 +205,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="styling of the navigation bar" />
+    <option name="LAST_COMMIT_MESSAGE" value="styling of the navigation bar" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
