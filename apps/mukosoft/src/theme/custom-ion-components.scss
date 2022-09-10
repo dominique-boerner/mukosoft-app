@@ -1,0 +1,44 @@
+ion-button {
+  --box-shadow: 0px;
+  --border-radius: 6px;
+
+  height: 3rem;
+  margin: 0;
+}
+
+ion-tab-bar {
+  background: white;
+  margin: 1rem;
+  border-radius: 4px;
+  padding: .5rem;
+}
+
+ion-tab-button {
+  background: transparent;
+
+  &.tab-selected {
+    color: var(--ion-color-secondary);
+
+    .icon {
+      animation: iconAnimation 500ms;
+      animation-timing-function: ease-in-out;
+    }
+  }
+}
+
+@keyframes iconAnimation {
+  $degree: 10deg;
+
+  0% {
+    rotate: 0deg;
+  }
+  20% {
+    rotate: $degree;
+  }
+  60% {
+    rotate: -$degree;
+  }
+  80% {
+    rotate: 0deg;
+  }
+}
