@@ -3,6 +3,7 @@
   "version": "0.0.0-development",
   "license": "MIT",
   "scripts": {
+    "commit": "git-cz",
     "pre:commit": "",
     "e2e": "npm run e2e:app",
     "e2e:app": "nx e2e mukosoft-e2e",
@@ -88,6 +89,7 @@
     "@typescript-eslint/parser": "^5.29.0",
     "autoprefixer": "^10.4.8",
     "cypress": "^10.2.0",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "~8.15.0",
     "eslint-config-prettier": "8.1.0",
     "eslint-plugin-cypress": "^2.10.3",
@@ -111,5 +113,10 @@
     "branches": [
       "main"
     ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
