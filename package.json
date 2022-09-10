@@ -80,6 +80,7 @@
     "@nrwl/nest": "14.5.6",
     "@nrwl/node": "14.5.6",
     "@nrwl/workspace": "14.5.6",
+    "@semantic-release/github": "^8.0.6",
     "@types/jest": "27.4.1",
     "@types/node": "^16.11.7",
     "@types/uuid": "^8.3.4",
@@ -107,6 +108,10 @@
     "url": "https://github.com/mukosoft/mukosoft-app.git"
   },
   "release": {
-    "branches": ["master", "next", "main"]
+    "branches": [
+      "master",
+      "next",
+      "main"
+    ]
   }
 }
