@@ -3,7 +3,7 @@ import { SettingsService } from "./services/settings-service/settings-service";
 import { Patient } from "fhir/r4";
 
 // @ts-ignore
-import versionJson from "version.json";
+import packageJson from "package.json";
 
 @Component({
   selector: "mukosoft-settings-page",
@@ -17,7 +17,7 @@ export class SettingsPage {
   public readonly profileImage = this.settingsService.getPatientAvatar();
   public readonly birthDate = new Date();
 
-  public readonly appVersion = versionJson.version;
+  public readonly appVersion = packageJson.version;
 
   private newName = "";
 

@@ -4,7 +4,6 @@
   "license": "MIT",
   "scripts": {
     "commit": "git-cz",
-    "pre:commit": "",
     "e2e": "npm run e2e:app",
     "e2e:app": "nx e2e mukosoft-e2e",
     "ng": "nx",
@@ -16,7 +15,6 @@
     "test": "nx test",
     "test:app": "nx test mukosoft-app",
     "test:website": "nx test mukosoft-website",
-    "prepare": "husky install",
     "semantic-release": "semantic-release"
   },
   "private": true,
@@ -93,7 +91,6 @@
     "eslint": "~8.15.0",
     "eslint-config-prettier": "8.1.0",
     "eslint-plugin-cypress": "^2.10.3",
-    "husky": "^8.0.0",
     "jest": "27.5.1",
     "jest-preset-angular": "~11.1.2",
     "nx": "14.5.6",
