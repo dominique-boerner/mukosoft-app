@@ -9,6 +9,7 @@ module.exports = {
   theme: {
     extend: {},
     colors: {
+      "card-background": "#ffffff",
       primary: "#e6dcf4",
       "primary-contrast": "#00152b",
       "primary-shade": "#b4aac1",
