@@ -1,9 +1,26 @@
 <ion-content [fullscreen]="true">
   <mukosoft-greeting-card></mukosoft-greeting-card>
+  <ion-slides [options]="sliderOptions">
+    <ion-slide *ngFor="let news of currentNews" (click)="openLink(news.url)">
+      <div class="flex flex-col m-4">
+        <img
+          class="h-44 rounded-2xl object-cover"
+          [src]="news.img"
+          [alt]="news.title"
+        />
+
+        <div class="flex justify-between my-2 font-bold">
+          <ion-text color="secondary tracking-wider">
+            {{ news.title }}
+          </ion-text>
+          <span class="fi fi-rr-bookmark"></span>
+        </div>
+      </div>
+    </ion-slide>
+  </ion-slides>
   <ion-title color="secondary" class="text-2xl leading-loose">
     Deine nächsten Medikamente
   </ion-title>
-
   <div
     class="flex bg-card-background shadow-md p-2 mx-4 rounded-lg items-center"
   >
