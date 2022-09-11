@@ -1,4 +1,6 @@
 {
+  "error.medication-loading.title": "Fehler beim laden der Medikationen",
+  "error.medication-loading.text": "Bitte starte die App neu und versuche es noch einmal.",
   "home.title": "MukoSoft",
   "home.greeting.title": "Hallo {{name}}",
   "home.greeting.subtitle": "Wie geht es dir heute?",

@@ -15,8 +15,6 @@ export class MedicationPageComponent implements OnInit {
   currentIntervalMedicationRequests$ =
     this.medicationRequestService.getCurrentIntervalMedicationRequests();
 
-  searchString = "";
-
   constructor(
     private readonly medicationRequestService: MedicationRequestService,
     private readonly medicationService: MedicationService,

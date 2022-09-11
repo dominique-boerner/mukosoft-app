@@ -1,24 +1,13 @@
 import { createReducer, on } from "@ngrx/store";
-import {
-  addMedicationRequest,
-  deleteMedicationRequest,
-  setMedicationRequests,
-} from "../../actions/medication-request.actions";
-import { MedicationRequest } from "fhir/r4";
+import { GlobalError } from "../../exception/global-error.interface";
+import { setError } from "../../actions/error.action";
 
-const initialState: MedicationRequest[] = [];
+export const initialErrorState: GlobalError = {
+  hasError: true,
+  title: "",
+};
 
-export const medicationRequestReducer = createReducer<MedicationRequest[]>(
-  initialState,
-  on(addMedicationRequest, (state, { medicationRequest }) => [
-    ...state,
-    medicationRequest,
-  ]),
-  on(
-    setMedicationRequests,
-    (state, { medicationRequests }) => medicationRequests
-  ),
-  on(deleteMedicationRequest, (state, { id }) =>
-    state.filter((medicationRequest) => medicationRequest.id !== id)
-  )
+export const errorReducer = createReducer<GlobalError>(
+  initialErrorState,
+  on(setError, (state, { error }) => error)
 );

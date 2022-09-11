@@ -1,11 +1,11 @@
-import { Injectable } from '@angular/core';
-import { ToastController } from '@ionic/angular';
+import { Injectable } from "@angular/core";
+import { ToastController } from "@ionic/angular";
 
 @Injectable({
-  providedIn: 'root',
+  providedIn: "root",
 })
 export class ToastService {
-  position: 'top' | 'bottom' | 'middle' = 'bottom';
+  position: "top" | "bottom" | "middle" = "top";
   duration = 2000;
 
   constructor(private readonly toastController: ToastController) {}
@@ -13,10 +13,10 @@ export class ToastService {
   async showSuccessToast(message: string) {
     const toast = await this.toastController.create({
       message,
-      icon: 'information-circle',
-      color: 'success',
+      icon: "information-circle",
+      color: "success",
       duration: this.duration,
-      position: this.position
+      position: this.position,
     });
 
     await toast.present();
@@ -25,8 +25,8 @@ export class ToastService {
   async showErrorToast(message: string) {
     const toast = await this.toastController.create({
       message,
-      icon: 'information-circle',
-      color: 'danger',
+      icon: "information-circle",
+      color: "danger",
       duration: this.duration,
       position: this.position,
     });

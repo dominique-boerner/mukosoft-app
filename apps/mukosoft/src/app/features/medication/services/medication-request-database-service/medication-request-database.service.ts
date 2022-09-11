@@ -3,12 +3,19 @@ import { MedicationRequest } from "fhir/r4";
 import { UuidService } from "../../../../core/services/uuid-service/uuid.service";
 import { AbstractDatabaseService } from "../../../../core/abstract/abstract-database-service";
 import { Logger } from "../../../../core/util/logger/logger";
+import { Store } from "@ngrx/store";
+import { AppState } from "../../../../core/state/app-state";
+import { setError } from "../../../../core/actions/error.action";
+import { medicationLoadingException } from "../../../../core/exception/medication-loading-exception";
 
 @Injectable({
   providedIn: "root",
 })
 export class MedicationRequestDatabaseService extends AbstractDatabaseService {
-  constructor(@Inject(UuidService) uuidService: UuidService) {
+  constructor(
+    @Inject(UuidService) uuidService: UuidService,
+    private readonly store: Store<AppState>
+  ) {
     super("crm_medicationRequests");
   }
 
@@ -46,12 +53,16 @@ export class MedicationRequestDatabaseService extends AbstractDatabaseService {
         );
         return response;
       })
-      .catch((error) => {
+      .catch(() => {
+        const error = medicationLoadingException;
+
+        this.store.dispatch(setError({ error }));
+
         Logger.error(
           `Error while loading all medicationRequests: ${error}`,
           MedicationRequestDatabaseService.name
         );
-        return error;
+        throw error;
       });
   }
 
