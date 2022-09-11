@@ -1,6 +1,6 @@
 {
   "name": "mukosoft-app-nx",
-  "version": "0.0.0-development",
+  "version": "1.2.0",
   "license": "MIT",
   "scripts": {
     "commit": "git-cz",

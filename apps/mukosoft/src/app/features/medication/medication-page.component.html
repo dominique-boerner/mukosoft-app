@@ -1,11 +1,9 @@
 <ion-content [fullscreen]="true">
-  <ion-searchbar
-    (ionChange)="searchString =($any($event).target.value)"
-  ></ion-searchbar>
-
   <ion-grid>
     <ion-row
-      *ngFor="let medicationRequest of currentIntervalMedicationRequests$ | async"
+      *ngFor="
+        let medicationRequest of currentIntervalMedicationRequests$ | async
+      "
     >
       <mukosoft-medication-request-item
         class="w-full"

@@ -20,6 +20,7 @@ import { environment } from "../environments/environment";
 import { AppInitializerProvider } from "./core/provider/app-initializer.provider";
 import { AppInitializerService } from "./features/medication/services/app-initializer-service/app-initializer.service";
 import { patientReducer } from "./core/reducer/patient.reducer";
+import { errorReducer } from "./core/reducer/error-reducer/error.reducer";
 
 export const createTranslateLoader = (http: HttpClient) =>
   new TranslateHttpLoader(http, "./assets/i18n/", ".json");
@@ -27,6 +28,7 @@ export const createTranslateLoader = (http: HttpClient) =>
 export const appState = {
   medicationRequests: medicationRequestReducer,
   patient: patientReducer,
+  error: errorReducer,
 };
 
 @NgModule({
