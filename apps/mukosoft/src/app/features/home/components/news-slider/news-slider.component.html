@@ -1,0 +1,31 @@
+<ion-slides *ngIf="news | async; else noNews" [options]="sliderOptions">
+  <ion-slide *ngFor="let news of news | async" (click)="openLink(news.url)">
+    <div class="flex flex-col m-4">
+      <img
+        class="h-44 rounded-2xl object-cover"
+        [src]="news.img"
+        [alt]="news.title"
+      />
+
+      <div class="flex justify-between my-2 font-bold">
+        <ion-text color="secondary tracking-wider">
+          {{ news.title }}
+        </ion-text>
+        <span class="fi fi-rr-bookmark"></span>
+      </div>
+    </div>
+  </ion-slide>
+</ion-slides>
+<ng-template #noNews>
+  <div class="flex flex-col m-4 rounded-2xl bg-primary p-4">
+    <div class="flex justify-start my-2 items-center">
+      <img
+        class="block w-12 mr-4 aspect-square"
+        src="./../../assets/sad-rounded-square-emoticon.png"
+      />
+      <ion-text color="secondary tracking-wider text-sm">
+        {{ "home.news.no-news.title" | translate }}
+      </ion-text>
+    </div>
+  </div>
+</ng-template>

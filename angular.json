@@ -5,6 +5,7 @@
     "api": "apps/api",
     "api-interfaces": "libs/api-interfaces",
     "mukosoft": "apps/mukosoft",
+    "mukosoft-api": "apps/mukosoft-api",
     "mukosoft-e2e": "apps/mukosoft-e2e",
     "mukosoft-website": "apps/mukosoft-website",
     "mukosoft-website-e2e": "apps/mukosoft-website-e2e"

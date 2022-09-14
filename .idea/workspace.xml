@@ -2,11 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e076ab55-216e-4444-b9af-130db4231713" name="Changes" comment="add error handling">
-      <change afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/home/models/news.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/mukosoft-api/src/app/v1/news/news.controller.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/mukosoft-api/src/app/v1/news/news.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/mukosoft-api/src/app/v1/news/news.service.spec.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/mukosoft-api/src/app/v1/news/news.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/mukosoft-api/src/assets/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/core/config/api.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/angular.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/home/home-page.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/home/home-page.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/home/home-page.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/home/home-page.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/tailwind.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/home/home.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/home/home.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/assets/i18n/de.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/assets/i18n/de.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.base.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.base.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,76 +72,25 @@
       <recent name="G:\mukosoft-app\apps\mukosoft\src\app\core\util\avatar-helper" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\mukosoft-app\apps\mukosoft\src\app\features\home\services" />
       <recent name="G:\mukosoft-app\apps\mukosoft\src\app\core\reducer\medication-request-reducer" />
       <recent name="G:\mukosoft-app\apps\mukosoft\src\app\core\util\logger" />
       <recent name="G:\mukosoft-app\apps\mukosoft\src\app\core\util\avatar-helper" />
       <recent name="G:\mukosoft-app\apps\mukosoft\src\app\__mocks__" />
-      <recent name="G:\mukosoft-app\apps\mukosoft\src\app" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.start">
-    <configuration name="MedicationRequestReducer" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Jest.NewsService">
+    <configuration name="NewsService" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
       <jest-package value="$PROJECT_DIR$/node_modules/jest" />
       <working-dir value="$PROJECT_DIR$" />
+      <jest-options value="--watch" />
       <envs />
       <scope-kind value="SUITE" />
-      <test-file value="$PROJECT_DIR$/apps/mukosoft/src/app/core/reducer/medication-request-reducer/medication-request.reducer.spec.ts" />
+      <test-file value="$PROJECT_DIR$/apps/mukosoft-api/src/app/v1/news/news.service.spec.ts" />
       <test-names>
-        <test-name value="MedicationRequestReducer" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="MedicationService" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="SUITE" />
-      <test-file value="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/services/medication-service/medication.service.spec.ts" />
-      <test-names>
-        <test-name value="MedicationService" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="NavigationService" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="SUITE" />
-      <test-file value="$PROJECT_DIR$/apps/mukosoft/src/app/core/services/navigation-service/navigation.service.spec.ts" />
-      <test-names>
-        <test-name value="NavigationService" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="logging of the application" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="SUITE" />
-      <test-file value="$PROJECT_DIR$/apps/mukosoft/src/app/core/util/logger/logger.spec.ts" />
-      <test-names>
-        <test-name value="logging of the application" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="should return a random avatar" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/apps/mukosoft/src/app/core/util/avatar-helper/avatar-helper.spec.ts" />
-      <test-names>
-        <test-name value="should return a random avatar" />
+        <test-name value="NewsService" />
       </test-names>
       <method v="2" />
     </configuration>
@@ -153,21 +110,13 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Jest.MedicationRequestReducer" />
-      <item itemvalue="Jest.MedicationService" />
-      <item itemvalue="Jest.logging of the application" />
-      <item itemvalue="Jest.should return a random avatar" />
-      <item itemvalue="Jest.NavigationService" />
+      <item itemvalue="Jest.NewsService" />
       <item itemvalue="npm.test --watch" />
       <item itemvalue="npm.start" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Jest.NavigationService" />
-        <item itemvalue="Jest.should return a random avatar" />
-        <item itemvalue="Jest.logging of the application" />
-        <item itemvalue="Jest.MedicationService" />
-        <item itemvalue="Jest.MedicationRequestReducer" />
+        <item itemvalue="Jest.NewsService" />
       </list>
     </recent_temporary>
   </component>
@@ -192,7 +141,12 @@
       <workItem from="1662818140442" duration="2129000" />
       <workItem from="1662886829416" duration="1778000" />
       <workItem from="1662920261175" duration="1280000" />
-      <workItem from="1662926530104" duration="1981000" />
+      <workItem from="1662926530104" duration="2774000" />
+      <workItem from="1663082601410" duration="613000" />
+      <workItem from="1663148117104" duration="2233000" />
+      <workItem from="1663164804014" duration="23000" />
+      <workItem from="1663165646150" duration="201000" />
+      <workItem from="1663166059934" duration="2133000" />
     </task>
     <task id="LOCAL-00001" summary="styling of the navigation bar">
       <created>1662801764817</created>
