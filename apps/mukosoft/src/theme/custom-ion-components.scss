@@ -32,7 +32,7 @@ ion-tab-button {
       background: var(--ion-color-secondary);
       position: absolute;
       bottom: 0;
-      left: calc(50% - calc($indicatorWidth / 2));
+      left: calc(50% - calc(#{$indicatorWidth} / 2));
       width: $indicatorWidth; height: $indicatorHeight;
       transform: translateY(2px);
       border-radius: 5px;
