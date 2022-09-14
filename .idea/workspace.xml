@@ -1,20 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e076ab55-216e-4444-b9af-130db4231713" name="Changes" comment="add error handling">
-      <change afterPath="$PROJECT_DIR$/apps/mukosoft-api/src/app/v1/news/news.controller.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/mukosoft-api/src/app/v1/news/news.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/mukosoft-api/src/app/v1/news/news.service.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/mukosoft-api/src/app/v1/news/news.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/mukosoft-api/src/assets/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/core/config/api.ts" afterDir="false" />
+    <list default="true" id="e076ab55-216e-4444-b9af-130db4231713" name="Changes" comment="implement news in new back-end and get the news in front-end">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/angular.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/home/home-page.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/home/home-page.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/home/home-page.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/home/home-page.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/home/home.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/home/home.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/assets/i18n/de.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/assets/i18n/de.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.base.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.base.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/home/services/news.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/home/services/news.service.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/tabs/tabs.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/tabs/tabs.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/theme/custom-ion-components.scss" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/theme/custom-ion-components.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,7 +137,7 @@
       <workItem from="1663148117104" duration="2233000" />
       <workItem from="1663164804014" duration="23000" />
       <workItem from="1663165646150" duration="201000" />
-      <workItem from="1663166059934" duration="2133000" />
+      <workItem from="1663166059934" duration="3184000" />
     </task>
     <task id="LOCAL-00001" summary="styling of the navigation bar">
       <created>1662801764817</created>
@@ -218,7 +209,14 @@
       <option name="project" value="LOCAL" />
       <updated>1662888369813</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="implement news in new back-end and get the news in front-end">
+      <created>1663168261916</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1663168261916</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -243,7 +241,8 @@
     <MESSAGE value="install semantic release" />
     <MESSAGE value="adjust semantic-release branches" />
     <MESSAGE value="add error handling" />
-    <option name="LAST_COMMIT_MESSAGE" value="add error handling" />
+    <MESSAGE value="implement news in new back-end and get the news in front-end" />
+    <option name="LAST_COMMIT_MESSAGE" value="implement news in new back-end and get the news in front-end" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

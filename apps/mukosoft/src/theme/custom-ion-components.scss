@@ -16,8 +16,27 @@ ion-tab-bar {
 ion-tab-button {
   background: transparent;
 
+  &:not(.tab-selected) {
+    opacity: 0.5;
+  }
+
   &.tab-selected {
+    position: relative;
     color: var(--ion-color-secondary);
+
+    &:after {
+      $indicatorWidth: 16px;
+      $indicatorHeight: 4px;
+
+      content: "";
+      background: var(--ion-color-secondary);
+      position: absolute;
+      bottom: 0;
+      left: calc(50% - calc($indicatorWidth / 2));
+      width: $indicatorWidth; height: $indicatorHeight;
+      transform: translateY(2px);
+      border-radius: 5px;
+    }
 
     .icon {
       animation: iconAnimation 500ms;
