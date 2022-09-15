@@ -1,5 +1,5 @@
 <ion-content [fullscreen]="true">
-  <div class="mx-auto w-96 py-4">
+  <div class="mx-auto w-11/12 m-4 p-4 bg-white rounded-md shadow-lg">
     <ion-grid class="p-0">
       <ion-row>
         <mukosoft-user-avatar
@@ -51,13 +51,15 @@
         </ion-grid>
       </ion-row>
     </ion-grid>
-    <ion-button color="secondary" expand="block" (click)="save()">
-      <ion-icon name="save" class="mr-2"></ion-icon>
-      <ion-text>{{ "settings.save" | translate }}</ion-text>
-    </ion-button>
-    <ion-text color="secondary" class="text-sm opacity-80 italic">
-      {{"settings.version"|translate}}: {{appVersion}}
-    </ion-text>
+    <div class="flex flex-col pt-6">
+      <ion-button color="secondary" expand="block" (click)="save()">
+        <ion-icon name="save" class="mr-2"></ion-icon>
+        <ion-text>{{ "settings.save" | translate }}</ion-text>
+      </ion-button>
+      <ion-text color="secondary" class="text-sm opacity-80 italic">
+        {{"settings.version"|translate}}: {{appVersion}}
+      </ion-text>
+    </div>
   </div>
 
   <ion-modal
