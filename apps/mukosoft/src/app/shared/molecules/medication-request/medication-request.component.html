@@ -1,0 +1,14 @@
+<ion-card *ngIf="medicationRequest" color="secondary">
+  <ion-card-content class="bg-card-background flex items-center text-secondary">
+    <mukosoft-medication-icon class="mr-4"></mukosoft-medication-icon>
+    <div class="flex flex-col">
+      <mukosoft-medication-name
+        [medication]="medication"
+      ></mukosoft-medication-name>
+      <mukosoft-medication-dosage-instruction
+        *ngFor="let dosageInstruction of medicationRequest.dosageInstruction"
+        [dosageInstruction]="dosageInstruction"
+      ></mukosoft-medication-dosage-instruction>
+    </div>
+  </ion-card-content>
+</ion-card>

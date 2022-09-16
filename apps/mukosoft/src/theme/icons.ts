@@ -3,7 +3,9 @@ export type IconFeature =
   | "deleteMedication"
   | "add"
   | "settings"
-  | "home";
+  | "home"
+  | "edit"
+  | "swipeLeft";
 
 export const MukoSoftIcons: Record<IconFeature, string> = {
   add: "fi fi-rr-plus",
@@ -11,4 +13,6 @@ export const MukoSoftIcons: Record<IconFeature, string> = {
   deleteMedication: "fi fi-rr-trash",
   home: "fi fi-rr-home",
   settings: "fi fi-rr-settings-sliders",
+  edit: "fi fi-rr-edit",
+  swipeLeft: "fi fi-rr-angle-left",
 };

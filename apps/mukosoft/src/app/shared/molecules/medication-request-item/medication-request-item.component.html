@@ -1,0 +1,24 @@
+<ion-item-sliding #itemSliding *ngIf="medicationRequest">
+  <ion-item-options>
+    <ion-item-option class="bg-body">
+      <span [ngClass]="[icons.edit, iconSize]"></span>
+    </ion-item-option>
+    <ion-item-option
+      class="bg-body"
+      (click)="onRemoveClick.emit(medicationRequest.id)"
+    >
+      <span [ngClass]="[icons.deleteMedication, iconSize]"></span>
+    </ion-item-option>
+  </ion-item-options>
+  <ion-item>
+    <mukosoft-medication-request
+      class="w-full"
+      [medicationRequest]="medicationRequest"
+      [medication]="medication"
+    ></mukosoft-medication-request>
+    <span
+      [ngClass]="[icons.swipeLeft, iconSize]"
+      (click)="itemSliding.open(undefined)"
+    ></span>
+  </ion-item>
+</ion-item-sliding>

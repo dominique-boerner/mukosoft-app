@@ -19,6 +19,7 @@ module.exports = {
         "secondary-shade": "#000000",
         "secondary-tint": "#2a3b54",
         danger: "#eb445a",
+        body: "#F5F6F8",
       },
     },
   },

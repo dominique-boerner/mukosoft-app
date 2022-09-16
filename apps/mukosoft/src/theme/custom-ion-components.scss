@@ -45,6 +45,10 @@ ion-tab-button {
   }
 }
 
+ion-item {
+  --border-color: transparent;
+}
+
 @keyframes iconAnimation {
   $degree: 10deg;
 
