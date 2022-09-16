@@ -1,18 +1,11 @@
-import { NgModule } from '@angular/core';
-import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { NgModule } from "@angular/core";
+import { PreloadAllModules, RouterModule, Routes } from "@angular/router";
 
 const routes: Routes = [
   {
-    path: '',
+    path: "",
     loadChildren: () =>
-      import('./features/tabs/tabs.module').then((m) => m.TabsPageModule),
-  },
-  {
-    path: 'settings',
-    loadChildren: () =>
-      import('./features/settings/settings.module').then(
-        (m) => m.SettingsPageModule
-      ),
+      import("./features/tabs/tabs.module").then((m) => m.TabsPageModule),
   },
 ];
 @NgModule({

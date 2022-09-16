@@ -21,6 +21,7 @@ import { AppInitializerProvider } from "./core/provider/app-initializer.provider
 import { AppInitializerService } from "./features/medication/services/app-initializer-service/app-initializer.service";
 import { patientReducer } from "./core/reducer/patient.reducer";
 import { errorReducer } from "./core/reducer/error-reducer/error.reducer";
+import { CreateMedicationComponent } from "./features/create-medication/create-medication.component";
 
 export const createTranslateLoader = (http: HttpClient) =>
   new TranslateHttpLoader(http, "./assets/i18n/", ".json");
@@ -32,7 +33,7 @@ export const appState = {
 };
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, CreateMedicationComponent],
   imports: [
     BrowserModule,
     IonicModule.forRoot(),

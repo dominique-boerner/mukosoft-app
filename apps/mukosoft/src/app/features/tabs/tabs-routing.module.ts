@@ -20,6 +20,13 @@ const routes: Routes = [
           ),
       },
       {
+        path: "create-medication",
+        loadChildren: () =>
+          import("../create-medication/create-medication.module").then(
+            (m) => m.CreateMedicationModule
+          ),
+      },
+      {
         path: "cookbook",
         redirectTo: "/tabs/home",
       },
