@@ -24,6 +24,7 @@ import { errorReducer } from "./core/reducer/error-reducer/error.reducer";
 import { CreateMedicationComponent } from "./features/create-medication/create-medication.component";
 import { SharedModule } from "./shared/shared.module";
 import { ReactiveFormsModule } from "@angular/forms";
+import { LocalNotifications } from "@awesome-cordova-plugins/local-notifications/ngx";
 
 export const createTranslateLoader = (http: HttpClient) =>
   new TranslateHttpLoader(http, "./assets/i18n/", ".json");
@@ -60,6 +61,7 @@ export const appState = {
     ReactiveFormsModule,
   ],
   providers: [
+    LocalNotifications,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
     AppInitializerService,
     AppInitializerProvider,
