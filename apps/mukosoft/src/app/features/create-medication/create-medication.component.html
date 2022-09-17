@@ -1,3 +1,71 @@
 <ion-content [fullscreen]="true">
-  <ion-title>Medikament erstellen</ion-title>
+  <div class="m-4 rounded-sm shadow-lg bg-card-background">
+    <ion-grid>
+      <ion-row>
+        <mukosoft-heading>
+          {{ "medication-creation.title" | translate }}</mukosoft-heading
+        >
+      </ion-row>
+      <ion-row>
+        <mukosoft-text>
+          {{ "medication-creation.text" | translate }}</mukosoft-text
+        >
+      </ion-row>
+      <ion-col class="p-0">
+        <mukosoft-label>Name</mukosoft-label>
+        <mukosoft-input [formControl]="name" ngDefaultControl></mukosoft-input>
+      </ion-col>
+      <ion-row>
+        <ion-col class="p-0 mr-1">
+          <mukosoft-label>Menge</mukosoft-label>
+          <mukosoft-input
+            [formControl]="amount"
+            ngDefaultControl
+          ></mukosoft-input>
+        </ion-col>
+        <ion-col class="p-0 ml-1">
+          <mukosoft-label>Dosierform</mukosoft-label>
+          <ion-select class="border rounded-md" [formControl]="medicationForm">
+            <ion-select-option
+              *ngFor="let form of medicationFormCodings"
+              [value]="form"
+              (click)="medicationForm.setValue(form)"
+            >
+              {{ "medication-form." + form.display | translate }}
+            </ion-select-option>
+          </ion-select>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-button color="secondary" class="w-full mt-2" (click)="saveClick()"
+          >Speichern</ion-button
+        >
+      </ion-row>
+    </ion-grid>
+    <!--    <mukosoft-label>When</mukosoft-label>-->
+    <!--    <div-->
+    <!--      *ngFor="let time of times.value"-->
+    <!--      class="flex items-center justify-between h-8"-->
+    <!--    >-->
+    <!--      <ion-datetime-button-->
+    <!--        class="block"-->
+    <!--        datetime="datetime"-->
+    <!--        [formControl]="times"-->
+    <!--        ngDefaultControl-->
+    <!--      ></ion-datetime-button>-->
+    <!--      <ion-button class="ml-2 h-full">-->
+    <!--        <span>Zeit hinzufügen</span>-->
+    <!--      </ion-button>-->
+    <!--    </div>-->
+
+    <!--    <ion-modal [keepContentsMounted]="true">-->
+    <!--      <ng-template>-->
+    <!--        <ion-datetime-->
+    <!--          id="datetime"-->
+    <!--          presentation="time"-->
+    <!--          (ionChange)="onDateTimeSelect($any($event).detail.value)"-->
+    <!--        ></ion-datetime>-->
+    <!--      </ng-template>-->
+    <!--    </ion-modal>-->
+  </div>
 </ion-content>

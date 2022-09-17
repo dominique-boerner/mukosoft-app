@@ -1,6 +1,9 @@
-<ion-input color="secondary"
-           class="border border-1 rounded-md"
-           [attr.aria-labelledby]="labelId"
-           [type]="type"
-           [value]="value"
-           (ionChange)="onIonChange.emit($any($event.target).value)"></ion-input>
+<ion-input
+  color="secondary"
+  class="border border-1 rounded-md"
+  [formControl]="formControl"
+  [attr.aria-labelledby]="labelId"
+  [type]="type"
+  [value]="value"
+  (ionChange)="onIonChange.emit($any($event.target).value)"
+></ion-input>

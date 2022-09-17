@@ -22,6 +22,8 @@ import { AppInitializerService } from "./features/medication/services/app-initia
 import { patientReducer } from "./core/reducer/patient.reducer";
 import { errorReducer } from "./core/reducer/error-reducer/error.reducer";
 import { CreateMedicationComponent } from "./features/create-medication/create-medication.component";
+import { SharedModule } from "./shared/shared.module";
+import { ReactiveFormsModule } from "@angular/forms";
 
 export const createTranslateLoader = (http: HttpClient) =>
   new TranslateHttpLoader(http, "./assets/i18n/", ".json");
@@ -54,6 +56,8 @@ export const appState = {
       maxAge: 25, // Retains last 25 states
       logOnly: environment.production, // Restrict extension to log-only mode
     }),
+    SharedModule,
+    ReactiveFormsModule,
   ],
   providers: [
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },

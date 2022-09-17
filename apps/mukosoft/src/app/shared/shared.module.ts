@@ -9,6 +9,7 @@ import { MedicationRequestComponent } from "./molecules/medication-request/medic
 import { MedicationNameComponent } from "./atoms/medication-name/medication-name.component";
 import { MedicationDosageInstructionComponent } from "./atoms/medication-dosage-instruction/medication-dosage-instruction.component";
 import { MedicationIconComponent } from "./atoms/medication-icon/medication-icon.component";
+import { ReactiveFormsModule } from "@angular/forms";
 
 const declarations = [
   InputComponent,
@@ -22,7 +23,7 @@ const declarations = [
 const imports = [IonicModule, TypographyModule];
 
 @NgModule({
-  imports: [imports, CommonModule],
+  imports: [imports, CommonModule, ReactiveFormsModule],
   declarations,
   exports: [...declarations, ...imports],
 })

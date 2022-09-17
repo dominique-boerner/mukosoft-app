@@ -16,5 +16,10 @@
   "navigation.tabs.home": "Home",
   "navigation.tabs.medications": "Medikationen",
   "navigation.tabs.cookbook": "Kochbuch",
-  "navigation.tabs.settings": "Einstellungen"
+  "navigation.tabs.settings": "Einstellungen",
+  "medication-form.pill": "Tablette",
+  "medication-form.inhaler": "Inhalieren",
+  "medication-form.other": "Anderes",
+  "medication-creation.title": "Medikament hinzufügen",
+  "medication-creation.text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 }

@@ -49,6 +49,10 @@ ion-item {
   --border-color: transparent;
 }
 
+ion-input:not(.ng-untouched).ng-invalid {
+  border-color: var(--ion-color-danger);
+}
+
 @keyframes iconAnimation {
   $degree: 10deg;
 
