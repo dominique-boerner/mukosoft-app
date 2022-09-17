@@ -1,0 +1,10 @@
+{
+  "defaultProject": "mukosoft",
+  "projects": {
+    "mukosoft": {
+      "name": "mukosoft",
+      "integrations": {},
+      "type": "angular"
+    }
+  }
+}

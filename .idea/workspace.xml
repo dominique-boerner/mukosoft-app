@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e076ab55-216e-4444-b9af-130db4231713" name="Changes" comment="update medication creation screen">
+    <list default="true" id="e076ab55-216e-4444-b9af-130db4231713" name="Changes" comment="local notification testing">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/create-medication/create-medication.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/create-medication/create-medication.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/create-medication/create-medication.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/create-medication/create-medication.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,11 +63,11 @@
       <recent name="G:\mukosoft-app\apps\mukosoft\src\app\core\util\logger" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\mukosoft-app" />
       <recent name="G:\mukosoft-app\apps\mukosoft\src\app\shared\atoms" />
       <recent name="G:\mukosoft-app\apps\mukosoft\src\app\shared\molecules" />
       <recent name="G:\mukosoft-app\apps\mukosoft\src\app\features\home\services" />
       <recent name="G:\mukosoft-app\apps\mukosoft\src\app\core\reducer\medication-request-reducer" />
-      <recent name="G:\mukosoft-app\apps\mukosoft\src\app\core\util\logger" />
     </key>
   </component>
   <component name="RunManager" selected="Jest.NewsService">
@@ -144,7 +143,10 @@
       <workItem from="1663326414648" duration="3349000" />
       <workItem from="1663343473248" duration="635000" />
       <workItem from="1663344152181" duration="4395000" />
-      <workItem from="1663402494481" duration="2980000" />
+      <workItem from="1663402494481" duration="3756000" />
+      <workItem from="1663406305998" duration="46000" />
+      <workItem from="1663406388958" duration="1449000" />
+      <workItem from="1663427205118" duration="6000" />
     </task>
     <task id="LOCAL-00001" summary="styling of the navigation bar">
       <created>1662801764817</created>
@@ -272,7 +274,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663405158638</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="local notification testing">
+      <created>1663405596101</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1663405596101</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -304,7 +313,8 @@
     <MESSAGE value="refactor medication and design" />
     <MESSAGE value="create medication creation screen" />
     <MESSAGE value="update medication creation screen" />
-    <option name="LAST_COMMIT_MESSAGE" value="update medication creation screen" />
+    <MESSAGE value="local notification testing" />
+    <option name="LAST_COMMIT_MESSAGE" value="local notification testing" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -13,23 +13,29 @@
       </ion-row>
       <ion-col class="p-0">
         <mukosoft-label>Name</mukosoft-label>
-        <mukosoft-input [formControl]="name" ngDefaultControl></mukosoft-input>
+        <mukosoft-input
+          [formControl]="formGroup.controls.name"
+          ngDefaultControl
+        ></mukosoft-input>
       </ion-col>
       <ion-row>
         <ion-col class="p-0 mr-1">
           <mukosoft-label>Menge</mukosoft-label>
           <mukosoft-input
-            [formControl]="amount"
+            [formControl]="formGroup.controls.amount"
             ngDefaultControl
           ></mukosoft-input>
         </ion-col>
         <ion-col class="p-0 ml-1">
           <mukosoft-label>Dosierform</mukosoft-label>
-          <ion-select class="border rounded-md" [formControl]="medicationForm">
+          <ion-select
+            class="border rounded-md"
+            [formControl]="formGroup.controls.medicationForm"
+          >
             <ion-select-option
               *ngFor="let form of medicationFormCodings"
               [value]="form"
-              (click)="medicationForm.setValue(form)"
+              (click)="formGroup.controls.medicationForm.setValue(form)"
             >
               {{ "medication-form." + form.display | translate }}
             </ion-select-option>
