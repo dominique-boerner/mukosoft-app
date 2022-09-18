@@ -1,19 +1,19 @@
-import { Component } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 import { SettingsService } from "./services/settings-service/settings-service";
 import { Patient } from "fhir/r4";
 
 // @ts-ignore
 import packageJson from "package.json";
+import { FormControl, Validators } from "@angular/forms";
 
 @Component({
   selector: "mukosoft-settings-page",
   templateUrl: "settings.page.html",
 })
-export class SettingsPage {
+export class SettingsPage implements OnInit {
   public readonly nameLabel = "name";
   public readonly birthdateLabel = "birthdate";
 
-  public readonly name = this.settingsService.getPatientName();
   public readonly profileImage = this.settingsService.getPatientAvatar();
   public readonly birthDate = new Date();
 
@@ -21,7 +21,15 @@ export class SettingsPage {
 
   private newName = "";
 
+  public name = new FormControl<string>("", [Validators.required]);
+
   constructor(private readonly settingsService: SettingsService) {}
+
+  ngOnInit() {
+    this.settingsService.getPatientName().subscribe((name) => {
+      this.name.setValue(name);
+    });
+  }
 
   public save() {
     this.settingsService

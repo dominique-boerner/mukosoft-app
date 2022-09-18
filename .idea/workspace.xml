@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e076ab55-216e-4444-b9af-130db4231713" name="Changes" comment="medication creation: implement days">
+    <list default="true" id="e076ab55-216e-4444-b9af-130db4231713" name="Changes" comment="change style of picker">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/theme/custom-ion-components.scss" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/theme/custom-ion-components.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/settings/settings.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/settings/settings.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/settings/settings.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/settings/settings.page.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/settings/settings.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/settings/settings.page.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,7 +149,7 @@
       <workItem from="1663427205118" duration="6000" />
       <workItem from="1663431847413" duration="3005000" />
       <workItem from="1663497725838" duration="257000" />
-      <workItem from="1663506592879" duration="4367000" />
+      <workItem from="1663506592879" duration="4864000" />
     </task>
     <task id="LOCAL-00001" summary="styling of the navigation bar">
       <created>1662801764817</created>
@@ -310,7 +312,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663515088529</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="change style of picker">
+      <created>1663515316859</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1663515316859</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -348,7 +357,8 @@
     <MESSAGE value="implement time picker" />
     <MESSAGE value="finalize time implementation" />
     <MESSAGE value="medication creation: implement days" />
-    <option name="LAST_COMMIT_MESSAGE" value="medication creation: implement days" />
+    <MESSAGE value="change style of picker" />
+    <option name="LAST_COMMIT_MESSAGE" value="change style of picker" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

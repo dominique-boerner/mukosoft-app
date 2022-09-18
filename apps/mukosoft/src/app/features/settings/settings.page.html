@@ -26,9 +26,9 @@
               </mukosoft-label>
               <mukosoft-input
                 type="text"
-                [labelId]="nameLabel"
-                [value]="name | async"
+                [formControl]="name"
                 (onIonChange)="setNewName($event)"
+                ngDefaultControl
               ></mukosoft-input>
             </div>
           </ion-row>
