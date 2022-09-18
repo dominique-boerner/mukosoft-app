@@ -1,9 +1,9 @@
 import { TestBed } from "@angular/core/testing";
 import { StoreModule } from "@ngrx/store";
-import { appState } from "../../../../app.module";
+import { appState } from "../../../app.module";
 import { MedicationService } from "./medication.service";
-import { mockMedications } from "../../../../__mocks__/medications";
-import { prednisone } from "../../../../__mocks__/mock-medication";
+import { mockMedications } from "../../../__mocks__/medications";
+import { prednisone } from "../../../__mocks__/mock-medication";
 
 describe("MedicationService", () => {
   let service: MedicationService;

@@ -1,7 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { MedicationRequestService } from "./services/medication-request-service/medication-request.service";
 import { Medication, MedicationRequest } from "fhir/r4";
-import { MedicationService } from "./services/medication-service/medication.service";
+import { MedicationService } from "../../core/services/medication-service/medication.service";
 import { mockMedicationRequestPrednisoneActive } from "../../__mocks__/mock-medication-request";
 import { UuidService } from "../../core/services/uuid-service/uuid.service";
 import { ToastService } from "../../core/services/toast-service/toast.service";

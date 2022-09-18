@@ -3,7 +3,7 @@ import { FormControl, FormGroup, Validators } from "@angular/forms";
 import { Logger } from "../../core/util/logger/logger";
 import { medicationFormCodings } from "../../core/medication-form-codings";
 import { Coding } from "fhir/r4";
-import { LocalNotifications } from "@awesome-cordova-plugins/local-notifications/ngx";
+import { MedicationService } from "../../core/services/medication-service/medication.service";
 
 @Component({
   selector: "mukosoft-create-medication",
@@ -15,7 +15,11 @@ export class CreateMedicationComponent {
 
   public readonly medicationFormCodings = medicationFormCodings;
   public formGroup = new FormGroup({
-    name: new FormControl("", [Validators.required, Validators.nullValidator]),
+    name: new FormControl("", [
+      Validators.required,
+      Validators.nullValidator,
+      Validators.pattern("^(?! )[A-Za-z0-9 ]*(?<! )$"),
+    ]),
     amount: new FormControl(1, [
       Validators.required,
       Validators.min(1),
@@ -28,27 +32,20 @@ export class CreateMedicationComponent {
     days: new FormControl<number[]>([...this.days], [Validators.required]),
   });
 
-  constructor(private readonly localNotifications: LocalNotifications) {}
+  constructor(private readonly medicationService: MedicationService) {}
 
-  public saveClick() {
+  public async saveClick() {
     const formGroupControls = this.formGroup.controls;
     const medicationName = formGroupControls.name.value;
     const amount = formGroupControls.amount.value;
     const times = formGroupControls.times.value;
     const days = formGroupControls.days.value;
-    Logger.info(
-      `Medication ${amount}x ${medicationName}, Times: ${times}, Days: ${days}`
-    );
-    if (!this.formGroup.touched || this.formGroup.dirty) {
-      Logger.info(`Isdirty`);
+    if (!this.isNameInvalid() && !this.isAmountInvalid()) {
+      Logger.info(
+        `Medication ${amount}x ${medicationName}, Times: ${times}, Days: ${days}`
+      );
+      await this.medicationService.createMedication(medicationName);
     }
-    this.localNotifications.schedule({
-      id: 1,
-      text: "Single ILocalNotification",
-      data: {
-        secret: `Medication ${amount}x ${medicationName}, Times: ${times}`,
-      },
-    });
   }
 
   public addTime(time: Date) {
@@ -72,5 +69,13 @@ export class CreateMedicationComponent {
     } else {
       formGroupDays.setValue([...currentDays, day]);
     }
+  }
+
+  private isNameInvalid() {
+    return this.formGroup.controls.name.invalid;
+  }
+
+  private isAmountInvalid() {
+    return this.formGroup.controls.amount.invalid;
   }
 }

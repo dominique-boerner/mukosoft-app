@@ -17,6 +17,13 @@
           [formControl]="formGroup.controls.name"
           ngDefaultControl
         ></mukosoft-input>
+        <mukosoft-invalid-label
+          *ngIf="
+            formGroup.controls.name.touched && formGroup.controls.name.invalid
+          "
+        >
+          {{ "medication-creation.name.invalid" | translate }}
+        </mukosoft-invalid-label>
       </ion-col>
       <ion-row>
         <ion-col class="p-0 mr-1">
@@ -25,6 +32,14 @@
             [formControl]="formGroup.controls.amount"
             ngDefaultControl
           ></mukosoft-input>
+          <mukosoft-invalid-label
+            *ngIf="
+              formGroup.controls.amount.touched &&
+              formGroup.controls.amount.invalid
+            "
+          >
+            {{ "medication-creation.amount.invalid" | translate }}
+          </mukosoft-invalid-label>
         </ion-col>
         <ion-col class="p-0 ml-1">
           <mukosoft-label>Dosierform</mukosoft-label>

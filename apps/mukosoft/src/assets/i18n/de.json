@@ -22,6 +22,8 @@
   "medication-form.other": "Anderes",
   "medication-creation.title": "Medikament hinzufügen",
   "medication-creation.text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "medication-creation.name.invalid": "Bitte geben Sie den Namen des Medikaments ein",
+  "medication-creation.amount.invalid": "Bitte geben Sie die Menge ein",
   "day.0": "Sonntag",
   "day.1": "Montag",
   "day.2": "Dienstag",

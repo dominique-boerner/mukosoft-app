@@ -2,7 +2,7 @@ import { Component, OnInit } from "@angular/core";
 import { PatientService } from "../../core/services/patient-service/patient.service";
 import { NewsService } from "./services/news.service";
 import { MedicationRequestService } from "../medication/services/medication-request-service/medication-request.service";
-import { MedicationService } from "../medication/services/medication-service/medication.service";
+import { MedicationService } from "../../core/services/medication-service/medication.service";
 import { Medication, MedicationRequest } from "fhir/r4";
 
 @Component({
