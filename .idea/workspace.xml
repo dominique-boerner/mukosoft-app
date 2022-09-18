@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e076ab55-216e-4444-b9af-130db4231713" name="Changes" comment="save medication-request">
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/core/services/medication-database-service/medication-database.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/core/services/medication-database-service/medication-database.service.spec.ts" afterDir="false" />
+    <list default="true" id="e076ab55-216e-4444-b9af-130db4231713" name="Changes" comment="fix tests">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/assets/i18n/de.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/assets/i18n/de.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,7 +147,8 @@
       <workItem from="1663427205118" duration="6000" />
       <workItem from="1663431847413" duration="3005000" />
       <workItem from="1663497725838" duration="257000" />
-      <workItem from="1663506592879" duration="14004000" />
+      <workItem from="1663506592879" duration="14358000" />
+      <workItem from="1663527479505" duration="11000" />
     </task>
     <task id="LOCAL-00001" summary="styling of the navigation bar">
       <created>1662801764817</created>
@@ -358,7 +360,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663526678774</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="fix tests">
+      <created>1663527114297</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1663527114297</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -402,7 +411,8 @@
     <MESSAGE value="add routing to medication add click" />
     <MESSAGE value="save medication and validate the form" />
     <MESSAGE value="save medication-request" />
-    <option name="LAST_COMMIT_MESSAGE" value="save medication-request" />
+    <MESSAGE value="fix tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix tests" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
