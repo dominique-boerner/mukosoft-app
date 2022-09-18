@@ -53,8 +53,18 @@ ion-input:not(.ng-untouched).ng-invalid {
   border-color: var(--ion-color-danger);
 }
 
-.ion-picker {
-  --background: red;
+ion-chip {
+  // activated chip
+  &.ion-color-secondary:not(.chip-outline) {
+    background: var(--ion-color-secondary);
+    color: var(--ion-color-secondary-contrast);
+  }
+
+  // non-activated chip
+  &.ion-color-secondary.chip-outline {
+    border-width: 1px;
+    border-color: var(--ion-color-secondary);
+  }
 }
 
 @keyframes iconAnimation {

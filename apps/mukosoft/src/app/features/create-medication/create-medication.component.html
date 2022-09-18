@@ -42,53 +42,58 @@
           </ion-select>
         </ion-col>
       </ion-row>
-      <ion-col class="p-0">
-        <mukosoft-label>Zeiten</mukosoft-label>
-        <div
-          class="flex items-center justify-between mb-2 rounded-md p-1 border border-1"
-          *ngFor="let time of formGroup.controls.times.value"
-        >
-          <span class="text-xl">{{ time | date: "HH:mm":"de-DE" }} Uhr </span>
-          <ion-button color="secondary" fill="clear" (click)="removeTime(time)">
-            <span class="fi fi-rr-cross"></span>
-          </ion-button>
-        </div>
-        <mukosoft-time-picker
-          class="block"
-          label="Zeit wählen"
-          (onConfirm)="addTime($event)"
-        ></mukosoft-time-picker>
-      </ion-col>
+      <ion-row>
+        <ion-col class="p-0">
+          <div class="flex items-center">
+            <mukosoft-label>Tägliche Einnahme</mukosoft-label>
+            <ion-toggle
+              color="secondary"
+              [checked]="isDaily"
+              (ionChange)="isDaily = !isDaily"
+            ></ion-toggle>
+          </div>
+          <div class="flex flex-col justify-center">
+            <div *ngIf="!isDaily" class="flex justify-start flex-wrap">
+              <ion-chip
+                *ngFor="let day of days"
+                color="secondary"
+                [outline]="!formGroup.controls.days.value.includes(day)"
+                (click)="toggleDay(day)"
+              >
+                {{ "day." + day | translate }}
+              </ion-chip>
+            </div>
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col class="p-0">
+          <mukosoft-label>Zeiten</mukosoft-label>
+          <div
+            class="flex items-center justify-between mb-2 rounded-md p-1 border border-1"
+            *ngFor="let time of formGroup.controls.times.value"
+          >
+            <span class="text-xl">{{ time | date: "HH:mm":"de-DE" }} Uhr </span>
+            <ion-button
+              color="secondary"
+              fill="clear"
+              (click)="removeTime(time)"
+            >
+              <span class="fi fi-rr-cross"></span>
+            </ion-button>
+          </div>
+          <mukosoft-time-picker
+            class="block"
+            label="Zeit wählen"
+            (onConfirm)="addTime($event)"
+          ></mukosoft-time-picker>
+        </ion-col>
+      </ion-row>
       <ion-row>
         <ion-button color="secondary" class="w-full mt-2" (click)="saveClick()"
           >Speichern</ion-button
         >
       </ion-row>
     </ion-grid>
-    <!--    <mukosoft-label>When</mukosoft-label>-->
-    <!--    <div-->
-    <!--      *ngFor="let time of times.value"-->
-    <!--      class="flex items-center justify-between h-8"-->
-    <!--    >-->
-    <!--      <ion-datetime-button-->
-    <!--        class="block"-->
-    <!--        datetime="datetime"-->
-    <!--        [formControl]="times"-->
-    <!--        ngDefaultControl-->
-    <!--      ></ion-datetime-button>-->
-    <!--      <ion-button class="ml-2 h-full">-->
-    <!--        <span>Zeit hinzufügen</span>-->
-    <!--      </ion-button>-->
-    <!--    </div>-->
-
-    <!--    <ion-modal [keepContentsMounted]="true">-->
-    <!--      <ng-template>-->
-    <!--        <ion-datetime-->
-    <!--          id="datetime"-->
-    <!--          presentation="time"-->
-    <!--          (ionChange)="onDateTimeSelect($any($event).detail.value)"-->
-    <!--        ></ion-datetime>-->
-    <!--      </ng-template>-->
-    <!--    </ion-modal>-->
   </div>
 </ion-content>

@@ -10,6 +10,9 @@ import { LocalNotifications } from "@awesome-cordova-plugins/local-notifications
   templateUrl: "./create-medication.component.html",
 })
 export class CreateMedicationComponent {
+  public days: number[] = [1, 2, 3, 4, 5, 6, 0];
+  public isDaily = true;
+
   public readonly medicationFormCodings = medicationFormCodings;
   public formGroup = new FormGroup({
     name: new FormControl("", [Validators.required, Validators.nullValidator]),
@@ -22,6 +25,7 @@ export class CreateMedicationComponent {
       Validators.required,
     ]),
     times: new FormControl<Date[]>([], [Validators.required]),
+    days: new FormControl<number[]>([...this.days], [Validators.required]),
   });
 
   constructor(private readonly localNotifications: LocalNotifications) {}
@@ -31,7 +35,10 @@ export class CreateMedicationComponent {
     const medicationName = formGroupControls.name.value;
     const amount = formGroupControls.amount.value;
     const times = formGroupControls.times.value;
-    Logger.info(`Medication ${amount}x ${medicationName}, Times: ${times}`);
+    const days = formGroupControls.days.value;
+    Logger.info(
+      `Medication ${amount}x ${medicationName}, Times: ${times}, Days: ${days}`
+    );
     if (!this.formGroup.touched || this.formGroup.dirty) {
       Logger.info(`Isdirty`);
     }
@@ -44,7 +51,7 @@ export class CreateMedicationComponent {
     });
   }
 
-  addTime(time: Date) {
+  public addTime(time: Date) {
     const times = this.formGroup.controls.times.value;
     const sortedTimes = [...times, time].sort((a: Date, b: Date) => {
       return a.getTime() - b.getTime();
@@ -52,8 +59,18 @@ export class CreateMedicationComponent {
     this.formGroup.controls.times.setValue(sortedTimes);
   }
 
-  removeTime(time: Date) {
+  public removeTime(time: Date) {
     const times = this.formGroup.controls.times.value;
     this.formGroup.controls.times.setValue(times.filter((t) => t !== time));
+  }
+
+  public toggleDay(day: number) {
+    const formGroupDays = this.formGroup.controls.days;
+    const currentDays = this.formGroup.controls.days.value;
+    if (currentDays.includes(day)) {
+      formGroupDays.setValue(currentDays.filter((d) => d !== day));
+    } else {
+      formGroupDays.setValue([...currentDays, day]);
+    }
   }
 }
