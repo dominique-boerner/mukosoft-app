@@ -42,11 +42,17 @@
           </ion-select>
         </ion-col>
       </ion-row>
-      <ion-col>
+      <ion-col class="p-0">
         <mukosoft-label>Zeiten</mukosoft-label>
-        <span class="block" *ngFor="let time of formGroup.controls.times.value">
-          {{ time | date: "shortTime" }}
-        </span>
+        <div
+          class="flex items-center justify-between mb-2 rounded-md p-1 border border-1"
+          *ngFor="let time of formGroup.controls.times.value"
+        >
+          <span class="text-xl">{{ time | date: "HH:mm":"de-DE" }} Uhr </span>
+          <ion-button color="secondary" fill="clear" (click)="removeTime(time)">
+            <span class="fi fi-rr-cross"></span>
+          </ion-button>
+        </div>
         <mukosoft-time-picker
           class="block"
           label="Zeit wählen"

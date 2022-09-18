@@ -46,6 +46,14 @@ export class CreateMedicationComponent {
 
   addTime(time: Date) {
     const times = this.formGroup.controls.times.value;
-    this.formGroup.controls.times.setValue([...times, time]);
+    const sortedTimes = [...times, time].sort((a: Date, b: Date) => {
+      return a.getTime() - b.getTime();
+    });
+    this.formGroup.controls.times.setValue(sortedTimes);
+  }
+
+  removeTime(time: Date) {
+    const times = this.formGroup.controls.times.value;
+    this.formGroup.controls.times.setValue(times.filter((t) => t !== time));
   }
 }
