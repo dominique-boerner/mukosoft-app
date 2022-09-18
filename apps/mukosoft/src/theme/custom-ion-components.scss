@@ -13,6 +13,16 @@ ion-tab-bar {
   padding: .5rem;
 }
 
+.picker-button.sc-ion-picker-md, .picker-button.ion-activated.sc-ion-picker-md {
+  font-weight: bold;
+  color: var(--ion-color-secondary);
+}
+
+.picker-opt.picker-opt-selected {
+  font-weight: bold;
+  color: var(--ion-color-secondary);
+}
+
 ion-tab-button {
   background: transparent;
 
