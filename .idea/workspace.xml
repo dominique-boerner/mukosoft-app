@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e076ab55-216e-4444-b9af-130db4231713" name="Changes" comment="fix settings">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/settings/settings.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/settings/settings.page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/settings/settings.page.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/settings/settings.page.ts" afterDir="false" />
+    <list default="true" id="e076ab55-216e-4444-b9af-130db4231713" name="Changes" comment="clean up settings-page">
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/medication-page.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/medication-page.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/medication-page.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/medication-page.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,7 +147,7 @@
       <workItem from="1663427205118" duration="6000" />
       <workItem from="1663431847413" duration="3005000" />
       <workItem from="1663497725838" duration="257000" />
-      <workItem from="1663506592879" duration="5010000" />
+      <workItem from="1663506592879" duration="5141000" />
     </task>
     <task id="LOCAL-00001" summary="styling of the navigation bar">
       <created>1662801764817</created>
@@ -325,7 +324,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663515823479</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="clean up settings-page">
+      <created>1663515970823</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1663515970823</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -365,7 +371,8 @@
     <MESSAGE value="medication creation: implement days" />
     <MESSAGE value="change style of picker" />
     <MESSAGE value="fix settings" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix settings" />
+    <MESSAGE value="clean up settings-page" />
+    <option name="LAST_COMMIT_MESSAGE" value="clean up settings-page" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

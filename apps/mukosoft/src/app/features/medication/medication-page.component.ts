@@ -6,6 +6,7 @@ import { mockMedicationRequestPrednisoneActive } from "../../__mocks__/mock-medi
 import { UuidService } from "../../core/services/uuid-service/uuid.service";
 import { ToastService } from "../../core/services/toast-service/toast.service";
 import { MedicationRequestError } from "./models/medication-request-error";
+import { Router } from "@angular/router";
 
 @Component({
   selector: "mukosoft-medication-page",
@@ -19,7 +20,8 @@ export class MedicationPageComponent implements OnInit {
     private readonly medicationRequestService: MedicationRequestService,
     private readonly medicationService: MedicationService,
     private readonly uuidService: UuidService,
-    private readonly toastService: ToastService
+    private readonly toastService: ToastService,
+    private readonly router: Router
   ) {}
 
   ngOnInit() {
@@ -34,7 +36,8 @@ export class MedicationPageComponent implements OnInit {
     );
   }
 
-  addMedicationMock() {
+  medicationAddClick() {
+    this.router.navigate(["/tabs/create-medication"]);
     const medicationRequest = mockMedicationRequestPrednisoneActive;
     this.medicationRequestService
       .createMedicationRequest({
