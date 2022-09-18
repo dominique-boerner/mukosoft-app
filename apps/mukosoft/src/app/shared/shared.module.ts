@@ -10,6 +10,7 @@ import { MedicationNameComponent } from "./atoms/medication-name/medication-name
 import { MedicationDosageInstructionComponent } from "./atoms/medication-dosage-instruction/medication-dosage-instruction.component";
 import { MedicationIconComponent } from "./atoms/medication-icon/medication-icon.component";
 import { ReactiveFormsModule } from "@angular/forms";
+import { TimePickerComponent } from "./molecules/time-picker/time-picker.component";
 
 const declarations = [
   InputComponent,
@@ -19,6 +20,7 @@ const declarations = [
   MedicationRequestComponent,
   MedicationDosageInstructionComponent,
   MedicationIconComponent,
+  TimePickerComponent,
 ];
 const imports = [IonicModule, TypographyModule];
 

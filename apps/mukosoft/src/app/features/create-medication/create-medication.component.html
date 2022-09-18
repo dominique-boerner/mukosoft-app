@@ -42,6 +42,17 @@
           </ion-select>
         </ion-col>
       </ion-row>
+      <ion-col>
+        <mukosoft-label>Zeiten</mukosoft-label>
+        <span class="block" *ngFor="let time of formGroup.controls.times.value">
+          {{ time | date: "shortTime" }}
+        </span>
+        <mukosoft-time-picker
+          class="block"
+          label="Zeit wählen"
+          (onConfirm)="addTime($event)"
+        ></mukosoft-time-picker>
+      </ion-col>
       <ion-row>
         <ion-button color="secondary" class="w-full mt-2" (click)="saveClick()"
           >Speichern</ion-button

@@ -21,7 +21,7 @@ export class CreateMedicationComponent {
     medicationForm: new FormControl<Coding>(medicationFormCodings[0], [
       Validators.required,
     ]),
-    times: new FormControl<Date[]>([new Date()], [Validators.required]),
+    times: new FormControl<Date[]>([], [Validators.required]),
   });
 
   constructor(private readonly localNotifications: LocalNotifications) {}
@@ -31,10 +31,9 @@ export class CreateMedicationComponent {
     const medicationName = formGroupControls.name.value;
     const amount = formGroupControls.amount.value;
     const times = formGroupControls.times.value;
+    Logger.info(`Medication ${amount}x ${medicationName}, Times: ${times}`);
     if (!this.formGroup.touched || this.formGroup.dirty) {
       Logger.info(`Isdirty`);
-    } else {
-      Logger.info(`Medication ${amount}x ${medicationName}, Times: ${times}`);
     }
     this.localNotifications.schedule({
       id: 1,
@@ -43,5 +42,10 @@ export class CreateMedicationComponent {
         secret: `Medication ${amount}x ${medicationName}, Times: ${times}`,
       },
     });
+  }
+
+  addTime(time: Date) {
+    const times = this.formGroup.controls.times.value;
+    this.formGroup.controls.times.setValue([...times, time]);
   }
 }

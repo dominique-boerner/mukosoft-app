@@ -53,6 +53,10 @@ ion-input:not(.ng-untouched).ng-invalid {
   border-color: var(--ion-color-danger);
 }
 
+.ion-picker {
+  --background: red;
+}
+
 @keyframes iconAnimation {
   $degree: 10deg;
 
