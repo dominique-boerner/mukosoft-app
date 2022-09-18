@@ -30,6 +30,13 @@
   "day.3": "Mittwoch",
   "day.4": "Donnerstag",
   "day.5": "Freitag",
-  "day.6": "Samstag"
+  "day.6": "Samstag",
+  "fhir.mon": "Montag",
+  "fhir.tue": "Dienstag",
+  "fhir.wed": "Mittwoch",
+  "fhir.thu": "Donnerstag",
+  "fhir.fri": "Freitag",
+  "fhir.sat": "Samstag",
+  "fhir.sun": "Sonntag"
 
 }

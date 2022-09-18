@@ -2,9 +2,10 @@ import { Component } from "@angular/core";
 import { FormControl, FormGroup, Validators } from "@angular/forms";
 import { Logger } from "../../core/util/logger/logger";
 import { medicationFormCodings } from "../../core/medication-form-codings";
-import { Coding, MedicationRequest } from "fhir/r4";
+import { Coding } from "fhir/r4";
 import { MedicationService } from "../../core/services/medication-service/medication.service";
 import { MedicationRequestService } from "../../core/services/medication-request-service/medication-request.service";
+import { MedicationRequestBuilderService } from "../../core/services/medication-request-builder/medication-request-builder.service";
 
 @Component({
   selector: "mukosoft-create-medication",
@@ -35,7 +36,8 @@ export class CreateMedicationComponent {
 
   constructor(
     private readonly medicationService: MedicationService,
-    private readonly medicationRequestService: MedicationRequestService
+    private readonly medicationRequestService: MedicationRequestService,
+    private readonly medicationRequestBuilderService: MedicationRequestBuilderService
   ) {}
 
   public async saveClick() {
@@ -56,94 +58,15 @@ export class CreateMedicationComponent {
 
       if (response.ok) {
         const medicationReferenceId = response.id;
-        console.log(medicationReferenceId);
-        const medicationRequest: MedicationRequest = {
-          id: "1234",
-          status: "active",
-          subject: {
-            reference: "User",
-          },
-          resourceType: "MedicationRequest",
-          intent: "plan",
-          medicationReference: {
-            reference: `#${medicationReferenceId}`,
-          },
-          dosageInstruction: [
-            {
-              sequence: 1,
-              text: "0.25mg PO every 6-12 hours as needed for menses from Jan 15-20, 2015.  Do not exceed more than 4mg per day",
-              additionalInstruction: [
-                {
-                  coding: [
-                    {
-                      system: "http://snomed.info/sct",
-                      code: "418914006",
-                      display:
-                        "Warning. May cause drowsiness. If affected do not drive or operate machinery. Avoid alcoholic drink (qualifier value)",
-                    },
-                  ],
-                },
-              ],
-              timing: {
-                repeat: {
-                  boundsPeriod: {
-                    start: "2020-01-15",
-                    end: "2025-01-20",
-                  },
-                  frequency: 1,
-                  period: 6,
-                  periodMax: 12,
-                  periodUnit: "h",
-                },
-              },
-              asNeededCodeableConcept: {
-                coding: [
-                  {
-                    system: "http://snomed.info/sct",
-                    code: "266599000",
-                    display: "Dysmenorrhea (disorder)",
-                  },
-                ],
-              },
-              route: {
-                coding: [
-                  {
-                    system: "http://snomed.info/sct",
-                    code: "26643006",
-                    display: "Oral Route",
-                  },
-                ],
-              },
-              doseAndRate: [
-                {
-                  type: {
-                    coding: [
-                      {
-                        system:
-                          "http://terminology.hl7.org/CodeSystem/dose-rate-type",
-                        code: "ordered",
-                        display: "Ordered",
-                      },
-                    ],
-                  },
-                  doseQuantity: {
-                    value: 1,
-                    unit: "TAB",
-                    system:
-                      "http://terminology.hl7.org/CodeSystem/v3-orderableDrugForm",
-                    code: "TAB",
-                  },
-                },
-              ],
-              maxDosePerAdministration: {
-                value: 4,
-                unit: "mg",
-                system: "http://unitsofmeasure.org",
-                code: "mg",
-              },
-            },
-          ],
-        };
+
+        const medicationRequest = this.medicationRequestBuilderService
+          .medicationReference(medicationReferenceId)
+          .daysOfWeek(["mon"])
+          .time(times)
+          .build();
+
+        console.log(medicationRequest);
+
         this.medicationRequestService.createMedicationRequest(
           medicationRequest
         );

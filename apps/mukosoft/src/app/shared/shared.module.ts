@@ -7,10 +7,11 @@ import { CommonModule } from "@angular/common";
 import { MedicationRequestItemComponent } from "./molecules/medication-request-item/medication-request-item.component";
 import { MedicationRequestComponent } from "./molecules/medication-request/medication-request.component";
 import { MedicationNameComponent } from "./atoms/medication-name/medication-name.component";
-import { MedicationDosageInstructionComponent } from "./atoms/medication-dosage-instruction/medication-dosage-instruction.component";
+import { MedicationDosageInstructionComponent } from "./molecules/medication-dosage-instruction/medication-dosage-instruction.component";
 import { MedicationIconComponent } from "./atoms/medication-icon/medication-icon.component";
 import { ReactiveFormsModule } from "@angular/forms";
 import { TimePickerComponent } from "./molecules/time-picker/time-picker.component";
+import { TranslateModule } from "@ngx-translate/core";
 
 const declarations = [
   InputComponent,
@@ -25,7 +26,7 @@ const declarations = [
 const imports = [IonicModule, TypographyModule];
 
 @NgModule({
-  imports: [imports, CommonModule, ReactiveFormsModule],
+  imports: [imports, CommonModule, ReactiveFormsModule, TranslateModule],
   declarations,
   exports: [...declarations, ...imports],
 })

@@ -2,10 +2,8 @@ import { Component, OnInit } from "@angular/core";
 import { MedicationRequestService } from "../../core/services/medication-request-service/medication-request.service";
 import { Medication, MedicationRequest } from "fhir/r4";
 import { MedicationService } from "../../core/services/medication-service/medication.service";
-import { mockMedicationRequestPrednisoneActive } from "../../__mocks__/mock-medication-request";
 import { UuidService } from "../../core/services/uuid-service/uuid.service";
 import { ToastService } from "../../core/services/toast-service/toast.service";
-import { MedicationRequestError } from "./models/medication-request-error";
 import { Router } from "@angular/router";
 
 @Component({
@@ -38,20 +36,6 @@ export class MedicationPageComponent implements OnInit {
 
   medicationAddClick() {
     this.router.navigate(["/tabs/create-medication"]);
-    const medicationRequest = mockMedicationRequestPrednisoneActive;
-    this.medicationRequestService
-      .createMedicationRequest({
-        ...medicationRequest,
-        id: this.uuidService.generateUuid(),
-      })
-      .then(() => {
-        this.toastService.showSuccessToast(
-          `Die Medikation wurde erfolgreich angelegt.`
-        );
-      })
-      .catch((error: MedicationRequestError) => {
-        this.toastService.showErrorToast(error.errorMessage);
-      });
   }
 
   removeMedicationRequest(id: string) {
