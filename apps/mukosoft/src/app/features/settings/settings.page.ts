@@ -11,17 +11,11 @@ import { FormControl, Validators } from "@angular/forms";
   templateUrl: "settings.page.html",
 })
 export class SettingsPage implements OnInit {
-  public readonly nameLabel = "name";
-  public readonly birthdateLabel = "birthdate";
+  public readonly appVersion = packageJson.version;
 
   public readonly profileImage = this.settingsService.getPatientAvatar();
   public readonly birthDate = new Date();
-
-  public readonly appVersion = packageJson.version;
-
-  private newName = "";
-
-  public name = new FormControl<string>("", [Validators.required]);
+  public readonly name = new FormControl<string>("", [Validators.required]);
 
   constructor(private readonly settingsService: SettingsService) {}
 
@@ -41,17 +35,13 @@ export class SettingsPage implements OnInit {
       .unsubscribe();
   }
 
-  public setNewName(name: string) {
-    this.newName = name;
-  }
-
   private generateNewPatient(currentPatient: Patient): Patient {
     return {
       ...currentPatient,
       name: [
         {
           use: "nickname",
-          text: this.newName,
+          text: this.name.value,
         },
       ],
     };
