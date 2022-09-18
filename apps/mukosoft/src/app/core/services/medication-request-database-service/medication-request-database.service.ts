@@ -1,12 +1,12 @@
 import { Inject, Injectable } from "@angular/core";
 import { MedicationRequest } from "fhir/r4";
-import { UuidService } from "../../../../core/services/uuid-service/uuid.service";
-import { AbstractDatabaseService } from "../../../../core/abstract/abstract-database-service";
-import { Logger } from "../../../../core/util/logger/logger";
+import { UuidService } from "../uuid-service/uuid.service";
+import { AbstractDatabaseService } from "../../abstract/abstract-database-service";
+import { Logger } from "../../util/logger/logger";
 import { Store } from "@ngrx/store";
-import { AppState } from "../../../../core/state/app-state";
-import { setError } from "../../../../core/actions/error.action";
-import { medicationLoadingException } from "../../../../core/exception/medication-loading-exception";
+import { AppState } from "../../state/app-state";
+import { setError } from "../../actions/error.action";
+import { medicationLoadingException } from "../../exception/medication-loading-exception";
 
 @Injectable({
   providedIn: "root",

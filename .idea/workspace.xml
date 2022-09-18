@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e076ab55-216e-4444-b9af-130db4231713" name="Changes" comment="add routing to medication add click">
+    <list default="true" id="e076ab55-216e-4444-b9af-130db4231713" name="Changes" comment="save medication and validate the form">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/create-medication/create-medication.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/create-medication/create-medication.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/__mocks__/mock-medication-request.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/__mocks__/mock-medication-request.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/core/services/medication-database-service/medication-database.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/core/services/medication-database-service/medication-database.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/core/services/medication-service/medication.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/core/services/medication-service/medication.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/create-medication/create-medication.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/create-medication/create-medication.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/home/home-page.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/home/home-page.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/medication-page.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/medication-page.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/services/medication-service/medication-service.interface.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/core/services/medication-service/medication-service.interface.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/services/medication-service/medication.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/core/services/medication-service/medication.service.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/services/medication-service/medication.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/core/services/medication-service/medication.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/shared/atoms/typography/typography.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/shared/atoms/typography/typography.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/assets/i18n/de.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/assets/i18n/de.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/services/medication-request-database-service/medication-request-database.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/core/services/medication-request-database-service/medication-request-database.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/services/medication-request-service/medication-request-errors.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/core/services/medication-request-service/medication-request-errors.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/services/medication-request-service/medication-request.service.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/core/services/medication-request-service/medication-request.service.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/services/medication-request-service/medication-request.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/core/services/medication-request-service/medication-request.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/shared/atoms/medication-name/medication-name.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/shared/atoms/medication-name/medication-name.component.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,8 +71,8 @@
       <recent name="G:\mukosoft-app\apps\mukosoft\src\app\core\util\logger" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="G:\mukosoft-app\apps\mukosoft\src\app\core\services\medication-database-service" />
       <recent name="G:\mukosoft-app\apps\mukosoft\src\app\core\services" />
+      <recent name="G:\mukosoft-app\apps\mukosoft\src\app\core\services\medication-database-service" />
       <recent name="G:\mukosoft-app" />
       <recent name="G:\mukosoft-app\apps\mukosoft\src\app\shared\atoms" />
       <recent name="G:\mukosoft-app\apps\mukosoft\src\app\shared\molecules" />
@@ -155,7 +157,7 @@
       <workItem from="1663427205118" duration="6000" />
       <workItem from="1663431847413" duration="3005000" />
       <workItem from="1663497725838" duration="257000" />
-      <workItem from="1663506592879" duration="8434000" />
+      <workItem from="1663506592879" duration="10010000" />
     </task>
     <task id="LOCAL-00001" summary="styling of the navigation bar">
       <created>1662801764817</created>
@@ -346,7 +348,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663516104664</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="save medication and validate the form">
+      <created>1663521470798</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1663521470798</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -388,7 +397,8 @@
     <MESSAGE value="fix settings" />
     <MESSAGE value="clean up settings-page" />
     <MESSAGE value="add routing to medication add click" />
-    <option name="LAST_COMMIT_MESSAGE" value="add routing to medication add click" />
+    <MESSAGE value="save medication and validate the form" />
+    <option name="LAST_COMMIT_MESSAGE" value="save medication and validate the form" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

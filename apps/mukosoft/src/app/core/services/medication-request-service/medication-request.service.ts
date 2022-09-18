@@ -1,17 +1,17 @@
 import { Injectable } from "@angular/core";
 import { BehaviorSubject, Observable, of } from "rxjs";
 import { MedicationRequest } from "fhir/r4";
-import { MedicationRequestResponse } from "../../models/medication-request-response";
-import { MedicationRequestError } from "../../models/medication-request-error";
+import { MedicationRequestResponse } from "../../../features/medication/models/medication-request-response";
+import { MedicationRequestError } from "../../../features/medication/models/medication-request-error";
 import { Store } from "@ngrx/store";
 import {
   selectCurrentIntervalMedicationRequests,
   selectMedicationRequests,
-} from "../../../../core/selectors/medication-request.selector";
+} from "../../selectors/medication-request.selector";
 import { MedicationRequestDatabaseService } from "../medication-request-database-service/medication-request-database.service";
-import { setMedicationRequests } from "../../../../core/actions/medication-request.actions";
+import { setMedicationRequests } from "../../actions/medication-request.actions";
 import { MedicationCreationError } from "./medication-request-errors";
-import { AppState } from "../../../../core/state/app-state";
+import { AppState } from "../../state/app-state";
 
 @Injectable({
   providedIn: "root",

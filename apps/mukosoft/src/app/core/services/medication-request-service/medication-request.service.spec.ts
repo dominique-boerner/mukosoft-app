@@ -1,9 +1,9 @@
 import { TestBed } from "@angular/core/testing";
 
 import { MedicationRequestService } from "./medication-request.service";
-import { mockMedicationRequestPrednisoneNonActive } from "../../../../__mocks__/mock-medication-request";
+import { mockMedicationRequestPrednisoneNonActive } from "../../../__mocks__/mock-medication-request";
 import { StoreModule } from "@ngrx/store";
-import { appState } from "../../../../app.module";
+import { appState } from "../../../app.module";
 
 describe("MedicationRequestService", () => {
   let service: MedicationRequestService;

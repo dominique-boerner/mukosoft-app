@@ -1,7 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { PatientService } from "../../core/services/patient-service/patient.service";
 import { NewsService } from "./services/news.service";
-import { MedicationRequestService } from "../medication/services/medication-request-service/medication-request.service";
+import { MedicationRequestService } from "../../core/services/medication-request-service/medication-request.service";
 import { MedicationService } from "../../core/services/medication-service/medication.service";
 import { Medication, MedicationRequest } from "fhir/r4";
 
@@ -32,6 +32,11 @@ export class HomePageComponent implements OnInit {
   getMedicationByReference(
     medicationRequest: MedicationRequest
   ): Medication | undefined {
+    console.log(
+      this.medicationService.getMedicationByReference(
+        medicationRequest.medicationReference.reference
+      )
+    );
     return this.medicationService.getMedicationByReference(
       medicationRequest.medicationReference.reference
     );

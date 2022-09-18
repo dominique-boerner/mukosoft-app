@@ -1,7 +1,6 @@
 import { Injectable } from "@angular/core";
 import { Medication } from "fhir/r4";
 import { BehaviorSubject } from "rxjs";
-import { prednisone } from "../../../__mocks__/mock-medication";
 import { IMedicationService } from "./medication-service.interface";
 import { UuidService } from "../uuid-service/uuid.service";
 import { Logger } from "../../util/logger/logger";
@@ -21,9 +20,10 @@ export class MedicationService implements IMedicationService {
   }
 
   public getMedicationByReference(medicationReference: string) {
-    return this.medications$.value.find((medications) => {
+    return this.medications$.value.find((medication) => {
+      console.log(medication);
       const searchString = medicationReference.replace("#", "");
-      return medications?.id?.includes(searchString);
+      return medication?.id?.includes(searchString);
     });
   }
 
@@ -53,7 +53,9 @@ export class MedicationService implements IMedicationService {
   }
 
   private loadAllMedications() {
-    this.setMedications([prednisone]);
+    this.medicationDatabaseService.get().then((response) => {
+      this.setMedications(response.rows.map((row: any) => row.doc));
+    });
   }
 
   private setMedications(medications: Medication[]) {
