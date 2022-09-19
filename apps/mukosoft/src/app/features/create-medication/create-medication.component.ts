@@ -1,6 +1,9 @@
 import { Component } from "@angular/core";
 import { Logger } from "../../core/util/logger/logger";
-import { MedicationRequestBuilderService } from "../../core/services/medication-request-builder/medication-request-builder.service";
+import {
+  DayOfWeek,
+  MedicationRequestBuilderService,
+} from "../../core/services/medication-request-builder/medication-request-builder.service";
 import { CreateMedicationService } from "./services/create-medication-service/create-medication.service";
 import { Router } from "@angular/router";
 
@@ -42,7 +45,7 @@ export class CreateMedicationComponent {
 
         const medicationRequest = this.medicationRequestBuilderService
           .medicationReference(medicationReferenceId)
-          .daysOfWeek(["mon"])
+          .daysOfWeek(days)
           .time(times)
           .build();
 
@@ -74,7 +77,7 @@ export class CreateMedicationComponent {
     );
   }
 
-  public toggleDay(day: number) {
+  public toggleDay(day: DayOfWeek) {
     this.formGroup.controls.days.setValue(
       this.createMedicationService.toggleDay(
         this.formGroup.controls.days.value,

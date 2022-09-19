@@ -4,6 +4,7 @@ import { FormControl, FormGroup, Validators } from "@angular/forms";
 import { Coding, MedicationRequest } from "fhir/r4";
 import { MedicationService } from "../../../../core/services/medication-service/medication.service";
 import { MedicationRequestService } from "../../../../core/services/medication-request-service/medication-request.service";
+import { DayOfWeek } from "../../../../core/services/medication-request-builder/medication-request-builder.service";
 
 @Injectable({
   providedIn: "root",
@@ -38,7 +39,7 @@ export class CreateMedicationService {
     return times.filter((t) => t !== time);
   }
 
-  public toggleDay(days: number[], day: number): number[] {
+  public toggleDay(days: DayOfWeek[], day: DayOfWeek): DayOfWeek[] {
     if (days.includes(day)) {
       return days.filter((d) => d !== day);
     } else {
@@ -46,8 +47,8 @@ export class CreateMedicationService {
     }
   }
 
-  public get defaultDays() {
-    return [1, 2, 3, 4, 5, 6, 0];
+  public get defaultDays(): DayOfWeek[] {
+    return ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
   }
 
   public get defaultName(): string {
@@ -79,7 +80,7 @@ export class CreateMedicationService {
         this.medicationFormValidator
       ),
       times: new FormControl<Date[]>(this.defaultTimes, this.timesValidator),
-      days: new FormControl<number[]>(
+      days: new FormControl<DayOfWeek[]>(
         [...this.defaultDays],
         this.daysValidator
       ),

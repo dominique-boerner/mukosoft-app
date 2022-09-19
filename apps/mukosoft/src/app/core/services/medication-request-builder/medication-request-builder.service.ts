@@ -2,7 +2,7 @@ import { Injectable } from "@angular/core";
 import { MedicationRequest } from "fhir/r4";
 import { UuidService } from "../uuid-service/uuid.service";
 
-type DayOfWeek = "mon" | "tue" | "wed" | "thu" | "fri" | "sat" | "sun";
+export type DayOfWeek = "mon" | "tue" | "wed" | "thu" | "fri" | "sat" | "sun";
 
 @Injectable({
   providedIn: "root",
