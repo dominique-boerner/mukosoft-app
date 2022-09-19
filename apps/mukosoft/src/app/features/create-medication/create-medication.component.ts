@@ -56,6 +56,23 @@ export class CreateMedicationComponent {
         this.resetForm();
         this.router.navigate(["/tabs/medications"]);
       }
+    } else {
+      this.formGroup.controls.name.markAsDirty();
+      if (
+        this.createMedicationService.isFormControlInvalid(
+          this.formGroup.controls.name
+        )
+      ) {
+        this.formGroup.controls.name.markAsDirty();
+      }
+
+      if (
+        this.createMedicationService.isFormControlInvalid(
+          this.formGroup.controls.amount
+        )
+      ) {
+        this.formGroup.controls.amount.markAsDirty();
+      }
     }
   }
 

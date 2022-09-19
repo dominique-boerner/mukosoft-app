@@ -19,7 +19,7 @@
         ></mukosoft-input>
         <mukosoft-invalid-label
           *ngIf="
-            formGroup.controls.name.touched && formGroup.controls.name.invalid
+            formGroup.controls.name.dirty && formGroup.controls.name.invalid
           "
         >
           {{ "medication-creation.name.invalid" | translate }}
@@ -34,7 +34,7 @@
           ></mukosoft-input>
           <mukosoft-invalid-label
             *ngIf="
-              formGroup.controls.amount.touched &&
+              formGroup.controls.amount.dirty &&
               formGroup.controls.amount.invalid
             "
           >

@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e076ab55-216e-4444-b9af-130db4231713" name="Changes" comment="refactor create-medication-component, put logic into own service">
+    <list default="true" id="e076ab55-216e-4444-b9af-130db4231713" name="Changes" comment="implement day picking">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/core/services/medication-request-builder/medication-request-builder.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/core/services/medication-request-builder/medication-request-builder.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/create-medication/create-medication.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/create-medication/create-medication.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/create-medication/create-medication.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/create-medication/create-medication.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/create-medication/services/create-medication-service/create-medication.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/create-medication/services/create-medication-service/create-medication.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/assets/i18n/de.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/assets/i18n/de.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,7 +150,7 @@
       <workItem from="1663497725838" duration="257000" />
       <workItem from="1663506592879" duration="14358000" />
       <workItem from="1663527479505" duration="132000" />
-      <workItem from="1663589684826" duration="2205000" />
+      <workItem from="1663589684826" duration="2634000" />
     </task>
     <task id="LOCAL-00001" summary="styling of the navigation bar">
       <created>1662801764817</created>
@@ -386,7 +383,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663591523760</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="implement day picking">
+      <created>1663591951453</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1663591951453</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -406,7 +410,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="- add card-background to tailwind config" />
     <MESSAGE value="- pre-commit with husky&#10;- create version.json on pre-commit" />
     <MESSAGE value="install semantic release" />
     <MESSAGE value="adjust semantic-release branches" />
@@ -431,7 +434,8 @@
     <MESSAGE value="fix tests" />
     <MESSAGE value="update translation" />
     <MESSAGE value="refactor create-medication-component, put logic into own service" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor create-medication-component, put logic into own service" />
+    <MESSAGE value="implement day picking" />
+    <option name="LAST_COMMIT_MESSAGE" value="implement day picking" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
