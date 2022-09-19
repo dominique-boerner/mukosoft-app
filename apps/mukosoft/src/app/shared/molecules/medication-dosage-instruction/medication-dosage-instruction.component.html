@@ -5,11 +5,23 @@
   >
     {{ time.split(":")[0] + ":" + time.split(":")[1] }}
   </ion-chip>
-  <ion-chip
-    *ngFor="let day of dosageInstruction.timing.repeat.dayOfWeek"
-    color="secondary"
-    [outline]="true"
+  <ng-container
+    *ngIf="
+      dosageInstruction.timing.repeat.dayOfWeek.length === 7;
+      else renderDays
+    "
   >
-    {{ "fhir." + day | translate }}
-  </ion-chip>
+    <ion-chip color="secondary" [outline]="true">{{
+      "daily" | translate
+    }}</ion-chip>
+  </ng-container>
+  <ng-template #renderDays>
+    <ion-chip
+      *ngFor="let day of dosageInstruction.timing.repeat.dayOfWeek"
+      color="secondary"
+      [outline]="true"
+    >
+      {{ "fhir." + day | translate }}
+    </ion-chip>
+  </ng-template>
 </article>

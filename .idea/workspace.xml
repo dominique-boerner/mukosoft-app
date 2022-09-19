@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e076ab55-216e-4444-b9af-130db4231713" name="Changes" comment="implement day picking">
+    <list default="true" id="e076ab55-216e-4444-b9af-130db4231713" name="Changes" comment="more validation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/create-medication/create-medication.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/create-medication/create-medication.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/create-medication/create-medication.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/create-medication/create-medication.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/shared/molecules/medication-dosage-instruction/medication-dosage-instruction.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/shared/molecules/medication-dosage-instruction/medication-dosage-instruction.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/assets/i18n/de.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/assets/i18n/de.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,7 +150,7 @@
       <workItem from="1663497725838" duration="257000" />
       <workItem from="1663506592879" duration="14358000" />
       <workItem from="1663527479505" duration="132000" />
-      <workItem from="1663589684826" duration="2634000" />
+      <workItem from="1663589684826" duration="2857000" />
     </task>
     <task id="LOCAL-00001" summary="styling of the navigation bar">
       <created>1662801764817</created>
@@ -390,7 +390,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663591951453</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="more validation">
+      <created>1663592350684</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1663592350684</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -410,7 +417,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="- pre-commit with husky&#10;- create version.json on pre-commit" />
     <MESSAGE value="install semantic release" />
     <MESSAGE value="adjust semantic-release branches" />
     <MESSAGE value="add error handling" />
@@ -435,7 +441,8 @@
     <MESSAGE value="update translation" />
     <MESSAGE value="refactor create-medication-component, put logic into own service" />
     <MESSAGE value="implement day picking" />
-    <option name="LAST_COMMIT_MESSAGE" value="implement day picking" />
+    <MESSAGE value="more validation" />
+    <option name="LAST_COMMIT_MESSAGE" value="more validation" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -30,5 +30,6 @@
   "fhir.thu": "Donnerstag",
   "fhir.fri": "Freitag",
   "fhir.sat": "Samstag",
-  "fhir.sun": "Sonntag"
+  "fhir.sun": "Sonntag",
+  "daily": "täglich"
 }
