@@ -21,7 +21,6 @@ export class MedicationService implements IMedicationService {
 
   public getMedicationByReference(medicationReference: string) {
     return this.medications$.value.find((medication) => {
-      console.log(medication);
       const searchString = medicationReference.replace("#", "");
       return medication?.id?.includes(searchString);
     });

@@ -1,43 +1,25 @@
 import { Component } from "@angular/core";
-import { FormControl, FormGroup, Validators } from "@angular/forms";
 import { Logger } from "../../core/util/logger/logger";
-import { medicationFormCodings } from "../../core/medication-form-codings";
-import { Coding } from "fhir/r4";
-import { MedicationService } from "../../core/services/medication-service/medication.service";
-import { MedicationRequestService } from "../../core/services/medication-request-service/medication-request.service";
 import { MedicationRequestBuilderService } from "../../core/services/medication-request-builder/medication-request-builder.service";
+import { CreateMedicationService } from "./services/create-medication-service/create-medication.service";
+import { Router } from "@angular/router";
 
 @Component({
   selector: "mukosoft-create-medication",
   templateUrl: "./create-medication.component.html",
 })
 export class CreateMedicationComponent {
-  public days: number[] = [1, 2, 3, 4, 5, 6, 0];
   public isDaily = true;
 
-  public readonly medicationFormCodings = medicationFormCodings;
-  public formGroup = new FormGroup({
-    name: new FormControl("", [
-      Validators.required,
-      Validators.nullValidator,
-      Validators.pattern("^(?! )[A-Za-z0-9 ]*(?<! )$"),
-    ]),
-    amount: new FormControl<number>(1, [
-      Validators.required,
-      Validators.min(1),
-      Validators.pattern("^[0-9]*$"),
-    ]),
-    medicationForm: new FormControl<Coding>(medicationFormCodings[0], [
-      Validators.required,
-    ]),
-    times: new FormControl<Date[]>([], [Validators.required]),
-    days: new FormControl<number[]>([...this.days], [Validators.required]),
-  });
+  public readonly medicationFormCodings =
+    this.createMedicationService.medicationFormCodings;
+
+  public formGroup = this.createMedicationService.defaultFormControlGroup;
 
   constructor(
-    private readonly medicationService: MedicationService,
-    private readonly medicationRequestService: MedicationRequestService,
-    private readonly medicationRequestBuilderService: MedicationRequestBuilderService
+    private readonly medicationRequestBuilderService: MedicationRequestBuilderService,
+    public readonly createMedicationService: CreateMedicationService,
+    private readonly router: Router
   ) {}
 
   public async saveClick() {
@@ -46,13 +28,12 @@ export class CreateMedicationComponent {
     const amount = formGroupControls.amount.value;
     const times = formGroupControls.times.value;
     const days = formGroupControls.days.value;
-    if (!this.isNameInvalid() && !this.isAmountInvalid()) {
+
+    if (this.isFormValid()) {
       Logger.info(
         `Medication ${amount}x ${medicationName}, Times: ${times}, Days: ${days}`
       );
-      this.formGroup.controls.name.reset();
-      this.formGroup.controls.amount.setValue(1);
-      const response = await this.medicationService.createMedication(
+      const response = await this.createMedicationService.createMedication(
         medicationName
       );
 
@@ -65,43 +46,55 @@ export class CreateMedicationComponent {
           .time(times)
           .build();
 
-        console.log(medicationRequest);
-
-        this.medicationRequestService.createMedicationRequest(
+        await this.createMedicationService.createMedicationRequest(
           medicationRequest
         );
+
+        this.resetForm();
+        this.router.navigate(["/tabs/medications"]);
       }
     }
   }
 
   public addTime(time: Date) {
-    const times = this.formGroup.controls.times.value;
-    const sortedTimes = [...times, time].sort((a: Date, b: Date) => {
-      return a.getTime() - b.getTime();
-    });
-    this.formGroup.controls.times.setValue(sortedTimes);
+    this.formGroup.controls.times.setValue(
+      this.createMedicationService.addTimeAndSort(
+        this.formGroup.controls.times.value,
+        time
+      )
+    );
   }
 
   public removeTime(time: Date) {
-    const times = this.formGroup.controls.times.value;
-    this.formGroup.controls.times.setValue(times.filter((t) => t !== time));
+    this.formGroup.controls.times.setValue(
+      this.createMedicationService.removeTime(
+        this.formGroup.controls.times.value,
+        time
+      )
+    );
   }
 
   public toggleDay(day: number) {
-    const formGroupDays = this.formGroup.controls.days;
-    const currentDays = this.formGroup.controls.days.value;
-    if (currentDays.includes(day)) {
-      formGroupDays.setValue(currentDays.filter((d) => d !== day));
-    } else {
-      formGroupDays.setValue([...currentDays, day]);
-    }
+    this.formGroup.controls.days.setValue(
+      this.createMedicationService.toggleDay(
+        this.formGroup.controls.days.value,
+        day
+      )
+    );
   }
 
-  private isNameInvalid() {
-    return this.formGroup.controls.name.invalid;
+  private isFormValid() {
+    return (
+      !this.createMedicationService.isFormControlInvalid(
+        this.formGroup.controls.name
+      ) &&
+      !this.createMedicationService.isFormControlInvalid(
+        this.formGroup.controls.amount
+      )
+    );
   }
 
-  private isAmountInvalid() {
-    return this.formGroup.controls.amount.invalid;
+  private resetForm() {
+    this.formGroup = this.createMedicationService.defaultFormControlGroup;
   }
 }

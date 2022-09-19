@@ -70,7 +70,7 @@
           <div class="flex flex-col justify-center">
             <div *ngIf="!isDaily" class="flex justify-start flex-wrap">
               <ion-chip
-                *ngFor="let day of days"
+                *ngFor="let day of createMedicationService.defaultDays"
                 color="secondary"
                 [outline]="!formGroup.controls.days.value.includes(day)"
                 (click)="toggleDay(day)"

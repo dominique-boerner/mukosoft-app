@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e076ab55-216e-4444-b9af-130db4231713" name="Changes" comment="fix tests">
+    <list default="true" id="e076ab55-216e-4444-b9af-130db4231713" name="Changes" comment="update translation">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/assets/i18n/de.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/assets/i18n/de.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/core/services/medication-service/medication.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/core/services/medication-service/medication.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/create-medication/create-medication.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/create-medication/create-medication.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/create-medication/create-medication.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/create-medication/create-medication.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,14 +63,14 @@
       <recent name="G:\mukosoft-app\apps\mukosoft\src\app\core\util\logger" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\mukosoft-app\apps\mukosoft\src\app\features\create-medication\services\create-medication-service" />
       <recent name="G:\mukosoft-app\apps\mukosoft\src\app\shared\molecules" />
       <recent name="G:\mukosoft-app\apps\mukosoft\src\app\core\services\medication-request-builder" />
       <recent name="G:\mukosoft-app\apps\mukosoft\src\app\core\services" />
       <recent name="G:\mukosoft-app\apps\mukosoft\src\app\core\services\medication-database-service" />
-      <recent name="G:\mukosoft-app" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.NewsService">
+  <component name="RunManager" selected="npm.start">
     <configuration name="NewsService" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -148,7 +150,8 @@
       <workItem from="1663431847413" duration="3005000" />
       <workItem from="1663497725838" duration="257000" />
       <workItem from="1663506592879" duration="14358000" />
-      <workItem from="1663527479505" duration="11000" />
+      <workItem from="1663527479505" duration="132000" />
+      <workItem from="1663589684826" duration="1793000" />
     </task>
     <task id="LOCAL-00001" summary="styling of the navigation bar">
       <created>1662801764817</created>
@@ -367,7 +370,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663527114297</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="update translation">
+      <created>1663527538493</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1663527538493</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -387,7 +397,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="styling of the navigation bar" />
     <MESSAGE value="- remove cookbook icon in navigation&#10;- use MukoSoftIcons instead of hard coded strings" />
     <MESSAGE value="- add card-background to tailwind config" />
     <MESSAGE value="- pre-commit with husky&#10;- create version.json on pre-commit" />
@@ -412,7 +421,8 @@
     <MESSAGE value="save medication and validate the form" />
     <MESSAGE value="save medication-request" />
     <MESSAGE value="fix tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix tests" />
+    <MESSAGE value="update translation" />
+    <option name="LAST_COMMIT_MESSAGE" value="update translation" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
