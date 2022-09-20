@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e076ab55-216e-4444-b9af-130db4231713" name="Changes" comment="more validation">
+    <list default="true" id="e076ab55-216e-4444-b9af-130db4231713" name="Changes" comment="better dosage-instructions">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/shared/molecules/medication-dosage-instruction/medication-dosage-instruction.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/shared/molecules/medication-dosage-instruction/medication-dosage-instruction.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/assets/i18n/de.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/assets/i18n/de.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft-api/src/app/v1/news/news.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft-api/src/app/v1/news/news.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft-api/src/app/v1/news/news.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft-api/src/app/v1/news/news.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/home/components/news-slider/news-slider.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/home/components/news-slider/news-slider.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/home/components/news-slider/news-slider.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/home/components/news-slider/news-slider.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/home/models/news.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/home/models/news.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,7 +155,8 @@
       <workItem from="1663497725838" duration="257000" />
       <workItem from="1663506592879" duration="14358000" />
       <workItem from="1663527479505" duration="132000" />
-      <workItem from="1663589684826" duration="2857000" />
+      <workItem from="1663589684826" duration="3443000" />
+      <workItem from="1663698315246" duration="2218000" />
     </task>
     <task id="LOCAL-00001" summary="styling of the navigation bar">
       <created>1662801764817</created>
@@ -397,7 +403,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663592350684</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="better dosage-instructions">
+      <created>1663592955063</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1663592955063</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -417,7 +430,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="install semantic release" />
     <MESSAGE value="adjust semantic-release branches" />
     <MESSAGE value="add error handling" />
     <MESSAGE value="implement news in new back-end and get the news in front-end" />
@@ -442,7 +454,8 @@
     <MESSAGE value="refactor create-medication-component, put logic into own service" />
     <MESSAGE value="implement day picking" />
     <MESSAGE value="more validation" />
-    <option name="LAST_COMMIT_MESSAGE" value="more validation" />
+    <MESSAGE value="better dosage-instructions" />
+    <option name="LAST_COMMIT_MESSAGE" value="better dosage-instructions" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

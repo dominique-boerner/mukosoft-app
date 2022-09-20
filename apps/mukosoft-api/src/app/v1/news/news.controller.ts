@@ -5,8 +5,8 @@ import NewsService from "./news.service";
 export class NewsController {
   constructor(private readonly newsService: NewsService) {}
 
-  @Get()
-  getNews(): any[] {
+  @Get("")
+  async getNews(): Promise<any[]> {
     return this.newsService.getNews();
   }
 }

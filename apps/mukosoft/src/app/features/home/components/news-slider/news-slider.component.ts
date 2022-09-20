@@ -16,6 +16,10 @@ export class NewsSliderComponent {
   news: Observable<News[]>;
 
   openLink(url: string) {
-    window.open(url, "_system", "location=yes");
+    const baseUrl = "www.muko.info";
+    console.log(`${baseUrl}${url}`);
+    if (url) {
+      window.open(`https://${baseUrl}${url}`, "_blank", "location=yes");
+    }
   }
 }
