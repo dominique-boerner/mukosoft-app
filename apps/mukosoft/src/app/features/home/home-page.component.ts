@@ -1,21 +1,20 @@
-import { Component, OnInit } from "@angular/core";
+import { Component } from "@angular/core";
 import { PatientService } from "../../core/services/patient-service/patient.service";
 import { NewsService } from "./services/news.service";
-import { MedicationRequestService } from "../../core/services/medication-request-service/medication-request.service";
 import { MedicationService } from "../../core/services/medication-service/medication.service";
 import { Medication, MedicationRequest } from "fhir/r4";
+import { MedicationRequestService } from "../../core/services/medication-request-service/medication-request.service";
 
 @Component({
   selector: "mukosoft-home-page",
   templateUrl: "home-page.component.html",
 })
-export class HomePageComponent implements OnInit {
-  readonly news = this.newsService.getNews();
+export class HomePageComponent {
+  public readonly news = this.newsService.getNews();
 
-  readonly name = this.patientService.getPatientName();
-  readonly profileImage = this.patientService.getPatientAvatar();
+  public readonly name = this.patientService.getPatientName();
 
-  readonly medicationRequests$ =
+  public readonly medicationRequests$ =
     this.medicationRequestService.getMedicationRequests();
 
   constructor(
@@ -25,18 +24,9 @@ export class HomePageComponent implements OnInit {
     private readonly medicationService: MedicationService
   ) {}
 
-  ngOnInit() {
-    this.medicationRequestService.synchronizeMedicationRequestsWithDatabase();
-  }
-
-  getMedicationByReference(
+  public getMedicationByReference(
     medicationRequest: MedicationRequest
-  ): Medication | undefined {
-    console.log(
-      this.medicationService.getMedicationByReference(
-        medicationRequest.medicationReference.reference
-      )
-    );
+  ): Medication {
     return this.medicationService.getMedicationByReference(
       medicationRequest.medicationReference.reference
     );

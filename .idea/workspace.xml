@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="e076ab55-216e-4444-b9af-130db4231713" name="Changes" comment="better dosage-instructions">
+    <list default="true" id="e076ab55-216e-4444-b9af-130db4231713" name="Changes" comment="implement events from muko.info">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft-api/src/app/v1/news/news.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft-api/src/app/v1/news/news.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft-api/src/app/v1/news/news.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft-api/src/app/v1/news/news.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/home/components/news-slider/news-slider.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/home/components/news-slider/news-slider.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/home/components/news-slider/news-slider.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/home/components/news-slider/news-slider.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/home/models/news.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/home/models/news.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/home/home-page.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/home/home-page.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/services/app-initializer-service/app-initializer.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/mukosoft/src/app/features/medication/services/app-initializer-service/app-initializer.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +39,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;G:/mukosoft-app/apps/mukosoft/src/app/features/create-medication&quot;,
+    &quot;last_opened_file_path&quot;: &quot;G:/stay-together&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -54,8 +52,9 @@
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;G:\\mukosoft-app\\node_modules\\typescript\\lib&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.new.ui&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;G:\\mukosoft-app\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -156,7 +155,13 @@
       <workItem from="1663506592879" duration="14358000" />
       <workItem from="1663527479505" duration="132000" />
       <workItem from="1663589684826" duration="3443000" />
-      <workItem from="1663698315246" duration="2218000" />
+      <workItem from="1663698315246" duration="2324000" />
+      <workItem from="1665755539277" duration="16000" />
+      <workItem from="1667241072163" duration="96000" />
+      <workItem from="1667241322183" duration="73000" />
+      <workItem from="1667241520896" duration="161000" />
+      <workItem from="1667241956367" duration="65000" />
+      <workItem from="1667242034772" duration="523000" />
     </task>
     <task id="LOCAL-00001" summary="styling of the navigation bar">
       <created>1662801764817</created>
@@ -410,7 +415,14 @@
       <option name="project" value="LOCAL" />
       <updated>1663592955063</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="implement events from muko.info">
+      <created>1663700612587</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1663700612587</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -430,7 +442,6 @@
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
-    <MESSAGE value="adjust semantic-release branches" />
     <MESSAGE value="add error handling" />
     <MESSAGE value="implement news in new back-end and get the news in front-end" />
     <MESSAGE value="change design of navigation and fix tests" />
@@ -455,7 +466,8 @@
     <MESSAGE value="implement day picking" />
     <MESSAGE value="more validation" />
     <MESSAGE value="better dosage-instructions" />
-    <option name="LAST_COMMIT_MESSAGE" value="better dosage-instructions" />
+    <MESSAGE value="implement events from muko.info" />
+    <option name="LAST_COMMIT_MESSAGE" value="implement events from muko.info" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
