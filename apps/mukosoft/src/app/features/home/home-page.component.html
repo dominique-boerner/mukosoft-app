@@ -2,12 +2,18 @@
   <mukosoft-greeting-card></mukosoft-greeting-card>
   <mukosoft-news-slider [news]="news"></mukosoft-news-slider>
 
-  <ion-title color="secondary" class="text-2xl leading-loose">
+  <ion-title
+    *ngIf="(medicationRequests$ | async)?.length > 0"
+    data-cy="home-medication-title"
+    color="secondary"
+    class="text-2xl leading-loose"
+  >
     {{ "home.medication.title" | translate }}
   </ion-title>
   <div class="mx-2">
     <mukosoft-medication-request
       *ngFor="let medicationRequest of medicationRequests$ | async"
+      data-cy="home-medication"
       [medicationRequest]="medicationRequest"
       [medication]="getMedicationByReference(medicationRequest)"
     >

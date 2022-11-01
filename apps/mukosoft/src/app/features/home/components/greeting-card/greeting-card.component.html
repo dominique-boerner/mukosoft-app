@@ -4,13 +4,19 @@
 >
   <ion-card-header class="flex justify-between w-full">
     <div class="flex flex-col">
-      <mukosoft-title>
+      <mukosoft-title data-cy="home-greeting-title">
         {{ "home.greeting.title" | translate: { name: (this.name | async) } }}!
       </mukosoft-title>
-      <ion-card-subtitle class="text-xl leading-loose">
+      <ion-card-subtitle
+        data-cy="home-greeting-subtitle"
+        class="text-xl leading-loose"
+      >
         {{ "home.greeting.subtitle" | translate }}
       </ion-card-subtitle>
     </div>
-    <mukosoft-user-avatar class="w-20 h-20"></mukosoft-user-avatar>
+    <mukosoft-user-avatar
+      data-cy="home-user-avatar"
+      class="w-20 h-20"
+    ></mukosoft-user-avatar>
   </ion-card-header>
 </ion-card>

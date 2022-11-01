@@ -1,6 +1,8 @@
 {
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
+    "target": "es5",
+    "lib": ["es5", "dom"],
     "sourceMap": false,
     "outDir": "../../dist/out-tsc",
     "allowJs": true,
@@ -12,7 +14,7 @@
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["cypress", "cypress.config.ts"],
+  "include": ["cypress", "cypress.config.ts", "**/*.ts"],
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,
